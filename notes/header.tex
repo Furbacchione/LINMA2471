@@ -1,0 +1,158 @@
+
+\documentclass[11pt]{scrreprt} %Type de doc. %scrartcl
+
+% TEMPORARY
+\usepackage{soul}
+
+
+% standard
+\usepackage[french,english]{babel}
+\usepackage[utf8]{inputenc} %Caracteres accentués           
+\usepackage[T1]{fontenc} 	%Police accentuée
+\usepackage{lmodern}			%Police vectorielle (haute qualité)
+\usepackage{vmargin} %Marges normales en A4
+\usepackage{amsmath} %Insertion d'equations
+\usepackage{todonotes}
+
+\usepackage{amssymb}
+\usepackage{vmargin} 
+
+\usepackage{graphicx} %Images dans le PDF
+\usepackage{float} 		%Flottants : Figures,Tables
+\usepackage{color}		%Utilisation de couleurs
+\definecolor{gris}{gray}{0.5}
+\usepackage{eurosym}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+% \usepackage{breakurl}
+\usepackage{wrapfig}
+\usepackage{multirow} 
+\usepackage{rotating}
+\usepackage[small,bf]{caption}
+\usepackage{textcomp}
+
+\usepackage{subfig} 
+
+\usepackage{amsthm}
+\usepackage{pgf}
+
+\usepackage{epstopdf}
+\usepackage{attachfile} 
+\usepackage{longtable}
+
+\usepackage[framemethod=tikz]{mdframed}
+
+\theoremstyle{plain}
+\newtheorem{example}{{\bf Example}}[chapter]
+\numberwithin{example}{chapter}
+\newtheorem{theorem}{{\bf Theorem}}[chapter]
+\numberwithin{theorem}{chapter}
+% \newtheorem{property}[example]{{\bf Property}}
+\newtheorem{definition}{{\bf Definition}}[chapter]
+\numberwithin{definition}{chapter}
+\newtheorem{lemma}{{\bf Lemma}}[chapter]
+\numberwithin{lemma}{chapter}
+% \newtheorem{hypothesis}[example]{{\bf Hypothesis}}
+% \newtheorem{exercise}{{\bf Exercise}}[section]
+\newtheorem{thesis}{Thesis}[chapter]
+\numberwithin{thesis}{chapter}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}%[chapter]
+% \numberwithin{remark}{chapter}
+
+\surroundwithmdframed[outerlinewidth=2,roundcorner=10pt,leftmargin=0,rightmargin=0,% backgroundcolor=yellow!40,outerlinecolor=blue!70!black,
+innertopmargin=\topskip,splittopskip=\topskip,ntheorem=true]{theorem}
+\surroundwithmdframed[outerlinewidth=2,roundcorner=10pt,leftmargin=0,rightmargin=0,% backgroundcolor=yellow!40,outerlinecolor=blue!70!black,
+innertopmargin=\topskip,splittopskip=\topskip,ntheorem=true]{lemma}
+\surroundwithmdframed[outerlinewidth=2,roundcorner=10pt,leftmargin=0,rightmargin=0,% backgroundcolor=yellow!40,outerlinecolor=blue!70!black,
+innertopmargin=\topskip,splittopskip=\topskip,ntheorem=true]{thesis}
+ 
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\R}{\mathbb{R}}
+
+\allowdisplaybreaks[3] % ou x prend une valeur entière comprise entre 0 et 4; Plus x est gd, plus le compilateur accepte les coupures sur deux pages dans une formule.
+% permet que les align puissent se prolonger sur pls pages
+
+%========================================
+\usepackage{listings}	%Inclusion de code-source
+\lstset{							%Paramètres généraux pour les inclusions de code
+	  language=matlab,
+    basicstyle=\ttfamily\small,
+    aboveskip={1.0\baselineskip},
+    belowskip={1.0\baselineskip},
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=4,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=lines,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    numbers=left,
+    numberstyle=\small,
+    stepnumber=1,
+    numbersep=10pt,
+    captionpos=t,
+    escapeinside={\%*}{*)}
+	}
+\renewcommand{\lstlistingname}{\textsc{Code}}	%Remplacer 'Listing' par 'Code' dans les légendes
+%\usepackage[french,boxed,linesnumbered]{algorithm2e}	%Package algorithme avec options
+\usepackage[english,algoruled, linesnumbered]{algorithm2e}	%Package algorithme avec options
+
+\hypersetup{
+colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+urlcolor=black
+} 
+
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}
+
+
+ \usepackage{layout}
+% \usepackage{geometry}
+ \usepackage{array}
+ \usepackage{fancyvrb}
+ \usepackage[parfill]{parskip} % espace apres paragraph
+%% \usepackage{fourier} % not to use
+\usepackage{pdfpages}
+%
+\newcommand{\QED}{\begin{flushright} QED \end{flushright}}
+\newcommand{\ent}[1]{\lfloor #1 \rfloor}
+\newcommand{\ceil}[1]{\lceil #1 \rceil}
+\newcommand{\tup}[2]{\left( \begin{matrix} #1\\ #2\end{matrix} \right)}
+
+% section numbering type
+\renewcommand\thechapter{\Alph{chapter}}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\hspace{0.5cm}\alph{subsection}}
+\renewcommand\thesubsubsection{\hspace{1cm}\roman{subsubsection}}
+
+\usepackage{framed}
+
+\renewenvironment{proof}{{\bfseries Proof}}{\QED}
+
+\usepackage{tocstyle}
+\usetocstyle{standard}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,calc,decorations.pathmorphing,decorations.pathreplacing}
+\tikzset{snake arrow/.style=
+{->,
+decorate,
+decoration={snake,amplitude=.4mm,segment length=2mm,post length=1mm}},
+}
