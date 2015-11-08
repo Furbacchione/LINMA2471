@@ -24,10 +24,9 @@
 %
 %\maketitle
 
-\section{Linear and convex models}
-In this section we will see some important classes of optimization problems, and some techniques to re-write an optimization problem into another form.
+In this chapter we will see some important classes of optimization problems, and some techniques to re-write an optimization problem into another form.
 
-\subsection{Definitions and motivation}
+\section{Definitions and motivation}
 First of all, let's recall what the model of an optimization problem looks like.\\
 
 \begin{definition}
@@ -87,10 +86,10 @@ Now that we know the definitions of linear and convex models, what is the \textb
 Also, one could argue that studying linear/convex models is a restriction to the number of problems we will be able to solve, but it turns out that convex problems are \textit{not so rare} in practice. Many problems are, or can be formulated as convex problems. Some problems can even be solved by using an equivalent convex problem : for example, the \textit{branch and bound} algorithm transforms a discrete (and therefore non-convex) problem into a sequence of linear problems. One last -informal- reason to restrict ourselves to convex problem is that, for non-convex problems, there is nothing interesting we can really do or say.
 
 
-\subsection{Standard forms}
+\section{Standard forms}
 As the general formulation of convex and linear problems can be very hard to use in order to develop a theory about them, due (mostly) to the variety of constraint types, it is important to define \textbf{standard forms}. Standard forms define a unique, specific, formulation of these problems, that is much simpler than the general form.
 
-\subsubsection{Linear case: re-writing objective function, variables and constraints}
+\subsection{Linear case: re-writing objective function, variables and constraints}
 Before we define the standard form, let us observe a number of transformations that can be applied to a linear problem without changing its solution (that is, the two problems will be equivalent).
 
 \paragraph{Maximization and minimization}
@@ -188,7 +187,7 @@ One last case to be treated is the \textbf{lower bound constraint}. This can of 
 \end{center}
 
 
-\subsubsection{Standard form for linear models}
+\subsection{Standard form for linear models}
 The standard form of a \textbf{linear optimization problem} is:
 \begin{framed}
 $$\begin{array}{cl}
@@ -200,9 +199,9 @@ $$\begin{array}{cl}
 
 If the problem has $n$ variables and $m$ constraints, then $c \in \mathbb{R}^{n\times 1}$, $A \in \mathbb{R}^{m\times n}$ and $b \in \mathbb{R}^{m\times 1}$. These constitute the only data needed to uniquely define the problem. 
 
-The transformations exposed in the previous subsection illustrate the fact that it is possible to turn any linear optimization problem in the standard form.
+The transformations exposed in the previous section illustrate the fact that it is possible to turn any linear optimization problem in the standard form.
 
-\subsubsection{Standard form for convex models}
+\subsection{Standard form for convex models}
 There is \textbf{no known standard form} for convex optimization problems. This can be understood in the sense that the objective function can be very general, as well as the set $X$. Since, by definition, the set $X$ is uncountable, it is very hard to represent it in a way that can be, for example, treated by a computer. However, it is possible, under certain assumptions, to represent the set $X$ in a purely functional way, as a set of inequalities involving functions.
 
 Most often, the set $X$ is defined as a set of constraints. Let's suppose that there exists a set of functions $g_i$, $i \in \left\{1 \geq \dots \geq m \right\}$, $h_j$, $j \in \left\{ 1 \geq \dots \geq l \right\}$, such that:
@@ -216,16 +215,16 @@ In general, this does not suffice to guarantee that X is convex. The following c
 \item the $h_j$ functions are \textbf{linear}: it's tempting to say that convexity is enough, but it is not the case. For example, the function $h:\mathbb{R}^2\rightarrow \mathbb{R}: (x,y) \rightarrow x^2+y^2 -1$ defined as ensemble $X$ the circle (and not the discus!) of radius 1, which is obviously not convex\footnote{In fact, each segment binding two points of the circle doesn't include any other point of the circle that its extremity\dots}.
 \end{itemize}
 
-In some cases, the constraints $h_j(x)=0$ can be relaxed to inequalities $h_j(x)=0$ \textcolor{red}{(Shouldn't it be an inequality?)}, thus relaxing the linearity constraint on $h_j$. One of these cases, which will be developed in the next subsection, is when the objective function is linear.
+In some cases, the constraints $h_j(x)=0$ can be relaxed to inequalities $h_j(x)=0$ \textcolor{red}{(Shouldn't it be an inequality?)}, thus relaxing the linearity constraint on $h_j$. One of these cases, which will be developed in the next section, is when the objective function is linear.
 
 
-\begin{framed}
-\textbf{A note on $\neq$} The standard forms developed in this subsection do not allow for strict inequalities to be considered. This is because strict inequalities tend to make solutions \textit{disappear}: in linear optimization, solutions are always located on the boundary of a closed polyhedron. By making this polyhedron open (with strict inequalities), the solutions disappear, as there is not admissible point with a minimal value (it is always possible to get \textit{closer} to the boundary, thus reducing the objective function).
+\begin{framed}\label{note_on_diff}
+\textbf{A note on $\neq$} The standard forms developed in this section do not allow for strict inequalities to be considered. This is because strict inequalities tend to make solutions \textit{disappear}: in linear optimization, solutions are always located on the boundary of a closed polyhedron. By making this polyhedron open (with strict inequalities), the solutions disappear, as there is not admissible point with a minimal value (it is always possible to get \textit{closer} to the boundary, thus reducing the objective function).
 
 A solution to this is to treat strict inequalities as non-strict ones by introducing a \textit{tolerance} $\epsilon > 0$, that describes how close to the open boundary the solutions can lie. The constraint $f>g$ then becomes $f \geq g+\epsilon$. The choice of the tolerance depends on the context of the problem (and is to be discussed with the client, for example).
 \end{framed}
 
-\subsubsection{Transforming \textit{any} problem into a convex problem}
+\subsection{Transforming \textit{any} problem into a convex problem}
 We can turn any optimization problem into a convex problem by following two "easy" steps. First, \textit{the objective function can be made linear} by adding a new variable. Then, \textit{the constraints can be made convex} by an operation called taking the convex hull. Let us see these operations in detail.
 
 \paragraph{First step : making the objective function linear}
@@ -295,15 +294,13 @@ $$\begin{array}{ccl}
 
 The convex hull of $\{-1,1\}^n$ is $[-1,1]^n$, and so both problems have the same solutions. The flow problem with integers (as seen in LINMA1702), which retains integer only solutions with relaxation, is an example of taking the convex hull of discrete problems without changing the nature of solutions. 
 
-\textcolor{red}{UNTIL THERE}
+\subsection{Approximate \textit{any} convex problem by a linear problem}
 
-\subsubsection{Approximate \textit{any} convex problem by a linear problem}
-
-It is possible to approximate convex problems by linear ones. Since the objective can always be converted to a linear function by adding a variable, the only work to be done concerns the constraints. Basically, the idea is to approximate the (closed\footnote{Why not open? Because an open set corresponds to strict inequalities, which cannot and will not be treated with the common optimization tools (see the note on $\neq$)}) set $X$ by a finite intersection of half-spaces (thus, linear constraints).
+It is possible to approximate convex problems by linear ones. Since the objective can always be converted to a linear function by adding a variable, the only work to be done concerns the constraints. Basically, the idea is to approximate the (closed\footnote{Why not open? Because an open set corresponds to strict inequalities, which cannot and will not be treated with the common optimization tools (see ``A note on $\neq$'', page \pageref{note_on_diff})}) set $X$ by a finite intersection of half-spaces (thus, linear constraints).
 
 The way to do this is to use \textbf{projections} of points on the convex space. The projection of a point $u$ on a set $X$ is defined as the point $u_p \in X$ that minimizes the distance between itself and $u$.\\
 
-\begin{theorem}{Uniqueness and existence of projection}
+\begin{theorem}{\textbf{Uniqueness and existence of projection.}}
 Let $X$ be a \textbf{closed, non-empty, convex} set in $\mathbb{R}^n$, the projection of any exterior point on $X$ exists and is unique.
 \end{theorem}
 
@@ -314,7 +311,7 @@ With this concept of projection, we can introduce the \textbf{separation propert
 
 So, to approximate a convex set by a linear one, the following method should be applied: for every point that should not be in $X$, create a separation plane. Such plane defines a half-space containing all of $X$. The intersection of all the half-spaces obtained this way forms a polyhedron containing $X$.
 
-Moreover, it is interesting to note that an infinite number of points will create the convex set itself! This yields a new definition for a convex set: a convex set can always be written as the infinite intersection if half-spaces. This definition also proves immediately that every polyhedra is convex.
+Moreover, it is interesting to note that an infinite number of points will create the convex set itself! This yields a new definition for a convex set: a convex set can always be written as the infinite intersection of half-spaces. This definition also proves immediately that every polyhedra is convex.
 
 \begin{figure}[H]
 \centering

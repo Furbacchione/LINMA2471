@@ -1,26 +1,36 @@
 \BOOKMARK [-1][-]{part.1}{Notes}{}% 1
 \BOOKMARK [0][-]{chapter.1}{Linear and Convex modeling}{part.1}% 2
-\BOOKMARK [1][-]{section.1.1}{Linear and convex models}{chapter.1}% 3
-\BOOKMARK [2][-]{subsection.1.1.1}{Definitions and motivation}{section.1.1}% 4
-\BOOKMARK [2][-]{subsection.1.1.2}{Standard forms}{section.1.1}% 5
-\BOOKMARK [3][-]{subsubsection.1.1.2.1}{Linear case: re-writing objective function, variables and constraints}{subsection.1.1.2}% 6
-\BOOKMARK [3][-]{subsubsection.1.1.2.2}{Standard form for linear models}{subsection.1.1.2}% 7
-\BOOKMARK [3][-]{subsubsection.1.1.2.3}{Standard form for convex models}{subsection.1.1.2}% 8
-\BOOKMARK [3][-]{subsubsection.1.1.2.4}{Transforming any problem into a convex problem}{subsection.1.1.2}% 9
-\BOOKMARK [3][-]{subsubsection.1.1.2.5}{Approximate any convex problem by a linear problem}{subsection.1.1.2}% 10
-\BOOKMARK [2][-]{subsection.1.1.3}{Modelling Tricks}{section.1.1}% 11
-\BOOKMARK [3][-]{subsubsection.1.1.3.1}{Monotonicity}{subsection.1.1.3}% 12
-\BOOKMARK [3][-]{subsubsection.1.1.3.2}{Change of variables}{subsection.1.1.3}% 13
-\BOOKMARK [3][-]{subsubsection.1.1.3.3}{Misleading/Deceptive appearances}{subsection.1.1.3}% 14
-\BOOKMARK [3][-]{subsubsection.1.1.3.4}{Flexibility}{subsection.1.1.3}% 15
-\BOOKMARK [3][-]{subsubsection.1.1.3.5}{Charnes and Cooper}{subsection.1.1.3}% 16
-\BOOKMARK [2][-]{subsection.1.1.4}{Convex Optimization : Theorems and properties}{section.1.1}% 17
-\BOOKMARK [3][-]{subsubsection.1.1.4.1}{Convex sets}{subsection.1.1.4}% 18
-\BOOKMARK [3][-]{subsubsection.1.1.4.2}{Convex functions}{subsection.1.1.4}% 19
-\BOOKMARK [3][-]{subsubsection.1.1.4.3}{Convexity and linear transformations}{subsection.1.1.4}% 20
-\BOOKMARK [0][-]{chapter.2}{First-order methods}{part.1}% 21
-\BOOKMARK [0][-]{chapter.3}{Conic modeling and duality}{part.1}% 22
-\BOOKMARK [0][-]{chapter.4}{Interior-point methods}{part.1}% 23
-\BOOKMARK [-1][-]{part.2}{Labs}{}% 24
-\BOOKMARK [0][-]{section.4.1}{Introduction : AMPL}{part.2}% 25
-\BOOKMARK [-1][-]{part.3}{Exercices}{}% 26
+\BOOKMARK [1][-]{section.1.1}{Definitions and motivation}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Standard forms}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.2.1}{Linear case: re-writing objective function, variables and constraints}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.2}{Standard form for linear models}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.3}{Standard form for convex models}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.4}{Transforming any problem into a convex problem}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.5}{Approximate any convex problem by a linear problem}{section.1.2}% 9
+\BOOKMARK [1][-]{section.1.3}{Modelling Tricks}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.3.1}{Monotonicity}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.2}{Change of variables}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.3}{Misleading/Deceptive appearances}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.4}{Flexibility}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.5}{Charnes and Cooper}{section.1.3}% 15
+\BOOKMARK [1][-]{section.1.4}{Convex Optimization: Theorems and properties}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.4.1}{Convex sets}{section.1.4}% 17
+\BOOKMARK [3][-]{subsubsection.1.4.1.1}{Definition and examples}{subsection.1.4.1}% 18
+\BOOKMARK [3][-]{subsubsection.1.4.1.2}{Properties}{subsection.1.4.1}% 19
+\BOOKMARK [2][-]{subsection.1.4.2}{Convex functions}{section.1.4}% 20
+\BOOKMARK [3][-]{subsubsection.1.4.2.1}{Definition and examples}{subsection.1.4.2}% 21
+\BOOKMARK [3][-]{subsubsection.1.4.2.2}{Properties}{subsection.1.4.2}% 22
+\BOOKMARK [2][-]{subsection.1.4.3}{Properties of convex functions}{section.1.4}% 23
+\BOOKMARK [3][-]{subsubsection.1.4.3.1}{Convexity and differential calculus}{subsection.1.4.3}% 24
+\BOOKMARK [3][-]{subsubsection.1.4.3.2}{Convexity and linear transformations}{subsection.1.4.3}% 25
+\BOOKMARK [3][-]{subsubsection.1.4.3.3}{Partial minimization}{subsection.1.4.3}% 26
+\BOOKMARK [3][-]{subsubsection.1.4.3.4}{Extended real valued functions}{subsection.1.4.3}% 27
+\BOOKMARK [3][-]{subsubsection.1.4.3.5}{Composition and product}{subsection.1.4.3}% 28
+\BOOKMARK [2][-]{subsection.1.4.4}{Advantage of convex problems}{section.1.4}% 29
+\BOOKMARK [2][-]{subsection.1.4.5}{Variants of convex functions}{section.1.4}% 30
+\BOOKMARK [0][-]{chapter.2}{First-order methods}{part.1}% 31
+\BOOKMARK [0][-]{chapter.3}{Conic modeling and duality}{part.1}% 32
+\BOOKMARK [0][-]{chapter.4}{Interior-point methods}{part.1}% 33
+\BOOKMARK [-1][-]{part.2}{Labs}{}% 34
+\BOOKMARK [0][-]{section.4.1}{Introduction : AMPL}{part.2}% 35
+\BOOKMARK [-1][-]{part.3}{Exercices}{}% 36

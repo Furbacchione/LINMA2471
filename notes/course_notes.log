@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.8)  3 NOV 2015 22:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.8)  8 NOV 2015 21:16
 entering extended mode
 **course_notes.tex
 (C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\course_notes.tex
@@ -1460,27 +1460,28 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 \c@theorem=\count195
 \c@definition=\count196
 \c@lemma=\count197
-\c@thesis=\count198
+\c@property=\count198
+\c@thesis=\count199
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count199
+\lst@mode=\count200
 \lst@gtempboxa=\box68
 \lst@token=\toks49
-\lst@length=\count200
+\lst@length=\count201
 \lst@currlwidth=\dimen268
-\lst@column=\count201
 Normal \count register pool exhausted, switching to extended pool.
-\lst@pos=\count277
+\lst@column=\count277
+\lst@pos=\count278
 \lst@lostspace=\dimen269
 \lst@width=\dimen270
-\lst@newlines=\count278
-\lst@lineno=\count279
+\lst@newlines=\count279
+\lst@lineno=\count280
 \lst@maxwidth=\dimen271
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count280
-\lst@skipnumbers=\count281
+\c@lstnumber=\count281
+\lst@skipnumbers=\count282
 \lst@framebox=\box69
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
@@ -1493,7 +1494,7 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithm2e\algorithm2e.sty"
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count282
+\c@AlgoLine=\count283
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
@@ -1536,46 +1537,46 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \algoheightrule=\skip159
 \algotitleheightruledefault=\skip160
 \algotitleheightrule=\skip161
-\c@algocfline=\count283
-\c@algocfproc=\count284
-\c@algocf=\count285
+\c@algocfline=\count284
+\c@algocfproc=\count285
+\c@algocf=\count286
 \algocf@algoframe=\box76
 \algocf@algobox=\box77
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 116.
+Package hyperref Info: Option `colorlinks' set `true' on input line 118.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\layout.sty"
 Package: layout 2000/09/25 v1.2c Show layout parameters
-\oneinch=\count286
-\cnt@paperwidth=\count287
-\cnt@paperheight=\count288
-\cnt@hoffset=\count289
-\cnt@voffset=\count290
-\cnt@textheight=\count291
-\cnt@textwidth=\count292
-\cnt@topmargin=\count293
-\cnt@oddsidemargin=\count294
-\cnt@evensidemargin=\count295
-\cnt@headheight=\count296
-\cnt@headsep=\count297
-\cnt@marginparsep=\count298
-\cnt@marginparwidth=\count299
-\cnt@marginparpush=\count300
-\cnt@footskip=\count301
-\fheight=\count302
-\ref@top=\count303
-\ref@hoffset=\count304
-\ref@voffset=\count305
-\ref@head=\count306
-\ref@body=\count307
-\ref@foot=\count308
-\ref@margin=\count309
-\ref@marginwidth=\count310
-\ref@marginpar=\count311
-\Interval=\count312
-\ExtraYPos=\count313
-\PositionX=\count314
-\PositionY=\count315
-\ArrowLength=\count316
+\oneinch=\count287
+\cnt@paperwidth=\count288
+\cnt@paperheight=\count289
+\cnt@hoffset=\count290
+\cnt@voffset=\count291
+\cnt@textheight=\count292
+\cnt@textwidth=\count293
+\cnt@topmargin=\count294
+\cnt@oddsidemargin=\count295
+\cnt@evensidemargin=\count296
+\cnt@headheight=\count297
+\cnt@headsep=\count298
+\cnt@marginparsep=\count299
+\cnt@marginparwidth=\count300
+\cnt@marginparpush=\count301
+\cnt@footskip=\count302
+\fheight=\count303
+\ref@top=\count304
+\ref@hoffset=\count305
+\ref@voffset=\count306
+\ref@head=\count307
+\ref@body=\count308
+\ref@foot=\count309
+\ref@margin=\count310
+\ref@marginwidth=\count311
+\ref@marginpar=\count312
+\Interval=\count313
+\ExtraYPos=\count314
+\PositionX=\count315
+\PositionY=\count316
+\ArrowLength=\count317
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
@@ -1589,11 +1590,11 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix <2008/02/07> (tvz)
-\FV@CodeLineNo=\count317
+\FV@CodeLineNo=\count318
 \FV@InFile=\read2
 \FV@TabBox=\box78
-\c@FancyVerbLine=\count318
-\FV@StepNumber=\count319
+\c@FancyVerbLine=\count319
+\FV@StepNumber=\count320
 \FV@OutFile=\write4
 )
 
@@ -1602,7 +1603,7 @@ Class scrreprt Warning: Usage of package `parskip' together
 (scrreprt)              I'd suggest to use option
 (scrreprt)              `parskip' with one of it's several values.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `parskip' on input line 132.
+(scrreprt)              package `parskip' on input line 134.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
 Package: parskip 2001/04/09 non-zero parskip adjustments
@@ -1618,7 +1619,7 @@ File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box79
 \AM@toc@title=\toks51
-\c@AM@survey=\count320
+\c@AM@survey=\count321
 \AM@templatesizebox=\box80
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\framed\framed.sty"
@@ -1640,7 +1641,7 @@ Package tocstyle Warning: THIS IS AN ALPHA VERSION!
 (tocstyle)                THERE IS NO SUPPORT, IF YOU USE THIS PACKAGE!
 (tocstyle)                Maybe it would be better, not to load this package.
 
-\tocstyle@indentstyle=\count321
+\tocstyle@indentstyle=\count322
 Package tocstyle Info: no tocstyle.cfg found on input line 856.
 )
 exclude: 
@@ -1723,7 +1724,7 @@ e.tex" ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\li
 \pgfdecoratedinputsegmentcompleteddistance=\dimen287
 \pgfdecoratedinputsegmentremainingdistance=\dimen288
 \pgf@decorate@distancetomove=\dimen289
-\pgf@decorate@repeatstate=\count322
+\pgf@decorate@repeatstate=\count323
 \pgfdecorationsegmentamplitude=\dimen290
 \pgfdecorationsegmentlength=\dimen291
 )
@@ -1771,16 +1772,16 @@ LaTeX Info: Redefining \dots on input line 6.
 LaTeX Info: Redefining \up on input line 6.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count323
+\scratchcounter=\count324
 \scratchdimen=\dimen292
 \scratchbox=\box102
-\nofMPsegments=\count324
-\nofMParguments=\count325
+\nofMPsegments=\count325
+\nofMParguments=\count326
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count326
+\MPscratchCnt=\count327
 \MPscratchDim=\dimen293
-\MPnumerator=\count327
-\makeMPintoPDFobject=\count328
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
 \everyMPtoPDFconversion=\toks53
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box103
@@ -1791,7 +1792,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count329
+\c@section@level=\count330
 )
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
@@ -1809,7 +1810,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count330
+\c@lstlisting=\count331
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 6.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
@@ -1855,7 +1856,7 @@ Package tocstyle Info: prepare \l@subsubsection for redefinition on input line 6
 Package tocstyle Info: prepare \l@table for redefinition on input line 6.
 Package tocstyle Info: prepare \l@figure for redefinition on input line 6.
 
-(C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\Page_de_garde.tex <images/epl.jpg, id=110, 164.615pt x 100.375pt>
+(C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\Page_de_garde.tex <images/epl.jpg, id=150, 164.615pt x 100.375pt>
 File: images/epl.jpg Graphic file (type jpg)
 
 <use images/epl.jpg>
@@ -1884,6 +1885,11 @@ text indent by \l@... (toc, 1):  25.18509pt
 number indent by parent (toc, 1):  19.451pt
 text indent calculated (toc, 1): 13.99162pt
 number indent calculated (toc, 1): 19.451pt
+number indent by \l@... (toc, 1):  16.42503pt
+text indent by \l@... (toc, 1):  25.18509pt
+number indent by parent (toc, 1):  19.451pt
+text indent calculated (toc, 1): 13.99162pt
+number indent calculated (toc, 1): 19.451pt
 number indent by \l@... (toc, 2):  41.61012pt
 text indent by \l@... (toc, 2):  35.04005pt
 number indent by parent (toc, 2):  33.44263pt
@@ -1894,6 +1900,61 @@ text indent by \l@... (toc, 2):  35.04005pt
 number indent by parent (toc, 2):  33.44263pt
 text indent calculated (toc, 2): 28.82625pt
 number indent calculated (toc, 2): 33.44263pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
+number indent by \l@... (toc, 1):  16.42503pt
+text indent by \l@... (toc, 1):  25.18509pt
+number indent by parent (toc, 1):  19.451pt
+text indent calculated (toc, 1): 13.99162pt
+number indent calculated (toc, 1): 19.451pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
+number indent by \l@... (toc, 1):  16.42503pt
+text indent by \l@... (toc, 1):  25.18509pt
+number indent by parent (toc, 1):  19.451pt
+text indent calculated (toc, 1): 13.99162pt
+number indent calculated (toc, 1): 19.451pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
 number indent by \l@... (toc, 3):  76.65019pt
 text indent by \l@... (toc, 3):  44.89517pt
 number indent by parent (toc, 3):  62.26888pt
@@ -1904,11 +1965,11 @@ text indent by \l@... (toc, 3):  44.89517pt
 number indent by parent (toc, 3):  62.26888pt
 text indent calculated (toc, 3): 46.0943pt
 number indent calculated (toc, 3): 62.26888pt
-number indent by \l@... (toc, 3):  76.65019pt
-text indent by \l@... (toc, 3):  44.89517pt
-number indent by parent (toc, 3):  62.26888pt
-text indent calculated (toc, 3): 46.0943pt
-number indent calculated (toc, 3): 62.26888pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
 number indent by \l@... (toc, 3):  76.65019pt
 text indent by \l@... (toc, 3):  44.89517pt
 number indent by parent (toc, 3):  62.26888pt
@@ -1954,21 +2015,11 @@ text indent by \l@... (toc, 2):  35.04005pt
 number indent by parent (toc, 2):  33.44263pt
 text indent calculated (toc, 2): 28.82625pt
 number indent calculated (toc, 2): 33.44263pt
-number indent by \l@... (toc, 3):  76.65019pt
-text indent by \l@... (toc, 3):  44.89517pt
-number indent by parent (toc, 3):  62.26888pt
-text indent calculated (toc, 3): 46.0943pt
-number indent calculated (toc, 3): 62.26888pt
-number indent by \l@... (toc, 3):  76.65019pt
-text indent by \l@... (toc, 3):  44.89517pt
-number indent by parent (toc, 3):  62.26888pt
-text indent calculated (toc, 3): 46.0943pt
-number indent calculated (toc, 3): 62.26888pt
-number indent by \l@... (toc, 3):  76.65019pt
-text indent by \l@... (toc, 3):  44.89517pt
-number indent by parent (toc, 3):  62.26888pt
-text indent calculated (toc, 3): 46.0943pt
-number indent calculated (toc, 3): 62.26888pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.42499pt
 number indent by parent (toc, 0):  0.0pt
@@ -2003,7 +2054,8 @@ number indent calculated (toc, -1): 0.0pt
 \tf@toc=\write6
  [1
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+] [2]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+
 <to be read again> 
                    \relax 
 l.17 \part{Notes}
@@ -2027,7 +2079,7 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface .
 
 (C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\Course_2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
@@ -2043,15 +2095,15 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 34.
+(scrreprt)              by `\normalfont \bfseries ' on input line 33.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
@@ -2067,12 +2119,12 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 46.
+(scrreprt)              by `\normalfont \bfseries ' on input line 45.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 48.
+(Font)              <9> on input line 47.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 48.
+(Font)              <5> on input line 47.
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              You should note, that in 1994 font command `\bf' has
@@ -2085,10 +2137,10 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 56.
+(scrreprt)              by `\normalfont \bfseries ' on input line 55.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
@@ -2104,48 +2156,47 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 66.
+(scrreprt)              by `\normalfont \bfseries ' on input line 65.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 71.
 
 [2
 
 ]
-
-Class scrreprt Warning: Usage of deprecated font command `\bf'!
-(scrreprt)              You should note, that in 1994 font command `\bf' has
-(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
-(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrreprt)              shouldn't use such commands any longer and within
-(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrreprt)              See `fntguide.pdf' for more information about
-(scrreprt)              recommended font commands.
-(scrreprt)              Note also, that KOMA-Script will remove the definition
-(scrreprt)              of `\bf' anytime until release of about version 3.20.
-(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 72.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-<./images/Course2_epi.jpg, id=192, 994.71625pt x 601.24625pt>
+<./images/Course2_epi.jpg, id=245, 994.71625pt x 601.24625pt>
 File: ./images/Course2_epi.jpg Graphic file (type jpg)
  <use ./images/Course2_epi.jpg>
-Package pdftex.def Info: ./images/Course2_epi.jpg used on input line 80.
+Package pdftex.def Info: ./images/Course2_epi.jpg used on input line 79.
 (pdftex.def)             Requested size: 298.41718pt x 180.37526pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 81.
+(Font)              <10> on input line 80.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 81.
+(Font)              <7> on input line 80.
  [3 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course2_epi.jpg>] [4] [5]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 215.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 214.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 228.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 227.
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
@@ -2161,7 +2212,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 246.
+(scrreprt)              by `\normalfont \bfseries ' on input line 245.
 
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
@@ -2175,24 +2226,371 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 250.
+(scrreprt)              by `\normalfont \bfseries ' on input line 249.
 
-<./images/Course2_conv2.jpg, id=231, 508.90125pt x 427.5975pt>
+<./images/Course2_conv2.jpg, id=284, 508.90125pt x 427.5975pt>
 File: ./images/Course2_conv2.jpg Graphic file (type jpg)
  <use ./images/Course2_conv2.jpg>
-Package pdftex.def Info: ./images/Course2_conv2.jpg used on input line 258.
+Package pdftex.def Info: ./images/Course2_conv2.jpg used on input line 257.
 (pdftex.def)             Requested size: 101.77844pt x 85.51797pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
 
-Package mdframed Warning: You have not loaded ntheorem yet on input line 265.
+Package mdframed Warning: You have not loaded ntheorem yet on input line 264.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 265.
+(mdframed)              on input line 264.
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 265.
+
+[7
+\pgfsyspdfmark {pgfid7}{6526379}{8099117}
+ <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course2_conv2.jpg>]
+<./images/Course2_polynoms.jpg, id=296, 380.42125pt x 400.49625pt>
+File: ./images/Course2_polynoms.jpg Graphic file (type jpg)
+ <use ./images/Course2_polynoms.jpg>
+Package pdftex.def Info: ./images/Course2_polynoms.jpg used on input line 282.
+(pdftex.def)             Requested size: 152.16579pt x 160.19566pt.
+ [8 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course2_polynoms.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
+
+ []
+
+
+Package mdframed Warning: You have not loaded ntheorem yet on input line 303.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 303.
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 303.
+
+<./images/Course2_Scan.jpg, id=304, 387.849pt x 226.9278pt>
+File: ./images/Course2_Scan.jpg Graphic file (type jpg)
+ <use ./images/Course2_Scan.jpg>
+Package pdftex.def Info: ./images/Course2_Scan.jpg used on input line 318.
+(pdftex.def)             Requested size: 155.13684pt x 90.7695pt.
+) [9
+\pgfsyspdfmark {pgfid8}{6526379}{32444781}
+] (C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\Course_3.tex
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 25.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 31.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 37.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 50.
+
+<./images/Course3_rate.jpg, id=312, 440.39531pt x 265.74281pt>
+File: ./images/Course3_rate.jpg Graphic file (type jpg)
+ <use ./images/Course3_rate.jpg>
+Package pdftex.def Info: ./images/Course3_rate.jpg used on input line 57.
+(pdftex.def)             Requested size: 132.1196pt x 79.72345pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 58.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
+
+ []
+
+[10 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course2_Scan.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+
+ []
+
+[11 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course3_rate.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+<./images/Course3_poly.png, id=334, 625.58719pt x 417.81094pt>
+File: ./images/Course3_poly.png Graphic file (type png)
+ <use ./images/Course3_poly.png>
+Package pdftex.def Info: ./images/Course3_poly.png used on input line 103.
+(pdftex.def)             Requested size: 250.23044pt x 167.12141pt.
+ [12 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course3_poly.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--170
+
+ []
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 171.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 186.
+
+[14]
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 193.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 206.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+ []
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 211.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 215.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 223.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 231.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 243.
+
+[15]
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 253.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 257.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 261.
+
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              You should note, that in 1994 font command `\bf' has
@@ -2207,25 +2605,6 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
 (scrreprt)              by `\normalfont \bfseries ' on input line 266.
 
-[7
-\pgfsyspdfmark {pgfid7}{6526379}{8099117}
- <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course2_conv2.jpg>]
-<./images/Course2_polynoms.jpg, id=243, 380.42125pt x 400.49625pt>
-File: ./images/Course2_polynoms.jpg Graphic file (type jpg)
- <use ./images/Course2_polynoms.jpg>
-Package pdftex.def Info: ./images/Course2_polynoms.jpg used on input line 283.
-(pdftex.def)             Requested size: 152.16579pt x 160.19566pt.
- [8 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course2_polynoms.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
-
- []
-
-
-Package mdframed Warning: You have not loaded ntheorem yet on input line 306.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 306.
 
 Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              You should note, that in 1994 font command `\bf' has
@@ -2238,133 +2617,389 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              Note also, that KOMA-Script will remove the definition
 (scrreprt)              of `\bf' anytime until release of about version 3.20.
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrreprt)              by `\normalfont \bfseries ' on input line 306.
+(scrreprt)              by `\normalfont \bfseries ' on input line 274.
 
-<./images/Course2_Scan.jpg, id=250, 387.849pt x 226.9278pt>
-File: ./images/Course2_Scan.jpg Graphic file (type jpg)
- <use ./images/Course2_Scan.jpg>
-Package pdftex.def Info: ./images/Course2_Scan.jpg used on input line 321.
-(pdftex.def)             Requested size: 155.13684pt x 90.7695pt.
-) [9
-\pgfsyspdfmark {pgfid8}{6526379}{31134060}
-] (C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\Course_3.tex
-\c@mydef=\count331
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 278--280
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-[10 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course2_Scan.jpg>]
-<./images/Course3_rate.jpg, id=266, 440.39531pt x 265.74281pt>
-File: ./images/Course3_rate.jpg Graphic file (type jpg)
- <use ./images/Course3_rate.jpg>
-Package pdftex.def Info: ./images/Course3_rate.jpg used on input line 51.
-(pdftex.def)             Requested size: 132.1196pt x 79.72345pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
-
- []
-
-[11 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course3_rate.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
-
- []
-
-<./images/Course3_poly.png, id=277, 625.58719pt x 417.81094pt>
-File: ./images/Course3_poly.png Graphic file (type png)
- <use ./images/Course3_poly.png>
-Package pdftex.def Info: ./images/Course3_poly.png used on input line 96.
-(pdftex.def)             Requested size: 250.23044pt x 167.12141pt.
- [12]
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
-
- []
-
-[13 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course3_poly.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
-
- []
-
-\c@myproperty=\count332
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--208
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 234--238
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--238
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--280
-
- []
-
-<./images/Course3_ApproximationConvexe.png, id=307, 572.1375pt x 303.38344pt>
+<./images/Course3_ApproximationConvexe.png, id=367, 572.1375pt x 303.38344pt>
 File: ./images/Course3_ApproximationConvexe.png Graphic file (type png)
 
 <use ./images/Course3_ApproximationConvexe.png>
 Package pdftex.def Info: ./images/Course3_ApproximationConvexe.png used on input line 283.
 (pdftex.def)             Requested size: 228.85094pt x 121.35121pt.
- [16]) [17 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course3_ApproximationConvexe.png>]
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 289.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 299.
+
+[16]
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 305.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 312.
+
+) (C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\Course_4.tex
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 26.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 29.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 35.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 47.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 52.
+
+[17 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course3_ApproximationConvexe.png>]
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 69.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 81.
+
+
+Overfull \hbox (3.01474pt too wide) in paragraph at lines 81--82
+[]\T1/lmr/bx/n/10.95 Property A.15. []\T1/lmr/m/it/10.95 If g is a con-vex func-tion and f is a con-vex, in-creas-ing an
+d one-dimensional
+ []
+
+[18]
+Package epstopdf Info: Source file: <./images/Course4_restrictedsquare.eps>
+(epstopdf)                    date: 2015-11-03 17:13:17
+(epstopdf)                    size: 13786 bytes
+(epstopdf)             Output file: <./images/Course4_restrictedsquare-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-11-08 18:53:20
+(epstopdf)                    size: 6284 bytes
+(epstopdf)             Command: <epstopdf --outfile=./images/Course4_restrictedsquare-eps-converted-to.pdf ./images/Cour
+se4_restrictedsquare.eps>
+(epstopdf)             \includegraphics on input line 96.
+Package epstopdf Info: Output file is already uptodate.
+ <./images/Course4_restrictedsquare-eps-converted-to.pdf, id=402, 562.1pt x 421.575pt>
+File: ./images/Course4_restrictedsquare-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./images/Course4_restrictedsquare-eps-converted-to.pdf>
+Package pdftex.def Info: ./images/Course4_restrictedsquare-eps-converted-to.pdf used on input line 96.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 103.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 108.
+
+
+Overfull \hbox (7.72221pt too wide) in paragraph at lines 111--114
+[]\T1/lmr/bx/n/10.95 Proof \T1/lmr/m/n/10.95 Again, one proves it in the sim-ple dif-fer-en-tiable, one-dimensional case
+. One has: 
+ []
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 121.
+
+[19 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course4_restrictedsquare-eps-converted-to.pdf>]
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 140.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 148.
+
+<./images/Course4_courbe.png, id=416, 642.4pt x 399.4925pt>
+File: ./images/Course4_courbe.png Graphic file (type png)
+ <use ./images/Course4_courbe.png>
+Package pdftex.def Info: ./images/Course4_courbe.png used on input line 151.
+(pdftex.def)             Requested size: 256.95544pt x 159.79416pt.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 157.
+
+<./images/Course4_absolue.png, id=417, 317.185pt x 236.885pt>
+File: ./images/Course4_absolue.png Graphic file (type png)
+ <use ./images/Course4_absolue.png>
+Package pdftex.def Info: ./images/Course4_absolue.png used on input line 160.
+(pdftex.def)             Requested size: 158.5921pt x 118.4422pt.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 166.
+
+[20 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course4_courbe.png> <C:/Users/Nicolas/Documents/GitHub/LIN
+MA2471/notes/images/Course4_absolue.png>]
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 172.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 176.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 180.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 190.
+
+) [21]
 Chapter B.
-[18
+[22
 
 ]
 Chapter C.
-[19
+[23
 
 ]
 Chapter D.
-[20
+[24
 
-] [21
+] [25
 
 ] (C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\Course_1.tex
 
@@ -2376,7 +3011,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-<./images/Course1_Slide1.JPG, id=345, 963.6pt x 542.025pt>
+<./images/Course1_Slide1.JPG, id=453, 963.6pt x 542.025pt>
 File: ./images/Course1_Slide1.JPG Graphic file (type jpg)
  <use ./images/Course1_Slide1.JPG>
 Package pdftex.def Info: ./images/Course1_Slide1.JPG used on input line 42.
@@ -2391,8 +3026,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
-[22 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course1_Slide1.JPG>]
-<./images/Course1_Slide2.JPG, id=351, 963.6pt x 542.025pt>
+[26 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course1_Slide1.JPG>]
+<./images/Course1_Slide2.JPG, id=459, 963.6pt x 542.025pt>
 File: ./images/Course1_Slide2.JPG Graphic file (type jpg)
  <use ./images/Course1_Slide2.JPG>
 Package pdftex.def Info: ./images/Course1_Slide2.JPG used on input line 70.
@@ -2412,30 +3047,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
-[23 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course1_Slide2.JPG>]) [24] [25
+[27 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course1_Slide2.JPG>]) [28] [29
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
 
 (C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\course_notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
 Package rerunfilecheck Info: File `course_notes.out' has not changed.
-(rerunfilecheck)             Checksum: 882502145F16F8DF47898C3DF44F4892;2063.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
+(rerunfilecheck)             Checksum: 21BCFC17201B88E4E98CF90BCA4FFCF0;2787.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 33839 strings out of 493921
- 634648 string characters out of 3144871
- 804590 words of memory out of 3000000
- 36330 multiletter control sequences out of 15000+200000
- 122600 words of font info for 82 fonts, out of 3000000 for 9000
+ 33907 strings out of 493921
+ 636011 string characters out of 3144871
+ 804685 words of memory out of 3000000
+ 36353 multiletter control sequences out of 15000+200000
+ 123017 words of font info for 83 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  78i,10n,102p,10443b,974s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9
-/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files (x86)/M
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm
+/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files (x86)/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
@@ -2452,9 +3087,9 @@ C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program F
 9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files 
 (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on course_notes.pdf (27 pages, 1034931 bytes).
+Output written on course_notes.pdf (32 pages, 1103366 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
- 109 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 602 PDF objects out of 1000 (max. 8388607)
+ 146 named destinations out of 1000 (max. 500000)
+ 366 words of extra memory for PDF output out of 10000 (max. 10000000)
 
