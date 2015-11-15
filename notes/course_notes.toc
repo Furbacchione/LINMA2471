@@ -36,8 +36,14 @@
 \contentsline {subsection}{\numberline {\hspace {0.5cm}d}Advantage of convex problems}{19}{subsection.1.4.4}
 \contentsline {subsection}{\numberline {\hspace {0.5cm}e}Variants of convex functions}{20}{subsection.1.4.5}
 \contentsline {chapter}{\numberline {B}First-order methods}{22}{chapter.2}
-\contentsline {chapter}{\numberline {C}Conic modeling and duality}{23}{chapter.3}
-\contentsline {chapter}{\numberline {D}Interior-point methods}{24}{chapter.4}
-\contentsline {part}{\numberline {II}Labs}{25}{part.2}
-\contentsline {section}{\numberline {1}Introduction : AMPL}{26}{section.4.1}
-\contentsline {part}{\numberline {III}Exercices}{29}{part.3}
+\contentsline {section}{\numberline {1}Gradient Method}{22}{section.2.1}
+\contentsline {subsection}{\numberline {\hspace {0.5cm}a}Step length selection}{22}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {\hspace {1cm}i}$h_k$ that minimize $f(x_k - h_k \nabla f(x_k))$}{22}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {\hspace {1cm}ii}$h_k = \alpha $}{22}{subsubsection.2.1.1.2}
+\contentsline {subsubsection}{\numberline {\hspace {1cm}iii}$h_k$ satisfies some "dynamic" conditions (e.g. Wolfe condition)}{23}{subsubsection.2.1.1.3}
+\contentsline {subsection}{\numberline {\hspace {0.5cm}b}Analysis of the $h_{k}$= $\frac {1}{L}$ gradient method}{25}{subsection.2.1.2}
+\contentsline {chapter}{\numberline {C}Conic modeling and duality}{27}{chapter.3}
+\contentsline {chapter}{\numberline {D}Interior-point methods}{28}{chapter.4}
+\contentsline {part}{\numberline {II}Labs}{29}{part.2}
+\contentsline {section}{\numberline {1}Introduction : AMPL}{30}{section.4.1}
+\contentsline {part}{\numberline {III}Exercices}{33}{part.3}

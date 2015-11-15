@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.8)  8 NOV 2015 21:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.2.8)  15 NOV 2015 19:49
 entering extended mode
 **course_notes.tex
 (C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\course_notes.tex
@@ -1856,7 +1856,7 @@ Package tocstyle Info: prepare \l@subsubsection for redefinition on input line 6
 Package tocstyle Info: prepare \l@table for redefinition on input line 6.
 Package tocstyle Info: prepare \l@figure for redefinition on input line 6.
 
-(C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\Page_de_garde.tex <images/epl.jpg, id=150, 164.615pt x 100.375pt>
+(C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\Page_de_garde.tex <images/epl.jpg, id=174, 164.615pt x 100.375pt>
 File: images/epl.jpg Graphic file (type jpg)
 
 <use images/epl.jpg>
@@ -2025,6 +2025,36 @@ text indent by \l@... (toc, 0):  16.42499pt
 number indent by parent (toc, 0):  0.0pt
 text indent calculated (toc, 0): 19.451pt
 number indent calculated (toc, 0): 0.0pt
+number indent by \l@... (toc, 1):  16.42503pt
+text indent by \l@... (toc, 1):  25.18509pt
+number indent by parent (toc, 1):  19.451pt
+text indent calculated (toc, 1): 13.99162pt
+number indent calculated (toc, 1): 19.451pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
+number indent by \l@... (toc, 3):  76.65019pt
+text indent by \l@... (toc, 3):  44.89517pt
+number indent by parent (toc, 3):  62.26888pt
+text indent calculated (toc, 3): 46.0943pt
+number indent calculated (toc, 3): 62.26888pt
+number indent by \l@... (toc, 3):  76.65019pt
+text indent by \l@... (toc, 3):  44.89517pt
+number indent by parent (toc, 3):  62.26888pt
+text indent calculated (toc, 3): 46.0943pt
+number indent calculated (toc, 3): 62.26888pt
+number indent by \l@... (toc, 3):  76.65019pt
+text indent by \l@... (toc, 3):  44.89517pt
+number indent by parent (toc, 3):  62.26888pt
+text indent calculated (toc, 3): 46.0943pt
+number indent calculated (toc, 3): 62.26888pt
+number indent by \l@... (toc, 2):  41.61012pt
+text indent by \l@... (toc, 2):  35.04005pt
+number indent by parent (toc, 2):  33.44263pt
+text indent calculated (toc, 2): 28.82625pt
+number indent calculated (toc, 2): 33.44263pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  16.42499pt
 number indent by parent (toc, 0):  0.0pt
@@ -2035,6 +2065,9 @@ text indent by \l@... (toc, 0):  16.42499pt
 number indent by parent (toc, 0):  0.0pt
 text indent calculated (toc, 0): 19.451pt
 number indent calculated (toc, 0): 0.0pt
+[1
+
+]
 number indent by \l@... (toc, -1):  0.0pt
 text indent by \l@... (toc, -1):  21.9pt
 number indent by parent (toc, -1):  0.0pt
@@ -2052,10 +2085,7 @@ text indent calculated (toc, -1): 24.81956pt
 number indent calculated (toc, -1): 0.0pt
 )
 \tf@toc=\write6
- [1
-
-] [2]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-
+ [2]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.17 \part{Notes}
@@ -2179,7 +2209,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-<./images/Course2_epi.jpg, id=245, 994.71625pt x 601.24625pt>
+<./images/Course2_epi.jpg, id=276, 994.71625pt x 601.24625pt>
 File: ./images/Course2_epi.jpg Graphic file (type jpg)
  <use ./images/Course2_epi.jpg>
 Package pdftex.def Info: ./images/Course2_epi.jpg used on input line 79.
@@ -2228,7 +2258,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
 (scrreprt)              by `\normalfont \bfseries ' on input line 249.
 
-<./images/Course2_conv2.jpg, id=284, 508.90125pt x 427.5975pt>
+<./images/Course2_conv2.jpg, id=314, 508.90125pt x 427.5975pt>
 File: ./images/Course2_conv2.jpg Graphic file (type jpg)
  <use ./images/Course2_conv2.jpg>
 Package pdftex.def Info: ./images/Course2_conv2.jpg used on input line 257.
@@ -2261,7 +2291,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 [7
 \pgfsyspdfmark {pgfid7}{6526379}{8099117}
  <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course2_conv2.jpg>]
-<./images/Course2_polynoms.jpg, id=296, 380.42125pt x 400.49625pt>
+<./images/Course2_polynoms.jpg, id=326, 380.42125pt x 400.49625pt>
 File: ./images/Course2_polynoms.jpg Graphic file (type jpg)
  <use ./images/Course2_polynoms.jpg>
 Package pdftex.def Info: ./images/Course2_polynoms.jpg used on input line 282.
@@ -2291,7 +2321,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
 (scrreprt)              by `\normalfont \bfseries ' on input line 303.
 
-<./images/Course2_Scan.jpg, id=304, 387.849pt x 226.9278pt>
+<./images/Course2_Scan.jpg, id=334, 387.849pt x 226.9278pt>
 File: ./images/Course2_Scan.jpg Graphic file (type jpg)
  <use ./images/Course2_Scan.jpg>
 Package pdftex.def Info: ./images/Course2_Scan.jpg used on input line 318.
@@ -2360,7 +2390,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
 (scrreprt)              by `\normalfont \bfseries ' on input line 50.
 
-<./images/Course3_rate.jpg, id=312, 440.39531pt x 265.74281pt>
+<./images/Course3_rate.jpg, id=342, 440.39531pt x 265.74281pt>
 File: ./images/Course3_rate.jpg Graphic file (type jpg)
  <use ./images/Course3_rate.jpg>
 Package pdftex.def Info: ./images/Course3_rate.jpg used on input line 57.
@@ -2386,7 +2416,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-<./images/Course3_poly.png, id=334, 625.58719pt x 417.81094pt>
+<./images/Course3_poly.png, id=364, 625.58719pt x 417.81094pt>
 File: ./images/Course3_poly.png Graphic file (type png)
  <use ./images/Course3_poly.png>
 Package pdftex.def Info: ./images/Course3_poly.png used on input line 103.
@@ -2624,7 +2654,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--280
 
  []
 
-<./images/Course3_ApproximationConvexe.png, id=367, 572.1375pt x 303.38344pt>
+<./images/Course3_ApproximationConvexe.png, id=397, 572.1375pt x 303.38344pt>
 File: ./images/Course3_ApproximationConvexe.png Graphic file (type png)
 
 <use ./images/Course3_ApproximationConvexe.png>
@@ -2805,7 +2835,7 @@ Package epstopdf Info: Source file: <./images/Course4_restrictedsquare.eps>
 se4_restrictedsquare.eps>
 (epstopdf)             \includegraphics on input line 96.
 Package epstopdf Info: Output file is already uptodate.
- <./images/Course4_restrictedsquare-eps-converted-to.pdf, id=402, 562.1pt x 421.575pt>
+ <./images/Course4_restrictedsquare-eps-converted-to.pdf, id=432, 562.1pt x 421.575pt>
 File: ./images/Course4_restrictedsquare-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./images/Course4_restrictedsquare-eps-converted-to.pdf>
@@ -2889,7 +2919,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
 (scrreprt)              by `\normalfont \bfseries ' on input line 148.
 
-<./images/Course4_courbe.png, id=416, 642.4pt x 399.4925pt>
+<./images/Course4_courbe.png, id=446, 642.4pt x 399.4925pt>
 File: ./images/Course4_courbe.png Graphic file (type png)
  <use ./images/Course4_courbe.png>
 Package pdftex.def Info: ./images/Course4_courbe.png used on input line 151.
@@ -2909,7 +2939,7 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 (scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
 (scrreprt)              by `\normalfont \bfseries ' on input line 157.
 
-<./images/Course4_absolue.png, id=417, 317.185pt x 236.885pt>
+<./images/Course4_absolue.png, id=447, 317.185pt x 236.885pt>
 File: ./images/Course4_absolue.png Graphic file (type png)
  <use ./images/Course4_absolue.png>
 Package pdftex.def Info: ./images/Course4_absolue.png used on input line 160.
@@ -2989,17 +3019,286 @@ Class scrreprt Warning: Usage of deprecated font command `\bf'!
 
 ) [21]
 Chapter B.
+(C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\Course_5.tex
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 68.
+
+
+LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
+(Font)              using `T1/lmr/bx/n' instead on input line 68.
+
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 68.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nabla' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\alpha' on input line 83.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 83.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 85.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--108
+
+ []
+
 [22
 
 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 115.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 115.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 121.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 125.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+[23]
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 140.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 145.
+
+<./images/Course5_construction.jpg, id=490, 561.09625pt x 422.57875pt>
+File: ./images/Course5_construction.jpg Graphic file (type jpg)
+ <use ./images/Course5_construction.jpg>
+Package pdftex.def Info: ./images/Course5_construction.jpg used on input line 161.
+(pdftex.def)             Requested size: 336.66034pt x 253.5492pt.
+
+
+Package mdframed Warning: You have not loaded ntheorem yet on input line 167.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 167.
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 168.
+
+[24 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course5_construction.jpg>]
+Package mdframed Info: Not enough space on this page on input line 172.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@@over' on input line 183.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 183.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--201
+
+ []
+
+[25
+\pgfsyspdfmark {pgfid9}{6526379}{42293682}
+]
+
+Package mdframed Warning: You have not loaded ntheorem yet on input line 214.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 214.
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 215.
+
+
+Class scrreprt Warning: Usage of deprecated font command `\bf'!
+(scrreprt)              You should note, that in 1994 font command `\bf' has
+(scrreprt)              been defined for compatiblitiy to Script 2.0 only.
+(scrreprt)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrreprt)              shouldn't use such commands any longer and within
+(scrreprt)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrreprt)              See `fntguide.pdf' for more information about
+(scrreprt)              recommended font commands.
+(scrreprt)              Note also, that KOMA-Script will remove the definition
+(scrreprt)              of `\bf' anytime until release of about version 3.20.
+(scrreprt)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrreprt)              by `\normalfont \bfseries ' on input line 221.
+
+) [26
+\pgfsyspdfmark {pgfid10}{6526379}{35720439}
+]
 Chapter C.
-[23
+[27
 
 ]
 Chapter D.
-[24
+[28
 
-] [25
+] [29
 
 ] (C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\Course_1.tex
 
@@ -3011,7 +3310,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-<./images/Course1_Slide1.JPG, id=453, 963.6pt x 542.025pt>
+<./images/Course1_Slide1.JPG, id=525, 963.6pt x 542.025pt>
 File: ./images/Course1_Slide1.JPG Graphic file (type jpg)
  <use ./images/Course1_Slide1.JPG>
 Package pdftex.def Info: ./images/Course1_Slide1.JPG used on input line 42.
@@ -3026,8 +3325,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
-[26 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course1_Slide1.JPG>]
-<./images/Course1_Slide2.JPG, id=459, 963.6pt x 542.025pt>
+[30 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course1_Slide1.JPG>]
+<./images/Course1_Slide2.JPG, id=531, 963.6pt x 542.025pt>
 File: ./images/Course1_Slide2.JPG Graphic file (type jpg)
  <use ./images/Course1_Slide2.JPG>
 Package pdftex.def Info: ./images/Course1_Slide2.JPG used on input line 70.
@@ -3047,49 +3346,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
-[27 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course1_Slide2.JPG>]) [28] [29
+[31 <C:/Users/Nicolas/Documents/GitHub/LINMA2471/notes/images/Course1_Slide2.JPG>]) [32] [33
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
 
 (C:\Users\Nicolas\Documents\GitHub\LINMA2471\notes\course_notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
 Package rerunfilecheck Info: File `course_notes.out' has not changed.
-(rerunfilecheck)             Checksum: 21BCFC17201B88E4E98CF90BCA4FFCF0;2787.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
+(rerunfilecheck)             Checksum: ED9BD2ADF3F7447351CBAA973032D7D5;3319.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 52.
  ) 
 Here is how much of TeX's memory you used:
- 33907 strings out of 493921
- 636011 string characters out of 3144871
- 804685 words of memory out of 3000000
- 36353 multiletter control sequences out of 15000+200000
- 123017 words of font info for 83 fonts, out of 3000000 for 9000
+ 34833 strings out of 493921
+ 646047 string characters out of 3144871
+ 807690 words of memory out of 3000000
+ 37244 multiletter control sequences out of 15000+200000
+ 127672 words of font info for 90 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 78i,10n,102p,10443b,974s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm
-/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files (x86)/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program F
+ 78i,15n,102p,10443b,1719s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
+/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/enc/dvips/lm/lm-ec.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files (x86)/MiKTe
+X 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
 public/lm/lmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/lm/lmmi5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi9.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm
-/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/lm/lmssbo10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on course_notes.pdf (32 pages, 1103366 bytes).
+2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi5.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/l
+m/lmmi9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/lm/lmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+lm/lmri8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/lm/lmss10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/
+lmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/sym
+bols/msbm7.pfb>
+Output written on course_notes.pdf (36 pages, 1206203 bytes).
 PDF statistics:
- 602 PDF objects out of 1000 (max. 8388607)
- 146 named destinations out of 1000 (max. 500000)
- 366 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 695 PDF objects out of 1000 (max. 8388607)
+ 171 named destinations out of 1000 (max. 500000)
+ 419 words of extra memory for PDF output out of 10000 (max. 10000000)
 
