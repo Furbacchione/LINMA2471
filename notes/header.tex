@@ -14,6 +14,7 @@
 \usepackage{amsmath} %Insertion d'equations
 \usepackage{todonotes}
 
+
 \usepackage{amssymb}
 \usepackage{vmargin} 
 
@@ -47,6 +48,8 @@
 \numberwithin{example}{chapter}
 \newtheorem{theorem}{{\bf Theorem}}[chapter]
 \numberwithin{theorem}{chapter}
+\newtheorem{proposition}{{\bf Proposition}}[chapter]
+\numberwithin{proposition}{chapter}
 % \newtheorem{property}[example]{{\bf Property}}
 \newtheorem{definition}{{\bf Definition}}[chapter]
 \numberwithin{definition}{chapter}
@@ -158,3 +161,16 @@ urlcolor=black
 decorate,
 decoration={snake,amplitude=.4mm,segment length=2mm,post length=1mm}},
 }
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+% shortcuts
+\newcommand{\vnorm}[1]{\left\Vert #1 \right\Vert}
+\newcommand{\myspan}{\mathrm{span}} % span
+\newcommand{\myint}{\mathrm{int}} % span
+\newcommand{\e}{\mathrm{e}} % e for exponential
+\newcommand{\dd}{\mathrm{d}} % d differential
+\newcommand{\J}{\mathrm{J}} % jacobian

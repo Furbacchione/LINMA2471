@@ -74,13 +74,14 @@ $k \leftarrow k+1$
 
 $h_k$ is called the step length and $-\nabla f(x_k)$ is called the direction.
 
-\subsection{Step length selection}
 
-\subsubsection{ $h_k$ that minimize $f(x_k - h_k \nabla f(x_k))$} 
+\section{Step length selection}
+
+\subsection{ $h_k$ that minimize $f(x_k - h_k \nabla f(x_k))$} 
 
 We have to solve for $h_k$ at each step. Even if we only minimize one variable, it's still an iterative method and does not give directly $h_k$. 
 
-\subsubsection{$h_k = \alpha$}
+\subsection{$h_k = \alpha$}
 
 \begin{example}\begin{leftbar}
 Let's consider $x^2$ and see what happens when we change $h_k$
@@ -112,7 +113,7 @@ We get closer to $x_0$.
 
 The simple gradient method is subjected to poor step length selection. However it still good to use a constant step length. We'll explicitly and numerically compute some value of $\alpha$ which guarantee a good behavior. 
 
-\subsubsection{$h_k$ satisfies some "dynamic" conditions (e.g. Wolfe condition)}
+\subsection{$h_k$ satisfies some "dynamic" conditions (e.g. Wolfe condition)}
 
 In order to know what is the best step length, we need to know the function. We focus only on functions that are $C_L^{1,1}$, which means that $f \in \mathbb{C}^1$ and $\nabla f$ is Lipschitz with constant L. The Lipschitz condition is:
 $$\| \nabla f(x) - \nabla f(y) \| \leq L \| x-y \|$$
@@ -146,11 +147,10 @@ This result is very useful for one variable functions but not for multi-variable
 Let's apply proposition \ref{5:prop1} with $f: x \rightarrow \sqrt{1+x^2}$
 \begin{eqnarray*}
 f'(x)=& \frac{x}{\sqrt{1+x^2}}\\
-f''(x)=& \frac{ \sqrt{1+x^2}-x \frac{x}{ \sqrt{1+x^2}}}{1+x^2}\\
+f''(x)=& \frac{ \sqrt{1+x^2}-x \frac{x}{ \sqrt{1+x^2}}}{1+x^2}=\frac{1}{(1+x^2)(\sqrt{1+x^2})}\\
 \end{eqnarray*}  
-\textcolor{red}{Where does the following line comes from?}
+We easily see that:
 $$ 0 \leq \frac{1}{(1+x^2)(\sqrt{1+x^2})} \leq 1$$
-
 The upper bound is clear and we also put the lower bound because we want the absolute value of $f''(x)$ to be bounded. We  will take $L=1$.
 \end{leftbar}\end{example}
 
@@ -188,7 +188,6 @@ f(x) + \nabla f(x)^{T} [\frac{-1}{L} \nabla f(x)]+\frac{L}{2} \|  \frac{-1}{L}\n
 & =f(x)- \frac{\|\nabla f(x)\|^{2}}{L}+\frac{1}{2L} \|\nabla f(x)\|^{2} \\
 & =f(x)-\underbrace{\frac{1}{2L} \|\nabla f(x)\|^{2}}_{\leq 0}
 \end{align*}
-\textcolor{red}{Where is the second term gone?}
 Looking at all iterations now:
 $$ f(x_{k+1})-f(x_{k}) \leq - \frac{\|\nabla f(x)\|^{2}}{L}$$
 (because the upper bound displays this decrease \textcolor{red}{What does it mean?})\\

@@ -65,6 +65,21 @@ We have for example :  \\
   \item $\cdots$
 \end{itemize} 
 
+This can be summerized by the next table: 
+
+\begin{tabular}{|C{0.2 \textwidth}|L{0.5 \textwidth}|C{0.2 \textwidth}|}
+\hline
+Solvers & Problems & Integer variables \\
+\hline
+\hline
+CPLEX, GUROBI & linear optimization and convex quadratic optimization & yes \\
+\hline
+KNITRO, SNOPT, MINOS & nonlinear optimization & yes for KNITRO but loss of efficiency \\
+\hline
+BARON & global optimization & no \\
+\hline
+\end{tabular}
+
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\textwidth]{./images/Course1_Slide2.JPG}
