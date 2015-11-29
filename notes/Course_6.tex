@@ -35,26 +35,9 @@
 
 \section{Gradient method for unconstrained problems}
 
-\textbf{\textcolor{red}{FROM HERE: form controlled, contained te be controlled}}
-
-\textcolor{red}{Let us recall basic definitions from last section. TO CHANGE}
-
-\begin{definition}
-Given $L>0$, we say $f : D \subseteq \mathbb{R}^n \to \mathbb{R}$ has \emph{$L$-Lipschitz gradient} if and only if $f \in C^1(D)$ and
-\begin{equation*}
-\vnorm{\nabla f(x) - \nabla f(y)} \le L \vnorm{x-y}
-\end{equation*}
-for all $x,y \in D$. We denote $C_L^{1,1}(D)$ the set of such functions. We also define
-\begin{equation*}
-F_L^{1,1}(D) = \{ f \in C_L^{1,1}(D) \mid f \text{ is convex}\} .
-\end{equation*}
-\end{definition}
-
-Given $f \in C^1$, we denote $T^1_y(x) = f(y) + \nabla f(y)^T (x-y)$ the first-order Taylor expansion of $f$ around $y$ evaluated at point $x$.
-
 \subsection{Gradient method for functions of $C_L^{1,1}$}
 
-\textcolor{red}{Last week, we studied the gradient method for the general problem}
+In the previous section, we studied the gradient method for the general problem.
 \begin{equation*}
 \min_{x \in \mathbb{R}^n} f(x)
 \end{equation*}
@@ -197,16 +180,63 @@ We assume $C \subseteq \mathbb{R}^n$ is a convex and closed set. This implies th
 \begin{equation*}
 P_C : \mathbb{R}^n \to C : x \mapsto P_C(x)
 \end{equation*}
-is well defined and unique.
+is well defined and unique.\\
 
 \begin{definition}
-Given $f \in C_L^{1,1}(C)$, we say that $x^*$ is a \emph{stationary point} of the problem $\min\limits_{x \in C} f(x)$ if and only if
+Let $\mathcal{C}$ be a closed convex set and f a differentiable function ($f \in C_L^{1,1}(C)$), we say that $x^*$ is a \textbf{stationary point} of the problem $\min\limits_{x \in C} f(x)$ if and only if
 \begin{equation*}
-\nabla f(x^*)^T(x-x^*) \ge 0
+\langle \nabla f(x^*), x-x^* \rangle \ \geq\ 0 \ \ \ \ \forall x \in \mathcal{C}
 \end{equation*}
 for all $x \in C$.
 \end{definition}
-This definition can be intuitively interpreted as follows: adding $f(x^*)$ on both sides brings up the first-order Taylor expansion of $f$ around $x^*$, which is closed to $f(x)$. So this definition essentially means $f(x) \ge f(x^*)$.
+This definition can be intuitively interpreted as follows: adding $f(x^*)$ on both sides brings up the first-order Taylor expansion of $f$ around $x^*$, which is closed to $f(x)$. So this definition essentially means $f(x) \ge f(x^*)$.\\
+In another interpretation, that means that all possible errors $x-x^*$ are in opposite direction with $-\nabla f$. A schema of the situation is shown on figure \ref{tik1}.
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\draw (0,0) circle (1);
+\draw[fill = black] (1,0) circle (0.05);
+\draw (0,-1.3) node{$\mathcal{C}$};
+\draw (1.2,-0.2) node{$x^*$};
+\draw[>=latex,->] (1,0) -- (2,0) node{$\ \ \ \ \ \ \ \ \ \ -\nabla f$};
+\draw[>=latex,->] (1,0) -- (1.866025403784439,0.5);
+\draw[>=latex,->] (1,0) -- (0,0);
+\draw[>=latex,->] (1,0) -- (0.133974596215561,0.5);
+\draw[>=latex,->] (1,0) -- (0.133974596215561,-0.5);
+\draw[>=latex,->] (1,0) -- (0.4,0.8);
+\draw[>=latex,->] (1,0) -- (0.4,-0.8);
+\draw[red] (1.5,0.15) -- (1.3,0.35);
+\draw[red] (1.35,0.1) -- (1.45,0.4);
+\end{tikzpicture}
+\caption{Example of a stationnary point $x^*$.}
+\label {tik1}
+\end{figure}
+
+\begin{example}
+\begin{leftbar}
+ $\mathcal{C} = \{x \in \mathbb{R}^n: x_i \ge 0\}$ (nonnegative orthant)
+\begin{align*}
+&x^* \; \text{stationnary iff} \; \sum_i \left[\nabla f(x^*)\right]_i \left[x_i - x_i^*\right] \ge 0\ \ \ \forall x\ge 0\\
+&x^* \; \text{stationnary iff either} \; [\nabla f(x^*)]_i=0\\ 
+&\phantom{x^* \; \text{stationnary iff eith}}\text{or} \; [\nabla f(x^*)]_i>0 \; \text{and} \; x_i^*=0 \; \forall \; i
+\end{align*}
+Indeed, as $\sum_i [x_i - x_i^*] \ge 0$ for all $x\ge0$,  $[\nabla f(x^*)]_i$ must be $\ge 0$.
+If not, we could choose a very large $x_i$ for this component and have a negative sum.
+\end{leftbar}
+\end{example}
+
+\begin{example}
+\begin{leftbar}
+It also works easily for $\mathcal{C} = \{x|\sum_{i}x_i=1\}$ which is a kind of budget constraint. In that case, it is possible to show that $[\nabla f(x^*)]_i = \lambda \; \forall i$. That means that all the gradient components are equal to each other, or economically speaking that the marginal costs are equal to each other. At the optimum, the marginal cost is equal for each component, it does not matter which one you lower.
+\end{leftbar}
+\end{example}
+
+\begin{example}
+\begin{leftbar}
+(not treated) The Euclidian bowl.
+\end{leftbar}
+\end{example}
+
 
 Note that if $x^* \in \myint\, C$, then necessarily $\nabla f(x^*) = 0$.
 Indeed, if $\nabla f(x^*) \neq 0$ and $x^* \in \myint\, C$, we can choose $x$ such that $\nabla f(x^*)$ and $x-x^*$ are of opposite directions. Consequently, their scalar product is negative which contradicts the definition of $x^*$. This implies that $\nabla f(x^*) = 0$.
@@ -219,6 +249,8 @@ Under the above assumptions, if $x^*$ is a local minimum, then $x^*$ is stationa
 When $f$ is convex, stationary implies optimality.
 \end{theorem}
 
+
+\subsection{Projected gradient method}
 Let us now present the gradient method for constrained problems. The principle is the following:
 \begin{enumerate}
 \item at each step, minimize the quadratic upper bound on set $C$,

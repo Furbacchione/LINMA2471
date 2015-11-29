@@ -33,7 +33,7 @@
 %\begin{document}
 %\maketitle
 
-\section{Introduction : AMPL}
+\section{Introduction: AMPL}
 
 AMPL (which stands for "A mathematical programming language") is an algebraic modelling language which enables the solving of high complexity problems for large (or small) scale models and will be used throughout this course. Knowing or identifying what type of problem we're dealing with is important and allows us to decide which will be the most adequate method to solve it. Certain methods work well with certain types of models, some are better than others, etc. \\
 
@@ -45,7 +45,7 @@ AMPL (which stands for "A mathematical programming language") is an algebraic mo
 \end{figure} 
 
 AMPL works by first reading a text file which contains all the useful information of the model, this file usually ends in ".mod", it then parses it and tries to solve the problem. Parameters, variables, objective function and constraints are all defined in this file. The solving part is done by communicating with a solver, AMPL gives it all the information, the solver then sends back the solution. 
-Consider the following optimization problem :
+Consider the following optimization problem:
 
 \begin{align*}
           &\min \, c^Tx  \\ 
@@ -55,7 +55,7 @@ Consider the following optimization problem :
 \\
 
 For this problem AMPL will give the solver the usefull values ($c$,$A$,$b$,$l$,$u$,...) it neads to solve the problem. There exists quite a few of these solvers, some mode adapted to certain model types (linear, convex,...). 
-We have for example :  \\
+We have for example:
 
 \begin{itemize}
   \item minos (basic solver for linear and nonlinear problems)
@@ -92,16 +92,16 @@ AMPL can also work with an additionnal data file (".dat") which is used when par
 A few examples and the basic syntax for AMPL can be found in the Tutorials Dropbox, given on Moodle. \\
 
 Everything in AMPL has a name, whether it be variables, constants, or even constraints (which represent a dual variable) and each command and declaration ends with a semicolon (";"). 
-Certain commands are worth being reminded here, for example : \\
+Certain commands are worth being reminded here, for example: \\
 
 \begin{itemize}
-  \item Changing solvers : \textbf{option solver ... ;}
-  \item Displaying dual variable : \textbf{display Protein;}
-  \item Displaying variable : \textbf{display Protein.body;}
-  \item Reset the whole model : \textbf{reset;}
-  \item Chosing a model file : \textbf{data data1.dat;}
-  \item Chosing a data file : \textbf{model data1.mod;}
-  \item Solving the chosen model : \textbf{solve;}
+  \item Changing solvers: \textbf{option solver ... ;}
+  \item Displaying dual variable: \textbf{display Protein;}
+  \item Displaying variable: \textbf{display Protein.body;}
+  \item Reset the whole model: \textbf{reset;}
+  \item Chosing a model file: \textbf{data data1.dat;}
+  \item Chosing a data file: \textbf{model data1.mod;}
+  \item Solving the chosen model: \textbf{solve;}
 \end{itemize} 
 
 
