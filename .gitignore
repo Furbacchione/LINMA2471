@@ -48,7 +48,6 @@ Temporary Items
 # Latex and other
 *.log
 *.aux
-*.pdf
 *.swp
 *.DS_Store
 *.make
