@@ -1,5 +1,5 @@
 
-\documentclass[11pt]{scrreprt} %Type de doc. %scrartcl
+\documentclass[11pt]{report} %Type de doc. %scrartcl   scrreprt
 
 % TEMPORARY
 \usepackage{soul}
@@ -143,9 +143,19 @@ urlcolor=black
 
 % section numbering type
 \renewcommand\thechapter{\Alph{chapter}}
-\renewcommand\thesection{\arabic{section}}
-\renewcommand\thesubsection{\hspace{0.5cm}\alph{subsection}}
-\renewcommand\thesubsubsection{\hspace{1cm}\roman{subsubsection}}
+\renewcommand\thesection{\arabic{section}.}
+\renewcommand\thesubsection{\alph{subsection}.}
+\renewcommand\thesubsubsection{\roman{subsubsection}.}
+
+\usepackage{titlesec}
+\titlespacing*{\subsection}
+  {15pt}% decalage a gauche (positif ou negatif)
+  {3.5ex plus 1ex minus .2ex}% espacement vertical avant
+  {2.3ex plus .2ex}% espacement vertical apres
+\titlespacing*{\subsubsection}
+  {30pt}% decalage a gauche (positif ou negatif)
+  {3.5ex plus 1ex minus .2ex}% espacement vertical avant
+  {2.3ex plus .2ex}% espacement vertical apres
 
 \usepackage{framed}
 

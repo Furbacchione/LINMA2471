@@ -1,56 +1,64 @@
 \select@language {english}
 \select@language {english}
-\contentsline {part}{\numberline {I}Notes}{1}{part.1}
+\contentsline {part}{I\hspace {1em}Notes}{1}{part.1}
 \contentsline {chapter}{\numberline {A}Linear and Convex modeling}{2}{chapter.1}
-\contentsline {section}{\numberline {1}Definitions and motivation}{2}{section.1.1}
-\contentsline {section}{\numberline {2}Standard forms}{3}{section.1.2}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}a}Linear case: re-writing objective function, variables and constraints}{4}{subsection.1.2.1}
-\contentsline {paragraph}{\nonumberline Maximization and minimization}{4}{section*.3}
-\contentsline {paragraph}{\nonumberline Non-negative variables}{4}{section*.4}
-\contentsline {paragraph}{\nonumberline Equalities and inequalities}{5}{section*.5}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}b}Standard form for linear models}{5}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}c}Standard form for convex models}{5}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}d}Transforming \textit {any} problem into a convex problem}{6}{subsection.1.2.4}
-\contentsline {paragraph}{\nonumberline First step : making the objective function linear}{6}{section*.6}
-\contentsline {paragraph}{\nonumberline Second step : making the constraints convex}{7}{section*.7}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}e}Approximate \textit {any} convex problem by a linear problem}{9}{subsection.1.2.5}
-\contentsline {section}{\numberline {3}Modelling Tricks}{10}{section.1.3}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}a}Monotonicity}{10}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}b}Change of variables}{11}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}c}Misleading/Deceptive appearances}{12}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}d}Flexibility}{12}{subsection.1.3.4}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}e}Charnes and Cooper}{13}{subsection.1.3.5}
-\contentsline {section}{\numberline {4}Convex Optimization: Theorems and properties}{14}{section.1.4}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}a}Convex sets}{14}{subsection.1.4.1}
-\contentsline {subsubsection}{\numberline {\hspace {1cm}i}Definition and examples}{14}{subsubsection.1.4.1.1}
-\contentsline {subsubsection}{\numberline {\hspace {1cm}ii}Properties}{15}{subsubsection.1.4.1.2}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}b}Convex functions}{15}{subsection.1.4.2}
-\contentsline {subsubsection}{\numberline {\hspace {1cm}i}Definition and examples}{15}{subsubsection.1.4.2.1}
-\contentsline {subsubsection}{\numberline {\hspace {1cm}ii}Properties}{16}{subsubsection.1.4.2.2}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}c}Properties of convex functions}{16}{subsection.1.4.3}
-\contentsline {subsubsection}{\numberline {\hspace {1cm}i}Convexity and differential calculus}{16}{subsubsection.1.4.3.1}
-\contentsline {subsubsection}{\numberline {\hspace {1cm}ii}Convexity and linear transformations}{16}{subsubsection.1.4.3.2}
-\contentsline {subsubsection}{\numberline {\hspace {1cm}iii}Partial minimization}{17}{subsubsection.1.4.3.3}
-\contentsline {subsubsection}{\numberline {\hspace {1cm}iv}Extended real valued functions}{18}{subsubsection.1.4.3.4}
-\contentsline {subsubsection}{\numberline {\hspace {1cm}v}Composition and product}{18}{subsubsection.1.4.3.5}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}d}Advantage of convex problems}{19}{subsection.1.4.4}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}e}Variants of convex functions}{20}{subsection.1.4.5}
-\contentsline {chapter}{\numberline {B}First-order methods}{22}{chapter.2}
-\contentsline {section}{\numberline {1}Gradient Method}{22}{section.2.1}
-\contentsline {section}{\numberline {2}Step length selection}{22}{section.2.2}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}a}$h_k$ that minimize $f(x_k - h_k \nabla f(x_k))$}{22}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}b}$h_k = \alpha $}{22}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}c}$h_k$ satisfies some "dynamic" conditions (e.g. Wolfe condition)}{23}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}d}Analysis of the $h_{k}$= $\frac {1}{L}$ gradient method}{25}{subsection.2.2.4}
-\contentsline {section}{\numberline {3}Gradient method for unconstrained problems}{27}{section.2.3}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}a}Gradient method for functions of $C_L^{1,1}$}{27}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}b}Gradient method for functions of $F_L^{1,1}$}{28}{subsection.2.3.2}
-\contentsline {section}{\numberline {4}Gradient method for constrained problems}{30}{section.2.4}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}a}Projected gradient method}{31}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}b}Gradient mapping for constrained problems}{31}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {\hspace {0.5cm}c}Acceleration gradient [Nesterov 1983]}{33}{subsection.2.4.3}
-\contentsline {chapter}{\numberline {C}Conic modeling and duality}{35}{chapter.3}
-\contentsline {chapter}{\numberline {D}Interior-point methods}{36}{chapter.4}
-\contentsline {part}{\numberline {II}Labs}{37}{part.2}
-\contentsline {section}{\numberline {1}Introduction: AMPL}{38}{section.4.1}
-\contentsline {part}{\numberline {III}Exercices}{41}{part.3}
+\contentsline {section}{\numberline {1.}Definitions and motivation}{2}{section.1.1}
+\contentsline {section}{\numberline {2.}Standard forms}{4}{section.1.2}
+\contentsline {subsection}{\numberline {a.}Linear case: re-writing objective function, variables and constraints}{4}{subsection.1.2.1}
+\contentsline {paragraph}{Maximization and minimization}{4}{subsection.1.2.1}
+\contentsline {paragraph}{Non-negative variables}{4}{subsection.1.2.1}
+\contentsline {paragraph}{Equalities and inequalities}{5}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {b.}Standard form for linear models}{5}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {c.}Standard form for convex models}{6}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {d.}Transforming \textit {any} problem into a convex problem}{7}{subsection.1.2.4}
+\contentsline {paragraph}{First step : making the objective function linear}{7}{subsection.1.2.4}
+\contentsline {paragraph}{Second step : making the constraints convex}{7}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {e.}Approximate \textit {any} convex problem by a linear problem}{9}{subsection.1.2.5}
+\contentsline {section}{\numberline {3.}Modelling Tricks}{10}{section.1.3}
+\contentsline {subsection}{\numberline {a.}Monotonicity}{10}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {b.}Change of variables}{12}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {c.}Misleading/Deceptive appearances}{12}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {d.}Flexibility}{13}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {e.}Charnes and Cooper}{14}{subsection.1.3.5}
+\contentsline {section}{\numberline {4.}Convex Optimization: Theorems and properties}{15}{section.1.4}
+\contentsline {subsection}{\numberline {a.}Convex sets}{15}{subsection.1.4.1}
+\contentsline {subsubsection}{\numberline {i.}Definition and examples}{15}{subsubsection.1.4.1.1}
+\contentsline {subsubsection}{\numberline {ii.}Properties}{15}{subsubsection.1.4.1.2}
+\contentsline {subsection}{\numberline {b.}Convex functions}{16}{subsection.1.4.2}
+\contentsline {subsubsection}{\numberline {i.}Definition and examples}{16}{subsubsection.1.4.2.1}
+\contentsline {subsubsection}{\numberline {ii.}Properties}{16}{subsubsection.1.4.2.2}
+\contentsline {subsection}{\numberline {c.}Properties of convex functions}{17}{subsection.1.4.3}
+\contentsline {subsubsection}{\numberline {i.}Convexity and differential calculus}{17}{subsubsection.1.4.3.1}
+\contentsline {subsubsection}{\numberline {ii.}Convexity and linear transformations}{17}{subsubsection.1.4.3.2}
+\contentsline {subsubsection}{\numberline {iii.}Partial minimization}{18}{subsubsection.1.4.3.3}
+\contentsline {subsubsection}{\numberline {iv.}Extended real valued functions}{19}{subsubsection.1.4.3.4}
+\contentsline {subsubsection}{\numberline {v.}Composition and product}{19}{subsubsection.1.4.3.5}
+\contentsline {subsection}{\numberline {d.}Advantage of convex problems}{20}{subsection.1.4.4}
+\contentsline {subsection}{\numberline {e.}Variants of convex functions}{21}{subsection.1.4.5}
+\contentsline {chapter}{\numberline {B}First-order methods}{23}{chapter.2}
+\contentsline {section}{\numberline {1.}Gradient Method}{23}{section.2.1}
+\contentsline {section}{\numberline {2.}Step length selection}{23}{section.2.2}
+\contentsline {subsection}{\numberline {a.} $h_k$ that minimize $f(x_k - h_k \nabla f(x_k))$}{23}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {b.}$h_k = \alpha $}{24}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {c.}$h_k$ satisfies some "dynamic" conditions (e.g. Wolfe condition)}{24}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {d.}Analysis of the $h_{k}$= $\frac {1}{L}$ gradient method}{26}{subsection.2.2.4}
+\contentsline {section}{\numberline {3.}Gradient method for unconstrained problems}{28}{section.2.3}
+\contentsline {subsection}{\numberline {a.}Gradient method for functions of $C_L^{1,1}$}{28}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {b.}Gradient method for functions of $F_L^{1,1}$}{29}{subsection.2.3.2}
+\contentsline {section}{\numberline {4.}Gradient method for constrained problems}{31}{section.2.4}
+\contentsline {subsection}{\numberline {a.}Projected gradient method}{32}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {b.}Gradient mapping for constrained problems}{33}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {c.}Acceleration gradient [Nesterov 1983]}{34}{subsection.2.4.3}
+\contentsline {chapter}{\numberline {C}Conic modeling and duality}{36}{chapter.3}
+\contentsline {section}{\numberline {1.}Linear and sublinear convergence}{36}{section.3.1}
+\contentsline {section}{\numberline {2.}Conic optimization}{36}{section.3.2}
+\contentsline {subsection}{\numberline {a.}Generalization}{37}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {b.}Solving a problem on different cones}{38}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {c.}Lorentz cone}{38}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {d.}Requirements for $K$}{39}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {e.}Equivalence with convex optimization}{40}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {f.}Conclusion with duality}{41}{subsection.3.2.6}
+\contentsline {chapter}{\numberline {D}Interior-point methods}{42}{chapter.4}
+\contentsline {part}{II\hspace {1em}Labs}{43}{part.2}
+\contentsline {section}{\numberline {1.}Introduction: AMPL}{44}{section.4.1}
+\contentsline {part}{III\hspace {1em}Exercices}{47}{part.3}

@@ -1,0 +1,359 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[francais,english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{fullpage}
+\usepackage{fancybox}
+\usepackage[Lenny]{fncychap}
+\usepackage{gensymb}
+\usepackage{color}
+\usepackage{array}
+\usepackage{url}
+\usepackage{here}
+\usepackage[final]{pdfpages}
+\usepackage{wrapfig}
+\usepackage[version=3]{mhchem}
+\usepackage{numprint}
+\usepackage[toc,page]{appendix}
+\usepackage{bibentry}
+\usepackage{eurosym}
+\usepackage{lmodern}
+\usepackage{subfig}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{textcomp}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\usepackage{numprint}
+\usepackage[toc,page]{appendix}
+\usepackage{booktabs}
+\usepackage{bm}
+\usepackage{amssymb}
+
+
+
+\title{LINMA2471 : Optimization models and methods: Lecture 8}
+\author{Antoine Noé, Ad'Oul Ismail, Dehem Boris}
+\date{S10 - November, 18th 2015}
+
+\begin{document}
+\maketitle
+
+From week 1 to week 3, we saw how to model convex problems. From week 4 to 6, we studied methods that deal with that type of problems. The disadvantage of those methods is that they can be quite slow, especially when compared with linear solvers (for linear systems). We now look at a certain class of convex problems, conic problems, that conserve some of the properties that make linear systems so effective. In particular, we want our problems to have duality, because a dual problem will be a much better problem to certify optimality. We start by looking at quadratic functions $x^TQx$ \\
+
+\noindent $x^Tx$\\
+$\downarrow$ \qquad $Q \geq 0 \Longleftrightarrow Q=LL^T$ \\
+$x^TQ$ \\
+$\Updownarrow$ \\
+$(L^tx)^T(L^Tx)$\\
+
+This last expression $(L^tx)^T(L^Tx)$ is a linear transformation of $x^Tx$ so it preserves convexity.\\
+
+\section{Exercise session on conic optimization}
+In this section, we will do a quick reminder on some exercises of Exercise session 5 on conic modelling: second order cone and duality. 
+
+\subsection*{Exercise 2}
+In this exercise, we have a rotated second order cone $\mathbb{L}^n_R $
+$$\mathbb{L}^n_R=\{(x,y,z)\in \mathbb{R}^n\times \mathbb{R}_+ \times \mathbb{R}_+ \mid x_1^2+x_2^2+...+x_n^2 \leq yz \}$$ 
+We can prove that this set is a cone by replacing it by a second order cone. Why do we then use the rotated second order cone? The rotated second order cone is usefull because it makes some models easier (for example, the models in exercise 3). 
+\subsection*{Exercise 4}
+The question here is "how do we deal with conic modelling of \textbf{functions}"? Lets take example (d). \\
+Function $(x,z)\rightarrow \dfrac{\parallel x \parallel^2}{z}$ (on the domain $z>0$). We have $$\underset{\underset{z\in \mathbb{R}>0}{x\in \mathbb{R}^n}}{min} \dfrac{\parallel x \parallel^2}{z}$$
+This is not a conic problem because there is no linear objective. Our goal is to transform it in order to have a linear objective:
+$$\underset{\underset{z\in \mathbb{R}>0}{x\in \mathbb{R}^n}}{min} \dfrac{\parallel x \parallel^2}{z}$$
+$$\Updownarrow$$
+$$\underset{\underset{z\in \mathbb{R}>0}{x\in \mathbb{R}^n}}{\underset{t\in\mathbb{R}}{min}}\ t\qquad s.t.$$
+$$\parallel x \parallel^2 \leq tz$$
+Now, we have a linear objective, and constraints of the rotated second order cone type.
+\subsection*{Exercise 6 : Conic duality}
+In this exercise, we need to find the dual for some optimization problems, using an equivalent conic formulation. To compute a dual problem, we need to reformulate it to a standard conic formulation.\\
+Lets consider the dual and the primal problem: 
+$$(D)\qquad \qquad max\, b^Ty \qquad \longleftrightarrow \qquad min \, c^Tx \qquad \qquad (P)$$ 
+$$ \qquad A^Ty \preceq_K c \qquad \qquad \qquad Ax=b$$
+$$ \qquad \qquad \qquad \qquad \qquad \qquad \quad x\succeq_{K^*}0$$
+where (D) stands for the dual problem and (P) the primal problem. 
+Note that for the positive real axis, second order cones and the semi definite cone: $K=K^*$.\\
+
+\section{Example: Duality}
+\subsection{Primal problem}
+Lets consider the following problem: 
+\begin{align*}
+&min \, \sqrt{z^TQz} \qquad (Q\geq 0)\\
+&Cz \leq d
+\end{align*}
+
+The function we minimize is quadratic, and Q is positive semi-definite. The constraint $Cz \leq d$ is a linear constraint. We need to transform this formulation into one of the two formulations above. \\
+Let's say we first want to take care of the objective (since it is quadratic). 
+$$min \, t$$
+$$\qquad \qquad \qquad \qquad \sqrt{z^TQz}\leq t \qquad \qquad Q=LL^T$$
+$$\parallel L^Tz \parallel \leq t$$
+This is equivalent 
+$$\begin{pmatrix}
+t\\
+L^Tz
+\end{pmatrix} \in \mathbb{L}^n$$
+
+Now, we want to reformulate the linear constraint: 
+$$Cz\leq d \Longleftrightarrow d-Cz \geq 0$$
+This can be written as 
+$$d-Cz \in \mathbb{R}^m_+$$
+Now, we are going to write everything using the cones: \\
+Let $y=\begin{pmatrix}
+t\\
+z
+\end{pmatrix} \in \mathbb{R}^{n+1}$ (t is composed of 1 element and z of n elements). \\
+Objective $-max \, b^Ty$ with $b=\begin{pmatrix}
+-1\\
+0\\
+. \\
+. \\
+. \\
+0
+\end{pmatrix}$\\
+Constraint: $c-A^Tu \geq_K 0 $ with $K= \mathbb{R}^m_+ \times \mathbb{L}^n$ (big vector with the top part being $\mathbb{R}^m_+$ and the bottom part $\mathbb{L}^n$)\\
+
+$\begin{bmatrix}
+d-Cz\\
+\_ \_ \_ \_ \_ \\
+t\\
+L^Tz
+\end{bmatrix} \in K$, where $d-Cz \in \mathbb{R}^m_+$ and $\begin{bmatrix}
+t\\
+L^Tz
+\end{bmatrix} \in \mathbb{L}^n$\\
+Note that $d-Cz$ is composed of m elements, t of one element and $L^Tz$ of n elements. \\
+
+We are not completely done yet because we still need $c$ and $A^T$:\\
+$$c = \begin{pmatrix}
+d\\
+\_ \_ \_ \\
+0\\
+. \\
+. \\
+. \\
+0
+\end{pmatrix} \qquad A^T= \begin{pmatrix}
+0 & C\\
+-1 & 0^{1\times n}\\
+0^{n\times 1} & -L^T
+\end{pmatrix}
+$$
+The first column of $A^T$ corresponds to the coefficients of t. \\
+
+By telling our solver the different matrices and the cone, it will solve the problem. Why is this useful? Because now we can write the dual without a problem.
+
+\subsection{Dual Problem}
+$$K^*= (\mathbb{R}^m_+ \times \mathbb{L}^n)^*= (\mathbb{R}^m_+)^* \times (\mathbb{L}^n)^*= \mathbb{R}^m_+ \times \mathbb{L}^n = K$$
+Lets consider $x= \begin{pmatrix}
+u \\
+v
+\end{pmatrix} $ with $u \in \mathbb{R}^m_+$ and $v \in \mathbb{L}^n$\\
+The dual is 
+$$-min \, \begin{bmatrix}
+d \\
+0
+\end{bmatrix}^T \begin{pmatrix}
+u\\
+v
+\end{pmatrix} $$
+
+\begin{equation}
+\begin{bmatrix}
+0^{1\times n} & -1 & 0^{1\times m}\\
+C^T & 0^{k\times 1} & -L
+\end{bmatrix}\begin{pmatrix}
+u\\
+v
+\end{pmatrix}=
+\begin{pmatrix}
+-1\\
+0^{k\times 1}
+\end{pmatrix}
+\end{equation}
+Where n, m and k are the dimensions of $C$ and $L$.
+ 
+ After simplifying, we have \\
+ $$-min \, d^Tu$$
+ $$u \geq 0$$
+ $$v_0 \geq \parallel (v_1 ... v_n) \parallel$$
+ $$C^Tu - L\begin{pmatrix}
+ v1\\ 
+ .\\
+ .\\
+ .\\
+ v_n
+ \end{pmatrix} = 0 $$
+ $$-v_0=-1$$
+ 
+ By putting $w=(v_1 ... v_n)$, we get the following simplified model 
+$$-min \, d^Tu$$
+$$u \geq 0$$
+$$\parallel w \parallel \leq 1$$
+$$C^Tu = Lw$$
+This model cannot be simplified any further. 
+
+
+
+
+\section{Theorems and properties of Dual}
+After this example of conic dual computation, we want to study the properties of the conic dual optimization and some of its theorems. One interesting design allows to prove some theorems. Let us first explain this design to eventually find the dual of the primal conic problem (P):
+\begin{align*}
+\textrm{min }&\textbf{b}^T\textbf{y}\\
+             &\textbf{A}^T\textbf{y}\preceq_K \textbf{c}
+\end{align*}
+
+First, to build the standard dual problem, We write the constraints as a system of inequations where coefficients $\lambda_i \geq 0$ multiplies $c_i$ (positivity of $\boldsymbol{\lambda}$ assures the preservation of inequalities):
+\[\begin{bmatrix}
+ a_1^T \boldsymbol{y} \leq c_1\\
+ a_2^T \boldsymbol{y} \leq c_2\\
+ \vdots\\
+ a_n^T \boldsymbol{y} \leq c_n
+\end{bmatrix}
+\begin{matrix}
+ \times \lambda_1\\
+ \times \lambda_2\\
+ \vdots\\
+ \times \lambda_n
+\end{matrix}
+\over
+(\sum_{i=1}^{n}\lambda_i a_i)^T \leq \sum_{i=1}^{n}\lambda_i c_i\]
+
+We can write the new system system as:
+\[(\boldsymbol{A}\boldsymbol{\lambda})^T \boldsymbol{y} \leq \boldsymbol{c}^T \boldsymbol{\lambda}
+\]
+The dual goal is to find the best upper bound for this system. This is, that best upper bound is found by minimizing the dual objective.\\
+
+When $\boldsymbol{A\lambda}=\boldsymbol{b}$, we get the system $\boldsymbol{b}^T \boldsymbol{y} \leq \boldsymbol{c}^T \boldsymbol{\lambda}$. The upper bound depends on $\boldsymbol{\lambda}$ and the dual problem (D) becomes:
+
+\begin{align*}
+\textrm{min }\boldsymbol{c}^T \boldsymbol{\lambda}&\\
+  \textrm{such that }&\boldsymbol{A\lambda}=\boldsymbol{b}\\
+             &\boldsymbol{\lambda} \geq \boldsymbol{0}
+\end{align*}
+
+In a conic problem, we have:
+\[\begin{bmatrix}
+ a_1^T \boldsymbol{y}\\
+ a_2^T \boldsymbol{y}\\
+ \vdots\\
+ a_n^T \boldsymbol{y}
+\end{bmatrix} \preceq_K \begin{bmatrix}
+ c_1\\
+ c_2\\
+ \vdots\\
+ c_n
+\end{bmatrix}\]
+
+A simple example on the Lorentz cone show that the standard dual does not always work in conic optimization: let us have:
+\[\begin{bmatrix}
+ 0\\
+ 0\\
+ 0
+\end{bmatrix} \preceq_{\mathbb{L}^2} \begin{bmatrix}
+ 1\\
+ -1\\
+ 0
+\end{bmatrix}]\]
+This is valid since on the Lorentz cone we must have in this case the condition $1\geq ||(-1,0)||$ satisfied, which is the case. However, if we now multiply $\boldsymbol{c}^T$ by a positive vector $\boldsymbol{\lambda}=(2,10,0)$, we get then:
+\[\begin{bmatrix}
+ 0\\
+ 0\\
+ 0
+\end{bmatrix} \preceq_{\mathbb{L}^2} \begin{bmatrix}
+ 1\\
+ -1\\
+ 0
+\end{bmatrix}\begin{matrix}
+ \times 2\\
+ \times 10\\
+ \times 0
+\end{matrix}\over
+0 \stackrel{?}{\leq} 2-10+0\]
+In this example, the positivity of $\boldsymbol{\lambda}$ does not preserve the inequalities as we need to in order to use the standard dual formulation.\\
+
+\subsubsection*{Necessary and sufficient condition}
+The idea is that when starting with something positive and multiplying by $\boldsymbol{\lambda}$, we must stay positive. For instance a good multiplier on the Lorentz cone would be such that:
+\[\begin{bmatrix}
+ 0\\
+ 0\\
+ \vdots\\
+ 0
+\end{bmatrix} \preceq_{\mathbb{L}^2} \begin{bmatrix}
+x_1\\
+x_2\\
+\vdots\\
+x_n
+\end{bmatrix}\begin{matrix}
+ \times \lambda_1\\
+ \times \lambda_2\\
+ \vdots\\
+ \times \lambda_n
+\end{matrix}\over
+0 \leq \sum_{i=1}^{n}\lambda_ix_i\]
+
+The condition to have a correct $\boldsymbol{\lambda}$ is the following: whatever the $\boldsymbol{x}$ we start with, $\boldsymbol{\lambda} \in K^*$ if $\boldsymbol{\lambda}^T\boldsymbol{x} \geq 0$:
+\[\boldsymbol{\lambda}^T\boldsymbol{x}\geq 0 \textrm{  } \forall \boldsymbol{x} \in K \Leftrightarrow \boldsymbol{\lambda} \in K^* \]
+Where $K^*$ is the dual cone.
+
+
+\subsection*{Example 1 : dual cone for $\mathbb{R}_+$ and $\mathbb{R}_+^n$}
+\subsubsection*{$(\mathbb{R}_+)^*=?$}
+$(\mathbb{R}_+)^*=\{\lambda | x \lambda \geq 0\textrm{, } \forall x \in \mathbb{R}_+ \}$
+\begin{itemize}
+\item $\lambda \geq 0$ : this works because $\lambda x \geq 0$ when $x,\lambda \geq 0$
+\item $\lambda < 0$ : one can pick $x=1$ and observe that $x \lambda<0$, that is $\lambda \notin (\mathbb{R}_+)^*$
+\end{itemize}
+
+\subsubsection*{$(\mathbb{R}_{+}^n)^*=?$}
+$(\mathbb{R}^n_+)^*=\{\boldsymbol{\lambda} | \boldsymbol{x}^T \boldsymbol{\lambda} \geq 0\textrm{, } \forall \boldsymbol{x} \in \mathbb{R}^n_+ \}$
+\begin{itemize}
+\item $\boldsymbol{\lambda} \geq 0$ : this works because $\boldsymbol{x}^T \boldsymbol{\lambda} \geq 0$ when $\boldsymbol{x},\boldsymbol{\lambda} \geq 0$
+\item $\lambda_i < 0$ : one can pick a $\boldsymbol{x}$ such that one of its elements is negative, but not negative everywhere: 
+\[\boldsymbol{\lambda}=\begin{bmatrix}
+ ?\\
+ \vdots\\
+ <0\\
+ \vdots\\
+ ?
+\end{bmatrix},\boldsymbol{x}=\begin{bmatrix}
+ 0\\
+ \vdots\\
+ 1\\
+ \vdots\\
+ 0
+\end{bmatrix}\]
+This way, $\lambda_i^T x_i < 0$, and that implies dual cone is $(\mathbb{R}_{+}^n)$.
+\end{itemize}
+\subsection*{Example 2 : dual cone for $\mathbb{L}^n$}
+\subsubsection*{$(\mathbb{L}^n)^*=?$}
+$(\mathbb{L}^n)^*=\{\lambda | x^T \lambda \geq 0\textrm{, } \forall x \in \mathbb{L}^n \}$
+\begin{itemize}
+\item $\lambda \in \mathbb{L}^n$ : $x^T\lambda = x_0\lambda_0 + [x_1 ... x_n][\lambda_1 ... \lambda_n]^T$:\\
+Because we know= $x_0\geq ||x_1...x_n||$ and $\lambda_0 \geq ||\lambda_1...\lambda_n||$, we can say: \begin{align*}
+x^T\lambda &\leq x_0\lambda_0+||x_1...x_n||||x_1...x_n||\\
+&\geq x_0\lambda_0-||x_1...x_n||||x_1...x_n|| \geq 0
+\end{align*}
+\item $\lambda \notin \mathbb{L}^n$: $\lambda_0 < ||\lambda_1 ..  \lambda_n||$ \\
+One can pick $x$ the following way: $x_0 = ||\lambda_1...\lambda_n||$; $[x_1..x_n] = -[\lambda_1 ... \lambda_n]$\\
+In that case, \begin{align*}
+x^T\lambda &= \lambda_0||\lambda_1 ..  \lambda_n|| - ||\lambda_1 ..  \lambda_n||^2\\
+&= (\lambda_0 - ||\lambda_1 ..  \lambda_n||)||\lambda_1 ..  \lambda_n||<0
+\end{align*}
+\end{itemize}
+This implies the second order cone is self-dual.
+\subsection*{Theorems}
+We can conclude what has been done with two theorems on conic duality:
+
+\begin{itemize}
+\item \textbf{Weak duality :} if x is feasible for the primal (P) and y is feasible for the dual (D), then $$c^Tx\ge b^Ty$$
+\item Under some assumptions, optimal value of (P) is equal to the optimal value of (D). This is detailed in the next lecture.
+\end{itemize}
+
+
+
+
+\end{document}
