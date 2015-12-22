@@ -1,0 +1,203 @@
+%\documentclass[12pt,a4paper]{article}
+%
+%\usepackage[utf8]{inputenc}			            % accents en francais
+%\usepackage[T1]{fontenc}			            % accents et cesure
+%\usepackage{lmodern}				            % image vectorielle
+%\usepackage{graphicx}                           % image stylees
+%\usepackage{epstopdf}
+%\usepackage{url}
+%\usepackage{array}                              % faire des beaux tableaux
+%\usepackage{amsmath,amsfonts,amssymb,amsthm}    % faire des maths
+%\usepackage{mathtools}                          % contient asmath mais pas amsfonts et amssymb
+%\usepackage{empheq}                             % encadrer equations
+%\usepackage{enumerate}				            % listes avec (a), (b)
+%\usepackage{geometry}                           % changer les marges
+%\usepackage{xcolor}
+%\usepackage{colortbl}
+%\usepackage{multicol}
+%\usepackage{sectsty}                            % titre colores
+%\usepackage{lipsum}                             % lipsum[1-5]
+%\usepackage{hyperref}
+%\usepackage{caption}                            % modifier legendes
+%\usepackage{listings}
+%\usepackage{slashbox}
+%\usepackage[french]{babel}
+%
+%\geometry{left=25mm,right=25mm,top=15mm,bottom=20mm}
+%
+%\theoremstyle{definition}
+%\newtheorem{mydef}{Definition}
+%
+%\theoremstyle{plain}
+%\newtheorem{mythm}{Theorem}
+%
+%\captionsetup{labelsep=endash,margin=20mm}
+%\captionsetup{font={sf},labelfont={sc,small},textfont={small}}
+%
+%\DeclareMathOperator{\reals}{\mathbb{R}}
+%\DeclareMathOperator{\suchthat}{\;\;\;\;\boxed{\text{s.t.}}\;\;\;\;}
+%
+%\title{LINMA2471: Optimization models and methods \\\smallskip --- Lecture 9 (Conic Modelling III) ---}
+%\author{Berger Guillaume, Fabri Arnaud, Hamaide Valentin}
+%\date{S11 - November, 25th 2015}
+%
+%\begin{document}
+%\maketitle
+
+
+%In this third lecture about conic modelling we will interest ourselves at applications of dual problem, mainly application in sensitivity analysis and robust optimisation. Then we will have a short look at optimisation with positive semi-definite matrices.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Strong duality for conic optimisation problems}
+
+The primal-dual formulation of a conic optimisation problem has already been covered in the precedent lecture notes. They also showed how we come to the weak duality theorem and the need to work with the dual cone. Let us recall the primal-dual formulation:
+\begin{eqnarray*}
+    \text{(PRIMAL)} & & \text{(DUAL)} \\
+    \min_{x\in \mathbb{R}^n} c^T x & \longleftrightarrow & \max_{y\in\mathbb{R}^m} b^Ty \\
+    Ax = b & & A^Ty \preceq_K c\\
+		x \succeq_{K^*} 0 & & 
+\end{eqnarray*}
+
+The weak duality theorem states that if $x$ is an admissible solution of the primal and $y$ is an admissible solution of the dual then we must have that $c^Tx\geq b^Ty$. First of all this show that if for example the dual is (upper)-unbounded then the primal is infeasible. Reversely, if the primal is (lower)-unbounded then the dual is infeasible.
+
+Imagine a algorithm has converged to a feasible solution $y$ of the dual. And it want to know if the solution is optimal or not. If it has also a solution $x$ of the primal and that $c^Tx=b^Ty$ then $y$ and $x$ are the optimum $y^*$ and $x^*$ of the dual and primal respectively.
+
+We can wonder if we always have $c^Tx^* = b^Ty^*$. On the same way, if the primal is infeasible, does it always mean that the dual is unbounded? To answer both questions, let us consider the conic problem with the following parameters:
+\begin{eqnarray*}
+ A = \left[\begin{array}{ccc} -1 & 0 & -1 \\ 0 & -1 & 0 \end{array}\right] ,
+b = \left[\begin{array}{c} 0 \\ -1 \end{array}\right] ,
+c = \left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right] ,
+K = K^* = \mathbb{L}^2
+\end{eqnarray*}
+Any admissible solution of $Ax=b$ is of the form $x=(k,1,-k)$ so that $x\notin \mathbb{L}^2$. Thus the primal is infeasible. But the dual has only one admissible solution $y=(0,0)$ which is thus the optimal solution and the dual objective is bounded.
+
+Another example involves the cone $\mathbb{S}^n_+$ of symmetric positive semi-definite matrices of order $n$. We will discuss this cone further in the following chapter. The primal formulation of this example is:
+\begin{eqnarray*}
+\min_{x\in\mathbb{R}^6} & & (kx_3 - 2x_4)  \\
+\text{such that} & & \left[\begin{array}{ccc} x_1 & x_4 & x_5 \\ x_4 & x_2 & x_6 \\ x_5 & x_6 & x_3 \end{array}\right] \in \mathbb{S}^3_+ \\
+ & & \left[\begin{array}{c} x_3 + x_4 \\ x_2 \end{array}\right] = \left[\begin{array}{c} 1 \\ 0 \end{array}\right]
+\end{eqnarray*}
+If you are motivated, we can show that the optimal solution is such that $c^Tx^* = k$. We are not yet able to write the dual of this problem but we will spoil that the optimal dual cost is $b^Ty^* = 2$. Thus we have a non-zero duality gap. The duality gap is defined to be the non-negative quantity $c^Tx^* - b^Ty^*$.
+
+Last but not least, a third example involving semi-definite cones:
+\begin{eqnarray*}
+ \min_{x\in\mathbb{R}^3} & & x_1 \\
+ \text{such that} & & \left[\begin{array}{cc} x_1 & x_3 \\ x_3 & x_2 \end{array}\right] \in \mathbb{S}^2_+ \\
+& & x_3 = 1 
+\end{eqnarray*}
+The eigenvalues of the matrix are such that $\lambda_1 + \lambda_2 = x_1 + x_2$ and $\lambda_1\lambda_2 = x_1x_2 - 1$. They must be non-negative, so that we find that $x_1>0$. There is thus no minimum, only an infimum when $x_1$ tends to be zero.
+
+In each one of the previous examples, we can identify the same cause of our troubles: the affine subspace defined by the linear constraint (of the primal problem) is tangent to the cone. The interior of the admissible primal domain is thus empty. This observation leads us to the strong duality theorem. But first, let us introduce a new definition.
+
+\begin{definition}
+A feasible solution to a conic (primal or dual) problem is strictly feasible if and only if it belongs to the interior of the cone. For the primal, we must have $Ax=b$ and $x \succ_{K^*} 0$. And for the dual, $y$ must satisfy $A^Ty \prec c$.
+\end{definition}
+
+\begin{theorem}[Strong duality]
+If the dual problem admits a strictly feasible solution and is unbounded, then the primal is infeasible. If the dual problem admits a strictly feasible solution and is bounded, then the primal is feasible and $c^Tx^*=b^Ty^*$. The reverse proposition holds for the primal.
+\end{theorem}
+
+\begin{table}
+\centering
+\begin{tabular}{|l||c|c|c|}
+    \hline
+    \backslashbox{Dual}{Primal} & Unbounded & Finite & Infeasible \\ \hline\hline
+    Unbounded & KO & KO & OK \\ \hline
+    Finite & KO & $c^Tx_*\geq b^Ty_*$ & OK \\ \hline
+    Infeasible & OK & OK & OK \\ \hline
+\end{tabular}
+\caption{Recapitulate of the weak duality theorem. The theorem is always true but does not tell a lot of things.}
+\label{tab_weak}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{|l||c|c|c|}
+    \hline
+    \backslashbox{Dual}{Primal} & Unbounded & Finite & Infeasible \\ \hline\hline
+    Unbounded & KO & KO & OK \\ \hline
+    Finite & KO & $c^Tx_*=b^Ty_*$ & KO \\ \hline
+    Infeasible & OK & KO & OK \\ \hline
+\end{tabular}
+\caption{Recapitulate of the weak duality theorem. The theorem can be used if either the dual or the primal has one strictly feasible solution.}
+\label{tab_strong}
+\end{table}
+
+Before going on to the following section, let us formulate a little remark about the dual of a cone. Actually finding the dual of a cone is not always an easy task. This becomes really tedious if it must be done by a computer. This is the reason why most of the conic solvers work only with self-dual cones. The most used self-dual cones are: the first-order cone $\mathbb{R}^n_+$, the Lorentz cone $\mathbb{L}^n$ and the semi-definite cone $\mathbb{S}^n_+$.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Robust optimisation}
+
+In all the conic problems we have encountered before, the number of conic constraints was finite and thus the resulting cones was computable since it was the Cartesian product of a finite number of cones. Now consider the following example with a infinite number of linear constraints and $X$ a convex domain:
+\begin{eqnarray*}
+\min_{x\in X} & c^Tx\\
+\text{such that}  & a^Tx \leq b & \forall a\in A
+\end{eqnarray*}
+We can satisfy all of the constraints by imposing:
+$$ \left[\max_{a \in A} a^Tx \right] \leq b $$
+This is not much better since we need to solve another optimisation problem in our original problem, but if we replace the last problem by his dual, we obtain:
+\begin{eqnarray*}
+\min_{x\in X} & & c^Tx\\
+\text{such that} & & \left[\min_{\lambda \in L(x)} d^Tx \right] \leq b 
+\end{eqnarray*}
+The new cost vector $d$ depends on the set $A$. We can finally simplify this problem in:
+\begin{eqnarray*}
+\min_{x,\lambda} & & c^Tx \\
+\text{such that}  & & d^Tx \leq b \\
+& & x\in X \\
+& & \lambda\in L(x)
+\end{eqnarray*}
+
+The way we can obtain the vector $d$ and the space $L(x)$ may seem a bit fuzzy at this point. To have a better view of the problem, consider the following example:
+\begin{eqnarray*}
+\min_{x\in X} & c^Tx\\
+\text{such that} &  a^Tx \leq b & \forall a\in \mathrm{B}_2[a_0,r] \subset \mathbb{R}^n
+\end{eqnarray*}
+Thus each $a$ has the form $a_0 + rv$ where $\|v\|_2 \leq 1$. We can re-write the linear condition:
+\begin{eqnarray*}
+& (a_0^Tx - b) + rv^Tx \leq 0 & \forall v\in \mathrm{B}_2[0,1] 
+\end{eqnarray*}
+We use the Lorentz cone $\mathbb{L}^n \subset \mathbb{R}^{n+1}$ to formulate a conic problem:
+\begin{equation*}
+\left[ \begin{array}{rcl}
+\max\limits_{t,v} & & (a_0^Tx - b)t + rv^Tx \\
+\text{such that}& &  (t,v)\in \mathbb{L}^n 
+\end{array}
+\right] \leq 0
+\end{equation*}
+The dual of the problem is given by:
+\begin{equation*}
+\left[ \begin{array}{rcl} 
+\min\limits_{\lambda} & & 0 \\
+\text{such that} & & \lambda = (a_0^Tx - b,rx)\\
+& &  \lambda\in \mathbb{L}^n 
+\end{array}
+ \right] \leq 0
+\end{equation*}
+And thus the original robust problem becomes a simple conic problem:
+\begin{eqnarray*}
+\min_{x\in X} & & c^Tx \\
+\text{such that} & &  (a_0^Tx - b,rx) \in \mathbb{L}^n \subset \mathbb{R}^{n+1}
+\end{eqnarray*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Semi-definite optimisation}
+
+We will now speak a bit further about the semi-definite cone. If we note $\mathbb{S}^n$ the set of symmetric matrices of order $n$, then the semi-definite cone is defined by:
+\begin{equation*}
+\mathbb{S}^n_+ = \left\lbrace X \in \mathbb{S}^n  \big|  v^TXv \geq 0 \hspace{5mm} \forall v\in \mathbb{R}^n \right\rbrace
+\end{equation*}
+
+Over the set $\mathbb{S}^n$, we defined the inner-product $\langle X,Y \rangle = \mathrm{trace}[X^TY]$. The dual $(\mathbb{S}^n_+)^*$ of the cone $\mathbb{S}^n_+$ is thus the set of $Y\in\mathbb{S}^n$ such that $\mathrm{trace}[X^TY]$ is non-negative for all $X\in\mathbb{S}^n_+$. We can show that $\mathbb{S}^n_+$ is auto-dual\footnote{For a simple proof, you can consult the lemma $12.5$ in \url{http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-f11/www/notes/lecture12.pdf}.}. The primal-dual formulation of a conic problem involving semi-definite constraints is given by:
+\begin{equation*}
+\begin{array}{ccc}
+    \text{(PRIMAL)} & & \text{(DUAL)} \\
+    \min\limits_{X\in\mathbb{S}^n} \langle C,X \rangle & \longleftrightarrow & \max\limits_{y\in\mathbb{R}^m}  b^Ty \\
+    \langle A_i,X \rangle = b_i \hspace{5mm} \text{for} \hspace{5mm} i\in\lbrace 1,\dots,m\rbrace & & C -\sum\limits_{i=1}^m A_iy_i \in \mathbb{S}^n_+ \\
+    X \in \mathbb{S}^n_+ & &
+\end{array} \:.
+\end{equation*}
+%
+%\end{document}

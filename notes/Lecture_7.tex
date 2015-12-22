@@ -78,15 +78,17 @@ In order to introduce the conic optimization concept, let's begin with an linear
 & & & y_2 + y_3 \leq 2 \label{eq2} \\
 & & & y_3 \leq 3 \label{eq3}
 \end{align}
-\end{leftbar}
-\end{example}
+
 A feasible point is given by $(y_1,y_2,y_3)= (1,0,2)$ which provides a cost function value $6$. \\ \\ \textit{How to know whether $6$ is strictly lower than or strictly higher than or equal to the optimal objective value ?}  \\ \\ Since a feasible point gives $6$ as cost function value, the optimal objective value is not strictly lower than $6$. The value $6$ can be increased to $7$ by taking the feasible point $(y_1,y_2,y_3)= (2,-1,3)$. So the optimal objective value is not equal to $6$ but higher than $6$.\\ Concerning the value $7$, we could ask our question again,\textit{ how to prove that the optimal objective value is higher than or equal to $7$ ? } \\ \\ We need an upper bound on the value for the objective function. This can be achieved by taking a linear combination of the constraints. \\ \\ Indeed, 
 \begin{align*}
 2 \cdot \text{~constraint~} \ref{eq1}+ 1 \cdot \text{~constraint~} \ref{eq2}+ 1 \cdot \text{~constraint~}\ref{eq3} & = 2y_1+3y_2+2y_3 \\
 & \leq 7
 \end{align*}
 $7$ is an upper bound for the objective value function. Since we have found a feasible point for which the objective value is equal to $7$, we can claim that the optimal objective value is equal to $7$. 
-\\ \\ It is possible to find a bound for the objective value for any linear problem. We want to extend the notion of linear problems while keeping their 'nice' properties of linear problems (i.e. duality and efficient algorithms). In order to extend this notion, we will generalize the inequalities $\leq$ and $\geq$ in the linear problems. \\ \\
+\end{leftbar}
+\end{example}
+
+It is possible to find a bound for the objective value for any linear problem. We want to extend the notion of linear problems while keeping their 'nice' properties of linear problems (i.e. duality and efficient algorithms). In order to extend this notion, we will generalize the inequalities $\leq$ and $\geq$ in the linear problems. \\ \\
 With $K \subseteq \mathbb{R}^n$, we define an generalized type of inequalities\[ a \succeq_K 0
  \Leftrightarrow a \in K \]
 On the basis of this definition, we also have the following properties \begin{align*}

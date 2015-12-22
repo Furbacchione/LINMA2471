@@ -1,0 +1,125 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{color}
+\usepackage{framed}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{listings}
+\renewcommand{\bar}{\overline}
+
+\geometry{hscale=0.8,vscale=0.8}
+
+\title{LINMA2471 : Optimization models and models : course 11}
+\author{Maxime Duyck \\ Rémi Chauvenne}
+\date{December 2015}
+
+\begin{document}
+
+\maketitle
+
+\section{Self-concordant function}
+
+\paragraph{Definition 1.} A function $f$ is self-concordant if and only if
+\begin{itemize}
+\item $f \in C^3(x)$ (on an open domain X)
+\item $f$ is convex
+\item $\nabla^3 f(x)[h,h,h] \le 2[h^T \nabla^2 f(x) h]^\frac{3}{2}$
+\end{itemize}
+Let's define $F_{x,h}(t) : t \rightarrow f(x+th)$. We have
+\begin{align*}
+\nabla^3 f(x)[h,h,h] & = F'''_{x,h}(0) \stackrel{1D}{=} f'''(x)h^3 \\
+\nabla^2 f(x)[h,h] & = F''_{x,h}(0) \stackrel{1D}{=} f''(x)h^2\\
+\nabla f(x)[h] & = F'_{x,h}(0) \stackrel{1D}{=} f'(x)h\\
+\end{align*}
+where 1D means that we are studying the one-dimensional case. Let's look at the third condition of \textbf{definition 1} in 1D :
+\begin{align*}
+f'''(x)h^3 & \le 2 (f''(x)h^2)^\frac{3}{2} \\
+\end{align*}
+which is equivalent to
+\begin{align*}
+\left\{
+\begin{aligned}
+f'''(x) \le 2f''(x)^\frac{3}{2} \quad \text{(h positive)} \\
+-f'''(x) \le 2f''(x)^\frac{3}{2} \quad \text{(h negative)}
+\end{aligned}
+\right.
+\end{align*}
+Then one can say that in the one-dimensional case :
+\begin{align*}
+|f'''(x)| \le 2f''(x)^\frac{3}{2}
+\end{align*}
+for a self-concordant function.
+\paragraph{Example 1.} $f(x) = -\log{(x)}$. 
+\begin{align*}
+f'(x) = -\frac{1}{x} \quad f''(x) = \frac{1}{x^2} \quad f'''(x) & = -\frac{2}{x^3} \\
+\Rightarrow \left|-\frac{2}{x^3}\right| = 2 \left(\frac{1}{x^2}\right)^\frac{3}{2}
+\end{align*}
+
+\paragraph{Property 1.} Let $f$ and $g$ be self-concordant (s.c.)\ functions. Then $f+g$ is a s.c.\ function.
+\paragraph{Example 2.}$$f(x) : \mathbb{R}_{++}^n \rightarrow \mathbb{R} : -\sum \log{(x_i)}$$ is s.c.\ as it is a sum of s.c.\ functions.
+
+\paragraph{Property 2.} Let $x \rightarrow f(x)$ be a s.c. function. Then $y \rightarrow f(c-A^Ty)$ is s.c.\
+\paragraph{Example 3.}
+$$f(y) = - \sum\limits_{i=1}^m \log{(c_i-a_i^Ty)}$$ on domain $\{y|c-A^Ty > 0\}$ is s.c.\
+\paragraph{Example 4.}
+$$f(x_0,x_1,...,x_n) = -\log{(x_0^2-x_1^2-...-x_n^2)}$$ is s.c. on int$(\mathbb{L}^n)$ with $\mathbb{L}^n = \left\{(x_0,x_1,...,x_n) | x_0 > \sqrt{x_1^2+...+x_n^2}\right\}$
+\paragraph{Example 5.} Let $X \in \mathbb{S}^n$.
+$$f(X) = -\log{\det{X}}$$
+is s.c.\ on int$(\mathbb{S}_+^n)$
+
+\paragraph{Property 3.} Let X be a set that contains no line. Then one can say that
+\begin{itemize}
+\item any s.c.\ function in X satisfies $\nabla^2 f(x) > 0$
+\item $f(x) \rightarrow + \infty$ as $x \rightarrow \delta(X)$
+\end{itemize}
+where $\delta(X)$ is the boundary of set X.
+
+
+\section{Minimisation of s.c.\ functions with Newton's method}
+S.c.\ functions are easy to minimize with Newton's method. But the optimality measure given by $\left|| \nabla f(x) \right||$ is bad as it is not affine-invariant. Let's try with another norm.
+\paragraph{Definition 2.} Local norm (given a s.c.\ function f) : $(x \in X)$ 
+$$
+||z||_x  = (z^T \nabla^2f(x)z)^{\frac{1}{2}}
+$$
+The dual of the local norm is given by
+$$
+||z||^*_x  = (z^T \nabla^2f(x)^{-1}z)^{\frac{1}{2}}
+$$
+\\
+Using the dual of the local norm, we have the optimality measure given by
+\begin{align*}
+\delta(x) &= ||\nabla f(x)||^*_x \\
+& = (\nabla f(x)^T \nabla^2f(x)^{-1}\nabla f(x))^{\frac{1}{2}} \\
+&= ||n(x)||_x
+\end{align*}
+
+\paragraph{Property 4.} Given a s.c.\ function (on domain X), $x\in X$. If $\delta(x) < 1$ then 
+\begin{itemize}
+\item min $x^*$ of f exists
+\item $f(x) \leq f(x^*) - \delta - \log{(1-\delta)} \approx f(x^*) - \frac{\delta^2}{2}$
+\item $||x-x^*||_x \leq \frac{\delta}{1 - \delta} $
+\item $x^+ = x + n(x)$ is feasible $(x^+ \in X)$
+\item $\delta(x^+) \leq \left(\dfrac{\delta(x)}{1-\delta(x)}\right)^2 $\\
+\end{itemize}
+And for any $\delta(x)$, we have 
+\begin{itemize}
+\item $x^+ = x + \left(\dfrac{\delta(x)}{1+\delta(x)}\right)n(x) $
+\item $f(x) - f(x^+) \geq \delta(x) - \log{(1+\delta(x))} \geq 0 $
+\end{itemize}
+with $\left(\dfrac{\delta(x)}{1+\delta(x)}\right) \le 1$ which is the damped Newton step.
+
+\paragraph{Application.} Suppose $\delta(x_0) > \dfrac{1}{\sqrt{2}}$, we have $$f(x_0) - f(x_1) \geq 0.16.$$ 
+If again $\delta(x_1) > \dfrac{1}{\sqrt{2}}$, then $$f(x_1) - f(x_2) \geq 0.16.$$ Hence, after at most $\dfrac{f(x_0) - f(x^*)}{0.16}$ iterations, we have $\leq \dfrac{1}{\sqrt{2}}$. \\
+After applying $O(\log{\log{\frac{1}{\epsilon}}})$ pure Newton steps, we obtain an $\epsilon-$solution.
+
+\end{document}

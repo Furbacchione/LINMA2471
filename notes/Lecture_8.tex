@@ -83,7 +83,7 @@ where (D) stands for the dual problem and (P) the primal problem.
 Note that for the positive real axis, second order cones and the semi definite cone: $K=K^*$.
 
 \subsection{Example of duality}
-\begin{leftbar}
+
 \subsubsection{Primal problem}
 Let's consider the following problem: 
 \begin{align*}
@@ -199,9 +199,7 @@ $$-\min \, d^Tu$$
 $$u \geq 0$$
 $$\parallel w \parallel \leq 1$$
 $$C^Tu = Lw$$
-This model cannot be simplified any further. 
-
-\end{leftbar}
+This model cannot be simplified any further.
 
 
 \subsection{Theorems and properties of Dual}
@@ -234,11 +232,11 @@ The dual goal is to find the best upper bound for this system. This is, that bes
 
 When $\boldsymbol{A\lambda}=\boldsymbol{b}$, we get the system $\boldsymbol{b}^T \boldsymbol{y} \leq \boldsymbol{c}^T \boldsymbol{\lambda}$. The upper bound depends on $\boldsymbol{\lambda}$ and the dual problem (D) becomes:
 
-\begin{align*}
-\min\boldsymbol{c}^T \boldsymbol{\lambda}&\\
-  \textrm{such that }&\boldsymbol{A\lambda}=\boldsymbol{b}\\
-             &\boldsymbol{\lambda} \geq \boldsymbol{0}
-\end{align*}
+\begin{eqnarray*}
+\min & & \boldsymbol{c}^T \boldsymbol{\lambda}\\
+\text{such that}& &\boldsymbol{A\lambda}=\boldsymbol{b}\\
+             & &\boldsymbol{\lambda} \geq \boldsymbol{0}
+\end{eqnarray*}
 
 In a conic problem, we have:
 \[\begin{bmatrix}
