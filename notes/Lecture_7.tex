@@ -63,7 +63,15 @@
 % Remarks: \begin{remark} ... \end{remark}
 
 \section{Linear and sublinear convergence}
- For methods with sublinear convergence, the value of the error firstly downs very quickly but after some value, the decreases becomes really slow. For methods with linear convergence, the decrease of the error is, at the beginning, slowler then sublinear methods. However, after the value where the decrease for sublinear methods becomes slow, the decrease for linear method remains constant on a logarithmic scale. \\ \\ Thus, the choice of the method depends on the application. If one needs a lot of accuracy, it is preferable to use linear methods but if high accuracy is not that much important (i.e. we only look for one digit), one then should use sublinear methods. \textcolor{red}{Some graphs to illustrated these results are available on the \textit{Linear convergence is faster than sublinear convergence (eventually) [missing figure from week 7]} pdf file.} 
+ For methods with sublinear convergence, the value of the error firstly downs very quickly but after some value, the decreases becomes really slow. For methods with linear convergence, the decrease of the error is, at the beginning, slowler then sublinear methods. However, after the value where the decrease for sublinear methods becomes slow, the decrease for linear method remains constant on a logarithmic scale. \\ \\ Thus, the choice of the method depends on the application. If one needs a lot of accuracy, it is preferable to use linear methods but if high accuracy is not that much important (i.e. we only look for one digit), one then should use sublinear methods. Some graphs to illustrated these results are given on Figure \ref{fig:linear_convergence}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{images/L6-Linear_convergence.pdf} 
+\caption{Illustration of linear and sublinear convergence.}
+\label{fig:linear_convergence}
+\end{figure}
+
 \section{Conic optimization}
 In order to introduce the conic optimization concept, let's begin with an linear example. 
 \begin{example}[Linear optimisation problem]

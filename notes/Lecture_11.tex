@@ -27,14 +27,21 @@
 %
 %\maketitle
 
-\section{Self-concordant function}
-
-\paragraph{Definition 1.} A function $f$ is self-concordant if and only if
+\subsection{Self-concordant function}
+\begin{definition} A function $f$ is called self-concordant if and only if
 \begin{itemize}
-\item $f \in C^3(x)$ (on an open domain X)
-\item $f$ is convex
-\item $\nabla^3 f(x)[h,h,h] \le 2[h^T \nabla^2 f(x) h]^\frac{3}{2}$
+\item $f \in \mathcal{C}^2(X)$ (open domain $X$)
+\item $f$ convex
+\item $\nabla^3 f(x) [h,h,h] \leq 2 (h^T \nabla^2 f(x)\ h)^{3/2} \quad \forall x \in X, \forall h$
 \end{itemize}
+\end{definition}
+
+%\paragraph{Definition 1.} A function $f$ is self-concordant if and only if
+%\begin{itemize}
+%\item $f \in C^3(x)$ (on an open domain X)
+%\item $f$ is convex
+%\item $\nabla^3 f(x)[h,h,h] \le 2[h^T \nabla^2 f(x) h]^\frac{3}{2}$
+%\end{itemize}
 Let's define $F_{x,h}(t) : t \rightarrow f(x+th)$. We have
 \begin{align*}
 \nabla^3 f(x)[h,h,h] & = F'''_{x,h}(0) \stackrel{1D}{=} f'''(x)h^3 \\
@@ -108,9 +115,9 @@ Let X be a set that contains no line. Then one can say that
 where $\delta(X)$ is the boundary of set X.
 \end{property}
 
-\section{Minimisation of s.c.\ functions with Newton's method}
+\subsection{Minimisation of s.c.\ functions with Newton's method}
 S.c.\ functions are easy to minimize with Newton's method. But the optimality measure given by $\left|| \nabla f(x) \right||$ is bad as it is not affine-invariant. Let's try with another norm.
-\paragraph{Definition 2.} Local norm (given a s.c.\ function f) : $(x \in X)$ 
+\begin{definition} \textbf{Local norm} (given a s.c.\ function f) : $(x \in X)$ 
 $$
 ||z||_x  = (z^T \nabla^2f(x)z)^{\frac{1}{2}}
 $$
@@ -118,7 +125,8 @@ The dual of the local norm is given by
 $$
 ||z||^*_x  = (z^T \nabla^2f(x)^{-1}z)^{\frac{1}{2}}
 $$
-\\
+\end{definition}
+
 Using the dual of the local norm, we have the optimality measure given by
 \begin{align*}
 \delta(x) &= ||\nabla f(x)||^*_x \\
