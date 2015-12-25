@@ -50,7 +50,7 @@ In chapter \ref{Ch1}, we saw how to model convex problems. In chapter \ref{Ch2},
 
 \noindent $x^Tx$\\
 $\downarrow$ \qquad $Q \geq 0 \Longleftrightarrow Q=LL^T$ \\
-$x^TQ$ \\
+$x^TQx$ \\
 $\Updownarrow$ \\
 $(L^tx)^T(L^Tx)$\\
 
@@ -130,7 +130,7 @@ L^Tz
 t\\
 L^Tz
 \end{bmatrix} \in \mathbb{L}^n$\\
-Note that $d-Cz$ is composed of m elements, t of one element and $L^Tz$ of n elements. \\
+Note that $d-Cz$ is composed of $m$ elements, $t$ of one element and $L^Tz$ of $n$ elements. \\
 
 We are not completely done yet because we still need $c$ and $A^T$:\\
 $$c = \begin{pmatrix}
@@ -179,7 +179,7 @@ v
 0^{k\times 1}
 \end{pmatrix}
 \end{equation}
-Where n, m and k are the dimensions of $C$ and $L$.
+Where $n$, $m$ and $k$ are the dimensions of $C$ and $L$.
  
  After simplifying, we have \\
  $$-\min \, d^Tu$$
@@ -223,7 +223,7 @@ First, to build the standard dual problem, we write the constraints as a system 
  \times \lambda_n
 \end{matrix}
 \over
-(\sum_{i=1}^{n}\lambda_i a_i)^T \leq \sum_{i=1}^{n}\lambda_i c_i\]
+(\sum_{i=1}^{n}\lambda_i a_i)^Ty \leq \sum_{i=1}^{n}\lambda_i c_i\]
 
 We can write the new system system as:
 \[(\boldsymbol{A}\boldsymbol{\lambda})^T \boldsymbol{y} \leq \boldsymbol{c}^T \boldsymbol{\lambda}
@@ -251,7 +251,7 @@ In a conic problem, we have:
  c_n
 \end{bmatrix}\]
 
-A simple example on the Lorentz cone show that the standard dual does not always work in conic optimization: let us have:
+A simple example on the Lorentz cone show that the standard dual does not always work in conic optimization. Let us have:
 \[\begin{bmatrix}
  0\\
  0\\

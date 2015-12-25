@@ -104,14 +104,14 @@ where $\delta (x)$ is a measure of accuracy.\\
 \label{eqDelta1}
  \bullet\delta (x) < 1 \quad \rightarrow \quad \delta (x + n(x)) \leq \left[ \dfrac{\delta (x)}{1 - \delta (x)} \right]^2 
 \end{equation}
-this case (\ref{eqDelta1}) gives $\epsilon$ solution after $\mathcal{O} (\log \log \dfrac{1}{\epsilon})$\\
+This case (\ref{eqDelta1}) gives $\epsilon$ solution after $\mathcal{O} (\log \log \dfrac{1}{\epsilon})$\\
 The convergence is quadratic, we only need a few iterates to get the solution.
 
 \begin{equation}
 \label{eqDelta2}
 \bullet\forall \delta(x) \quad \rightarrow \quad f(x) - f\left(x + \dfrac{n(x)}{1 + \delta(x)}\right) \geq \delta(x) - log(1 + \delta(x))
 \end{equation}
-in (\ref{eqDelta2}), if started with $\delta(x) > \tau $, we have $\delta(x) \leq \tau$ after $\lceil\dfrac{f(x) - f(x)^{\star}}{\tau - log(1 + \tau)}\rceil$ ($\lceil \rceil$ means rounded above) iterations ($\mathcal{O}\left(f(x)-f(x^{\star}\right)$). \\
+In (\ref{eqDelta2}), if started with $\delta(x) > \tau $, we have $\delta(x) \leq \tau$ after $\lceil\dfrac{f(x) - f(x)^{\star}}{\tau - log(1 + \tau)}\rceil$ ($\lceil \rceil$ means rounded above) iterations ($\mathcal{O}\left(f(x)-f(x^{\star}\right)$). \\
 Note that $\dfrac{n(x)}{1 + \delta(x)}$ is a damped Newton step.\\
 In practise, we are starting with case 2 and moving to case 1 after some iterations.
 
@@ -119,18 +119,18 @@ In practise, we are starting with case 2 and moving to case 1 after some iterati
 Consider 
 $$ \text{min} ~~ c^T x \qquad x \in X \qquad X \ \text{convex}$$
 Assume $f$ is self concordant and defined in the interior of $X$ (int $X$), then all the iterates will be in the set.\\
-Take for example $f(y) = - \sum_{i = 1}^m \log(c_i - a_i^T y)$\\ for domain $\lbrace y | a_i^T y < c\quad \forall i = 1,..,m \rbrace \Longleftrightarrow \lbrace y | A^T y < c  \rbrace$ = interior of a polytope\\
+Take for example $f(y) = - \sum_{i = 1}^m \log(c_i - a_i^T y)$ for domain $\lbrace y | a_i^T y < c\quad \forall i = 1,..,m \rbrace \Longleftrightarrow \lbrace y | A^T y < c  \rbrace$ = interior of a polytope.\\
 \begin{center}
 \includegraphics[scale=0.5]{images/12-fig1.jpg} 
 \end{center}
 
 \begin{definition} 
 \textbf{analytic center:} $x(\infty) = \underset{x\ \in \ \int(X)}{\arg \min} f(x) \qquad (*)$  \\
-We call this center "analytic" because it is defined by functions, by calculus. This corresponds to the value of $x$ that minimizes $f(x)$
+We call this center "analytic" because it is defined by functions, by calculus. This corresponds to the value of $x$ that minimizes $f(x)$.
 \end{definition}
 
 \subsection{Barrier Problem} 
-We are going tu use the self-concordant function as a barrier to get to the border of the polytope.
+We are going to use the self-concordant function as a barrier to get to the border of the polytope.
 \begin{equation}
 \label{BarrierProblem}
 (p_{\mu}) \qquad \underset{x \in \int X}{\min} \quad \dfrac{c^T x}{\mu} + f(x) = \underset{x \in \int X}{\min} \quad f_{\mu}(x)
@@ -153,7 +153,7 @@ $\underset{\mu \rightarrow 0}{\lim} x(\mu) = x^{\star}$ and it is well defined a
 \end{property} 
 
 A possible method would be to target a point $x(\mu)$ and after reaching it jump a bit further on the path and target another point until reaching the true minimum of the objective function. However, this method is too slow (the complexity is not good).\\
-So we will introduce a method which will skip some values of $\mu$ but without b too far from the central path.\\
+So we will introduce a method which will skip some values of $\mu$ but without being too far from the central path.\\
 The path is the set of points minimizing $P_\mu$ for different values of $\mu$
 \begin{center}
 \includegraphics[scale=0.3]{images/12-fig2.jpg} 

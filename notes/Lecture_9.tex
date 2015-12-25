@@ -50,7 +50,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Strong duality for conic optimisation problems}
 
-The primal-dual formulation of a conic optimisation problem has already been covered in the precedent lecture notes. They also showed how we come to the weak duality theorem and the need to work with the dual cone. Let us recall the primal-dual formulation:
+% The primal-dual formulation of a conic optimisation problem has already been covered in the precedent lecture notes. They also showed how we come to the weak duality theorem and the need to work with the dual cone. 
+Let us recall the primal-dual formulation:
 \begin{eqnarray*}
     \text{(PRIMAL)} & & \text{(DUAL)} \\
     \min_{x\in \mathbb{R}^n} c^T x & \longleftrightarrow & \max_{y\in\mathbb{R}^m} b^Ty \\
@@ -60,7 +61,7 @@ The primal-dual formulation of a conic optimisation problem has already been cov
 
 The weak duality theorem states that if $x$ is an admissible solution of the primal and $y$ is an admissible solution of the dual then we must have that $c^Tx\geq b^Ty$. First of all this show that if for example the dual is (upper)-unbounded then the primal is infeasible. Reversely, if the primal is (lower)-unbounded then the dual is infeasible.
 
-Imagine a algorithm has converged to a feasible solution $y$ of the dual. And it want to know if the solution is optimal or not. If it has also a solution $x$ of the primal and that $c^Tx=b^Ty$ then $y$ and $x$ are the optimum $y^*$ and $x^*$ of the dual and primal respectively.
+Imagine a algorithm has converged to a feasible solution $y$ of the dual. And we want to know if the solution is optimal or not. If it has also a solution $x$ of the primal and that $c^Tx=b^Ty$ then $y$ and $x$ are the optimum $y^*$ and $x^*$ of the dual and primal respectively.
 
 We can wonder if we always have $c^Tx^* = b^Ty^*$. On the same way, if the primal is infeasible, does it always mean that the dual is unbounded? To answer both questions, let us consider the conic problem with the following parameters:
 \begin{eqnarray*}
@@ -119,7 +120,7 @@ If the dual problem admits a strictly feasible solution and is unbounded, then t
     Finite & KO & $c^Tx_*=b^Ty_*$ & KO \\ \hline
     Infeasible & OK & KO & OK \\ \hline
 \end{tabular}
-\caption{Recapitulate of the weak duality theorem. The theorem can be used if either the dual or the primal has one strictly feasible solution.}
+\caption{Recapitulate of the strong duality theorem. The theorem can be used if either the dual or the primal has one strictly feasible solution.}
 \label{tab_strong}
 \end{table}
 
