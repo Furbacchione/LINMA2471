@@ -47,12 +47,11 @@ Find a symmetric matrix M such that:
 $\emph{Idea:}$
 $\newline$
 Let $M \in \mathbb{S}^n$ with eigenvalues $\lambda_1, \cdots, \lambda_n$. The eigenvalues are real because M is symmetric. It's easy to see that $ M + \Delta I \in \mathbb{S}^n$ has eigenvalues $ \lambda_1 + \Delta, \cdots, \lambda_n + \Delta $. By applying a shift on the diagonal of M we also shift the eigenvalues. By applying these observations to matrix M we can write the following \textcolor{red}{some of the $\geq$ or $\succeq$ seem to be inverted}: 
+All eigenvalues of M $\geq 0 \Leftrightarrow M \succeq  0 \Leftrightarrow \lambda_{min}(M) \geq 0$
 $\newline$
-All eigenvalues of M $\succeq 0 \Leftrightarrow M \geq 0 \Leftrightarrow \lambda_{min}(M) \geq 0$
+All eigenvalues of M $\geq 1 \Leftrightarrow M - I \succeq 0 \Leftrightarrow \lambda_{min}(M) \geq 1$
 $\newline$
-All eigenvalues of M $\geq 1 \Leftrightarrow M - I\succeq 0 \Leftrightarrow \lambda_{min}(M) \geq 1$
-$\newline$
-All eigenvalues of M $\succeq c \Leftrightarrow M - cI \geq 0$  (linear even if c is a variable)$  \Leftrightarrow \lambda_{min}(M) \geq c$
+All eigenvalues of M $\geq c \Leftrightarrow M - cI \preceq 0$  (linear even if c is a variable)$  \Leftrightarrow \lambda_{min}(M) \geq c$
 $\newline$
 All eigenvalues of M $\leq c \Leftrightarrow M - cI \preceq 0   \Leftrightarrow \lambda_{max}(M) \leq c \Leftrightarrow - (M-cI) \succeq 0 = cI-M \succeq 0$ which is also a linear constraint.
 $\newline$
