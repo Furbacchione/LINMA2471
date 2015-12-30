@@ -205,24 +205,24 @@ f(x) + \nabla f(x)^{T} [\frac{-1}{L} \nabla f(x)]+\frac{L}{2} \|  \frac{-1}{L}\n
 & =f(x)-\underbrace{\frac{1}{2L} \|\nabla f(x)\|^{2}}_{\leq 0}
 \end{align*}
 Looking at all iterations now:
-$$ f(x_{k+1})-f(x_{k}) \leq - \frac{\|\nabla f(x_k)\|^{2}}{L}$$
+$$ f(x_{k+1})-f(x_{k}) \leq - \frac{\|\nabla f(x_k)\|^{2}}{2L}$$
 (because the upper bound displays this decrease \textcolor{red}{What does it mean?})\\
 
 
-$f(1)-f(0) \leq -\dfrac{\|\nabla f(x_{0})\|^{2}}{L}$\\
-$f(2)-f(1) \leq -\dfrac{\|\nabla f(x_{1})\|^{2}}{L}$ \\
+$f(1)-f(0) \leq -\dfrac{\|\nabla f(x_{0})\|^{2}}{2L}$\\
+$f(2)-f(1) \leq -\dfrac{\|\nabla f(x_{1})\|^{2}}{2L}$ \\
 $\vdots$ \\
-$f(N+1)-f(N) \leq -\dfrac{\|\nabla f(x_{N})\|^{2}}{L}$\\
+$f(N+1)-f(N) \leq -\dfrac{\|\nabla f(x_{N})\|^{2}}{2L}$\\
 
 Summing the equations above, we get \\
 $f(N+1)-f(0) \leq - \dfrac{1}{L} \sum\limits_{i=1}^{n}$ $\|\nabla f(x_{i})\|^{2}$\\
 so we deduce \\
-$L(f(0)-f(N+1)) \geq \sum\limits_{i=1}^{n} \|\nabla f(x_{i})\|^{2} \geq (N+1) \min \|\nabla f(x_{i})\|^{2}$
+$2L(f(0)-f(N+1)) \geq \sum\limits_{i=1}^{n} \|\nabla f(x_{i})\|^{2} \geq (N+1) \min \|\nabla f(x_{i})\|^{2}$
 
 Hence
 \begin{align*}
-\underset{i=0,...,N}{\text{min }} \|\nabla f(x_{i})\| & \leq \sqrt{\frac{L(f(0)-f(N+1)}{N+1}} \\
-& \leq \sqrt{\frac{L(f(0)-f(x^*)}{N+1}}
+\underset{i=0,...,N}{\text{min }} \|\nabla f(x_{i})\| & \leq \sqrt{\frac{2L(f(0)-f(N+1)}{N+1}} \\
+& \leq \sqrt{\frac{2L(f(0)-f(x^*)}{N+1}}
 \end{align*}
 with $x^*$ minimum point of $f$.
 
