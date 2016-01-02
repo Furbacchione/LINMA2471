@@ -78,16 +78,16 @@ One can see that the extended function is convex over the whole real line. The e
 
 \subsubsection{Composition and product}
 \begin{property}
-If g is a convex function and f is a convex, increasing and one-dimensional function then the composition function $h \circ g: x \mapsto h(g(x))$ is also convex. 
+If $g$ is a convex function and $h$ is a convex, increasing and one-dimensional function then the composition function $h \circ g: x \mapsto h(g(x))$ is also convex. 
 \end{property}
 \begin{proof}
-Let's prove this proposition for a simple case. We assume that f and g are both one-dimensional functions and that $f,g \in \mathcal{C}^2$. The general case requires a more difficult proof. \\
+Let's prove this proposition for a simple case. We assume that $h$ and $g$ are both one-dimensional functions and that $h,g \in \mathcal{C}^2$. The general case requires a more difficult proof. \\
 Since f and g are 2 times differentiable, one has:
 $$\big[ h(g(x))\big]'' = \big[ h'(g(x))g'(x)\big]' = \underbrace{h''(x)(g'(x))^2}_\text{A} + \underbrace{h'(g(x))g''(x)}_\text{B} $$
 
-Since h is convex, its second derivative is positive and given that a square is positive, one has that A is positive. Furthermore, since g is also convex and h is increasing, one also has that B is positive. One conclude that the second derivative of $h \circ g$ is positive and thus, the function $h \circ g$ is convex. 
+Since h is convex, its second derivative is positive and given that a square is positive, one has that $A$ is positive. Furthermore, since $g$ is also convex and $h$ is increasing, one also has that $B$ is positive. One conclude that the second derivative of $h \circ g$ is positive and thus, the function $h \circ g$ is convex. 
 \end{proof}
-\textbf{Remark}: Sometimes we need to square a value but also to keep convexity (for example, we don't care about negative deviations on a budget) \textcolor{red}{Should be better expressed}. However the traditional square function is not convex on the real line. Let's introduce a restricted square function as follows: 
+\textbf{Remark}: Sometimes we need to square a value but also to keep convexity (for example, we don't care about negative deviations on a budget) \textcolor{red}{Should be better expressed}. However the traditional square function is not convex \textcolor{red}{(increasing??)} on the real line. Let's introduce a restricted square function as follows: 
 $$f: x \mapsto (x_+)^2 = (\frac{x + |x|}{2})^2$$
 We easily see (Figure \ref{restricted}) that this restricted square function is convex.
 
@@ -101,7 +101,7 @@ We easily see (Figure \ref{restricted}) that this restricted square function is 
 
 \begin{example}
 \begin{leftbar}
-The function $\big[ \log(x+y)_+\big]^2$ is convex. Indeed, the restricted square and $-\log$ are convex functions. Therefore, their composition is convex. Since $x+y$ is a linear transformation, it preserves convexity and the whole function is convex. 
+The function $\big[ \log(x+y)_+\big]^2$ is convex. Indeed, the restricted square \textcolor{red}{(is convex and increasing???)} and $-\log$ are convex functions. Therefore, their composition is convex. Since $x+y$ is a linear transformation, it preserves convexity and the whole function is convex. 
 \end{leftbar}
 \end{example}
 \vspace{0.5cm}
