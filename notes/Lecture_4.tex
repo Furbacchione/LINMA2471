@@ -183,7 +183,7 @@ What can we say about the minimum of a function based only on its first derivati
 \begin{lemma}
 \textbf{Quadratic upper bound (QUB) of $C_L^{1,1}$ function} \\
 Let's $f \in C_L^{1,1}$. Then for any $x$ we have that 
-$$ \hat{f}: y \mapsto  f(x)+ \nabla f^T(x)(x-y)+ \frac{L}{2} \| x-y\| $$
+$$ \hat{f}: y \mapsto  f(x)+ \nabla f^T(x)(x-y)+ \frac{L}{2} \| x-y\|^2 $$
  is an upper bound of $f(y)$.
 \end{lemma}
 
@@ -200,7 +200,7 @@ We can notice that the last equation is very similar to the gradient method. It 
  
 After one step, taking  $y= x-\frac{1}{L}\nabla f(x)$, the upper bound gives:
 \begin{align*}
-f(x) + \nabla f(x)^{T} [\frac{-1}{L} \nabla f(x)]+\frac{L}{2} \|  \frac{-1}{L}\nabla f(x)\|^2
+\hat{f}(y)=f(x) + \nabla f(x)^{T} [\frac{-1}{L} \nabla f(x)]+\frac{L}{2} \|  \frac{-1}{L}\nabla f(x)\|^2
 & =f(x)- \frac{\|\nabla f(x)\|^{2}}{L}+\frac{1}{2L} \|\nabla f(x)\|^{2} \\
 & =f(x)-\underbrace{\frac{1}{2L} \|\nabla f(x)\|^{2}}_{\leq 0}
 \end{align*}
@@ -215,14 +215,14 @@ $\vdots$ \\
 $f(N+1)-f(N) \leq -\dfrac{\|\nabla f(x_{N})\|^{2}}{2L}$\\
 
 Summing the equations above, we get \\
-$f(N+1)-f(0) \leq - \dfrac{1}{L} \sum\limits_{i=1}^{N}$ $\|\nabla f(x_{i})\|^{2}$\\
+$f(N+1)-f(0) \leq - \dfrac{1}{L} \sum\limits_{i=1}^{N+1}$ $\|\nabla f(x_{i})\|^{2}$\\
 so we deduce \\
-$2L(f(0)-f(N+1)) \geq \sum\limits_{i=1}^{N} \|\nabla f(x_{i})\|^{2} \geq (N+1) \min \|\nabla f(x_{i})\|^{2}$
+$2L(f(0)-f(N+1)) \geq \sum\limits_{i=1}^{N+1} \|\nabla f(x_{i})\|^{2} \geq (N+1) \min \|\nabla f(x_{i})\|^{2}$
 
 Hence
 \begin{align*}
-\underset{i=0,...,N}{\text{min }} \|\nabla f(x_{i})\| & \leq \sqrt{\frac{2L(f(0)-f(N+1)}{N+1}} \\
-& \leq \sqrt{\frac{2L(f(0)-f(x^*)}{N+1}}
+\underset{i=0,...,N}{\text{min }} \|\nabla f(x_{i})\| & \leq \sqrt{\frac{2L(f(0)-f(N+1))}{N+1}} \\
+& \leq \sqrt{\frac{2L(f(0)-f(x^*))}{N+1}}
 \end{align*}
 with $x^*$ minimum point of $f$.
 

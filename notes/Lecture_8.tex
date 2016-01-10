@@ -110,8 +110,8 @@ Now, we are going to write everything using the cones: \\
 Let $y=\begin{pmatrix}
 t\\
 z
-\end{pmatrix} \in \mathbb{R}^{n+1}$ (t is composed of 1 element and z of n elements). \\
-Objective $-\max \, b^Ty$ with $b=\begin{pmatrix}
+\end{pmatrix} \in \mathbb{R}^{n+1}$ ($t$ is composed of 1 element and $z$ of $n$ elements). \\
+Objective: $-\max \, b^Ty$ with $b=\begin{pmatrix}
 -1\\
 0\\
 . \\
@@ -119,7 +119,7 @@ Objective $-\max \, b^Ty$ with $b=\begin{pmatrix}
 . \\
 0
 \end{pmatrix}$\\
-Constraint: $c-A^Tu \geq_K 0 $ with $K= \mathbb{R}^m_+ \times \mathbb{L}^n$ (big vector with the top part being $\mathbb{R}^m_+$ and the bottom part $\mathbb{L}^n$)\\
+Constraint: $c-A^Tu \succeq_K 0 $ with $K= \mathbb{R}^m_+ \times \mathbb{L}^n$ (big vector with the top part being $\mathbb{R}^m_+$ and the bottom part $\mathbb{L}^n$)\\
 
 $\begin{bmatrix}
 d-Cz\\
@@ -147,7 +147,7 @@ d\\
 0^{n\times 1} & -L^T
 \end{pmatrix}
 $$
-The first column of $A^T$ corresponds to the coefficients of t. \\
+The first column of $A^T$ corresponds to the coefficients of $t$. \\
 
 By telling our solver the different matrices and the cone, it will solve the problem. Why is this useful? Because now we can write the dual without a problem.
 
@@ -168,7 +168,7 @@ v
 
 \begin{equation}
 \begin{bmatrix}
-0^{1\times n} & -1 & 0^{1\times m}\\
+0^{1\times m} & -1 & 0^{1\times n}\\
 C^T & 0^{k\times 1} & -L
 \end{bmatrix}\begin{pmatrix}
 u\\
@@ -204,10 +204,10 @@ This model cannot be simplified any further.
 
 \subsection{Theorems and properties of Dual}
 After this example of conic dual computation, we want to study the properties of the conic dual optimization and some of its theorems. One interesting design allows to prove some theorems. Let us first explain this design to eventually find the dual of the primal conic problem (P):
-\begin{align*}
-\min&\textbf{b}^T\textbf{y}\\
-             &\textbf{A}^T\textbf{y}\preceq_K \textbf{c}
-\end{align*}
+\begin{eqnarray*}
+ \min & &\textbf{b}^T\textbf{y}\\
+ \text{such that} & & \textbf{A}^T\textbf{y}\preceq_K \textbf{c}
+\end{eqnarray*}
 
 First, to build the standard dual problem, we write the constraints as a system of inequations where coefficients $\lambda_i \geq 0$ multiplies $c_i$ (positivity of $\boldsymbol{\lambda}$ assures the preservation of inequalities):
 \[\begin{bmatrix}
@@ -223,7 +223,7 @@ First, to build the standard dual problem, we write the constraints as a system 
  \times \lambda_n
 \end{matrix}
 \over
-(\sum_{i=1}^{n}\lambda_i a_i)^Ty \leq \sum_{i=1}^{n}\lambda_i c_i\]
+(\sum_{i=1}^{n}\lambda_i a_i)^T \textbf{y} \leq \sum_{i=1}^{n}\lambda_i c_i\]
 
 We can write the new system system as:
 \[(\boldsymbol{A}\boldsymbol{\lambda})^T \boldsymbol{y} \leq \boldsymbol{c}^T \boldsymbol{\lambda}
@@ -234,7 +234,7 @@ When $\boldsymbol{A\lambda}=\boldsymbol{b}$, we get the system $\boldsymbol{b}^T
 
 \begin{eqnarray*}
 \min & & \boldsymbol{c}^T \boldsymbol{\lambda}\\
-\text{such that}& &\boldsymbol{A\lambda}=\boldsymbol{b}\\
+\text{such that}& & A\boldsymbol{\lambda}=\boldsymbol{b}\\
              & &\boldsymbol{\lambda} \geq \boldsymbol{0}
 \end{eqnarray*}
 
@@ -344,10 +344,12 @@ This way, $\lambda_i^T x_i < 0$, and that implies dual cone is $(\mathbb{R}_{+}^
 $\Rightarrow(\mathbb{L}^n)^*=?$\\
 $(\mathbb{L}^n)^*=\{\lambda | x^T \lambda \geq 0\textrm{, } \forall x \in \mathbb{L}^n \}$
 \begin{itemize}
-\item $\lambda \in \mathbb{L}^n$ : $x^T\lambda = x_0\lambda_0 + [x_1 ... x_n][\lambda_1 ... \lambda_n]^T$:\\
-Because we know= $x_0\geq ||x_1...x_n||$ and $\lambda_0 \geq ||\lambda_1...\lambda_n||$, we can say: \begin{align*}
-x^T\lambda &\leq x_0\lambda_0+||x_1...x_n||||x_1...x_n||\\
-&\geq x_0\lambda_0-||x_1...x_n||||x_1...x_n|| \geq 0
+\item $\lambda \in \mathbb{L}^n$ : $x^T\lambda = x_0\lambda_0 + [x_1 ... x_n]^T[\lambda_1 ... \lambda_n]$:\\
+Because we know: $x_0\geq ||x_1...x_n||$ and $\lambda_0 \geq ||\lambda_1...\lambda_n||$, we can say: \begin{align*}
+x^T\lambda &= x_0\lambda_0 + [x_1 ... x_n]^T[\lambda_1 ... \lambda_n]\\
+& \geq||x_1...x_n|| \times ||\lambda_1...\lambda_n||+[x_1 ... x_n]^T[\lambda_1 ... \lambda_n]\\
+ &\geq |[x_1 ... x_n]^T[\lambda_1 ... \lambda_n]|+[x_1 ... x_n]^T[\lambda_1 ... \lambda_n] \quad \textit{(Cauchy-Schwartz)}\\
+ & \geq 0 \quad{(a+|a|\geq 0)}
 \end{align*}
 \item $\lambda \notin \mathbb{L}^n$: $\lambda_0 < ||\lambda_1 ..  \lambda_n||$ \\
 One can pick $x$ the following way: $x_0 = ||\lambda_1...\lambda_n||$; $[x_1..x_n] = -[\lambda_1 ... \lambda_n]$\\

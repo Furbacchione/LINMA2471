@@ -59,7 +59,7 @@ Let us recall the way we obtained the above inequality.
 The following conditions are equivalent :
 \begin{enumerate}% [label=(\alph*)]
 \item $f \in C_L^{1,1}(D)$,
-\item $f \in C^1(D)$ and $|f(y) - T_x^1(y)| \le \frac{L}{2}\vnorm{x-y}^2$ for all $x,y \in D$.
+\item $f \in C^1(D)$ and $|f(y) - T_x^1(y)| \le \frac{L}{2}\vnorm{x-y}^2$ $\forall x,y \in D$.
 \end{enumerate}
 \label{qbCL}
 \end{lemma}
@@ -72,7 +72,7 @@ From this lemma, we concluded that $\frac{1}{L}$ is the optimal step length.
 \begin{theorem}[Decrease guarantee]
 Let $f \in C_L^{1,1}$. Denote $x^+ = x - \frac{1}{L}\nabla f(x)$ the next iterate. Then
 \begin{equation*}
-f(x) - f(x^+) \ge \frac{{\vnorm{\nabla f(x)}}^2}{2L} .
+f(x) - f(x^+) \ge \frac{{\vnorm{\nabla f(x)}}^2}{2L}.
 \end{equation*}
 \label{DecreaseGuar}
 \end{theorem}
@@ -110,7 +110,7 @@ The first inequality follows from theorem \ref{DecreaseGuar} since $f(x^+) \ge f
 \end{proof}
 
 \begin{theorem}[Convergence of $\frac{1}{L}$-gradient method for $F_L^{1,1}$]
-Let $f \in F_L^{1,1}$. For any iterate $x_N$ and any $x$ \textcolor{red}{(shouldn't it be $x_0$??)},
+Let $f \in F_L^{1,1}$. For any iterate $x_N$ and any $x_0$,
 \begin{equation*}
 f(x_N) - f(x^*) \le \frac{L}{2N} \vnorm{x_0-x^*}^2 .
 \end{equation*}
@@ -185,9 +185,8 @@ is well defined and unique.\\
 \begin{definition}
 Let $\mathcal{C}$ be a closed convex set and f a differentiable function ($f \in C_L^{1,1}(C)$), we say that $x^*$ is a \textbf{stationary point} of the problem $\min\limits_{x \in C} f(x)$ if and only if
 \begin{equation*}
-\langle \nabla f(x^*), x-x^* \rangle \ \geq\ 0 \ \ \ \ \forall x \in \mathcal{C}
+\langle \nabla f(x^*), x-x^* \rangle \ \geq\ 0 \ \ \ \ \forall x \in C
 \end{equation*}
-for all $x \in C$.
 \end{definition}
 This definition can be intuitively interpreted as follows: adding $f(x^*)$ on both sides brings up the first-order Taylor expansion of $f$ around $x^*$, which is closed to $f(x)$. So this definition essentially means $f(x) \ge f(x^*)$.\\
 In another interpretation, that means that all possible errors $x-x^*$ are in opposite direction with $-\nabla f$. A schema of the situation is shown on figure \ref{tik1}.
@@ -196,7 +195,7 @@ In another interpretation, that means that all possible errors $x-x^*$ are in op
 \begin{tikzpicture}
 \draw (0,0) circle (1);
 \draw[fill = black] (1,0) circle (0.05);
-\draw (0,-1.3) node{$\mathcal{C}$};
+\draw (0,-1.3) node{$C$};
 \draw (1.2,-0.2) node{$x^*$};
 \draw[>=latex,->] (1,0) -- (2,0) node{$\ \ \ \ \ \ \ \ \ \ -\nabla f$};
 \draw[>=latex,->] (1,0) -- (1.866025403784439,0.5);
@@ -214,7 +213,7 @@ In another interpretation, that means that all possible errors $x-x^*$ are in op
 
 \begin{example}
 \begin{leftbar}
- $\mathcal{C} = \{x \in \mathbb{R}^n: x_i \ge 0\}$ (nonnegative orthant)
+ $C = \{x \in \mathbb{R}^n: x_i \ge 0\}$ (nonnegative orthant)
 \begin{align*}
 &x^* \; \text{stationnary iff} \; \sum_i \left[\nabla f(x^*)\right]_i \left[x_i - x_i^*\right] \ge 0\ \ \ \forall x\ge 0\\
 &x^* \; \text{stationnary iff either} \; [\nabla f(x^*)]_i=0\\ 
@@ -227,7 +226,7 @@ If not, we could choose a very large $x_i$ for this component and have a negativ
 
 \begin{example}
 \begin{leftbar}
-It also works easily for $\mathcal{C} = \{x|\sum_{i}x_i=1\}$ which is a kind of budget constraint. In that case, it is possible to show that $[\nabla f(x^*)]_i = \lambda \; \forall i$. That means that all the gradient components are equal to each other, or economically speaking that the marginal costs are equal to each other. At the optimum, the marginal cost is equal for each component, it does not matter which one you lower.
+It also works easily for $C = \{x|\sum_{i}x_i=1\}$ which is a kind of budget constraint. In that case, it is possible to show that $[\nabla f(x^*)]_i = \lambda \; \forall i$. That means that all the gradient components are equal to each other, or economically speaking that the marginal costs are equal to each other. At the optimum, the marginal cost is equal for each component, it does not matter which one you lower.
 \end{leftbar}
 \end{example}
 

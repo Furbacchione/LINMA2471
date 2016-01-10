@@ -62,15 +62,7 @@
 % Propositions: \begin{proposition} ... \end{proposition}
 % Remarks: \begin{remark} ... \end{remark}
 
-\section{Linear and sublinear convergence}
- For methods with sublinear convergence, the value of the error firstly downs very quickly but after some value, the decreases becomes really slow. For methods with linear convergence, the decrease of the error is, at the beginning, slowler then sublinear methods. However, after the value where the decrease for sublinear methods becomes slow, the decrease for linear method remains constant on a logarithmic scale. \\ \\ Thus, the choice of the method depends on the application. If one needs a lot of accuracy, it is preferable to use linear methods but if high accuracy is not that much important (i.e. we only look for one digit), one then should use sublinear methods. Some graphs to illustrated these results are given on Figure \ref{fig:linear_convergence}.
 
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth]{images/L6-Linear_convergence.pdf} 
-\caption{Illustration of linear and sublinear convergence.}
-\label{fig:linear_convergence}
-\end{figure}
 
 \section{Conic optimization}
 In order to introduce the conic optimization concept, let's begin with an linear example. 
@@ -96,7 +88,7 @@ $7$ is an upper bound for the objective value function. Since we have found a fe
 \end{leftbar}
 \end{example}
 
-It is possible to find a bound for the objective value for any linear problem. We want to extend the notion of linear problems while keeping their 'nice' properties of linear problems (i.e. duality and efficient algorithms). In order to extend this notion, we will generalize the inequalities $\leq$ and $\geq$ in the linear problems. \\ \\
+It is possible to find a bound for the objective value for any linear problem. We want to extend the notion of linear problems while keeping their `nice' properties of linear problems (i.e. duality and efficient algorithms). In order to extend this notion, we will generalize the inequalities $\leq$ and $\geq$ in the linear problems. \\ \\
 With $K \subseteq \mathbb{R}^n$, we define an generalized type of inequalities\[ a \succeq_K 0
  \Leftrightarrow a \in K \]
 On the basis of this definition, we also have the following properties \begin{align*}
@@ -177,7 +169,7 @@ As a result, applying a rotation or a scaling operation to a cone and solving th
 The conic optimization is useful since it is more general than linear optimization. The sets considered are not polyhedrons anymore but rather curved sets. Thus, it can cover more problems.
 
 \subsection{Lorentz cone}
-A common example of a cone is the Lorentz cone or Ice cream cone. It is defined such as: 
+A common example of a cone is the Lorentz cone or ice cream cone. It is defined such as: 
 \[
 \mathbb{L}^n = \{(x_0,\dots, x_n) \in \mathbb{R}^{n+1} \mid \sqrt{x_1^2+...+x_n^2} \le x_0 \}
 \]
@@ -336,7 +328,7 @@ x^T z \geq 0 \ \forall x \in K \} \]
 \item $K^*$ is always \emph{closed}, and if $K$ is closed, $(K^*)^* = K$; \item $K$ is \emph{pointed} (resp. 
    solid) $\Rightarrow K^*$ is \emph{solid} (resp. pointed) \item Cartesian products: $(K_1 \times K_2)^*
    = K_1^* \times K_2^*$;
-\item $(\mathbb{R}^n+)^* = \mathbb{R}^n+, (\mathbb{L}^n)^* = \mathbb{L}^n, (\mathbb{S}_+^n)^* = \mathbb{S}_+^n$: \\these cones are self-dual, but there are (many) cones which are not.
+\item $(\mathbb{R}^n+)^* = \mathbb{R}^n+, (\mathbb{L}^n)^* = \mathbb{L}^n, (\mathbb{S}_+^n)^* = \mathbb{S}_+^n$: these cones are self-dual, but there are (many) cones which are not.
 \end{itemize}
 
 

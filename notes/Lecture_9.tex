@@ -126,6 +126,27 @@ If the dual problem admits a strictly feasible solution and is unbounded, then t
 
 Before going on to the following section, let us formulate a little remark about the dual of a cone. Actually finding the dual of a cone is not always an easy task. This becomes really tedious if it must be done by a computer. This is the reason why most of the conic solvers work only with self-dual cones. The most used self-dual cones are: the first-order cone $\mathbb{R}^n_+$, the Lorentz cone $\mathbb{L}^n$ and the semi-definite cone $\mathbb{S}^n_+$.
 
+\section{Sensibility analysis}
+Let
+\[
+  \phi_P(b) = \max_{A^Ty \leq c} b^Ty
+\]
+
+We can see that $\phi_P$ is the maximum over all feasible $y$ of $b^Ty$.
+Hence it is the maximum of an infinity of convex functions, so it is convex.
+Therefore,
+\[ \phi_P(b + \Delta b) \geq (b + \Delta b)^T y^* = \phi_P(b) + (y^*)^T \Delta b. \]
+$y^*$ is still feasible since $b$ only affects the objective.
+If $y$ is an unique optimal solution for the objective $b^Ty$,
+$\phi_P(b + \Delta b) = (b + \Delta b)^T y^*$ for $\Delta b$ small enough.
+
+If
+\[ \phi_P(b + \Delta b) > (b + \Delta b)^T y^*, \]
+that means that just before (for a $\Delta b$ just smaller),
+$y^*$ wasn't anymore the unique optimal solution.
+
+By strong duality,
+we have $\phi_D(b) = \phi_P(b)$ so this analysis gives a good sensibility analysis on the independent term $b$ of the constraints of $D$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Robust optimisation}
@@ -184,21 +205,6 @@ And thus the original robust problem becomes a simple conic problem:
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Semi-definite optimisation}
 
-We will now speak a bit further about the semi-definite cone. If we note $\mathbb{S}^n$ the set of symmetric matrices of order $n$, then the semi-definite cone is defined by:
-\begin{equation*}
-\mathbb{S}^n_+ = \left\lbrace X \in \mathbb{S}^n  \big|  v^TXv \geq 0 \hspace{5mm} \forall v\in \mathbb{R}^n \right\rbrace
-\end{equation*}
-
-Over the set $\mathbb{S}^n$, we defined the inner-product $\langle X,Y \rangle = \mathrm{trace}[X^TY]$. The dual $(\mathbb{S}^n_+)^*$ of the cone $\mathbb{S}^n_+$ is thus the set of $Y\in\mathbb{S}^n$ such that $\mathrm{trace}[X^TY]$ is non-negative for all $X\in\mathbb{S}^n_+$. We can show that $\mathbb{S}^n_+$ is auto-dual\footnote{For a simple proof, you can consult the lemma $12.5$ in \url{http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15859-f11/www/notes/lecture12.pdf}.}. The primal-dual formulation of a conic problem involving semi-definite constraints is given by:
-\begin{equation*}
-\begin{array}{ccc}
-    \text{(PRIMAL)} & & \text{(DUAL)} \\
-    \min\limits_{X\in\mathbb{S}^n} \langle C,X \rangle & \longleftrightarrow & \max\limits_{y\in\mathbb{R}^m}  b^Ty \\
-    \langle A_i,X \rangle = b_i \hspace{5mm} \text{for} \hspace{5mm} i\in\lbrace 1,\dots,m\rbrace & & C -\sum\limits_{i=1}^m A_iy_i \in \mathbb{S}^n_+ \\
-    X \in \mathbb{S}^n_+ & &
-\end{array} \:.
-\end{equation*}
 %
 %\end{document}

@@ -28,7 +28,7 @@
 %\maketitle
 
 \subsection{Self-concordant function}
-\begin{definition} A function $f$ is called self-concordant if and only if
+\begin{definition}\label{Def:1D} A function $f$ is called self-concordant if and only if
 \begin{itemize}
 \item $f \in \mathcal{C}^3(X)$ (open domain $X$)
 \item $f$ convex
@@ -48,7 +48,7 @@ Let's define $F_{x,h}(t) : t \rightarrow f(x+th)$. We have
 \nabla^2 f(x)[h,h] & = F''_{x,h}(0) \stackrel{1D}{=} f''(x)h^2\\
 \nabla f(x)[h] & = F'_{x,h}(0) \stackrel{1D}{=} f'(x)h\\
 \end{align*}
-where 1D means that we are studying the one-dimensional case. Let's look at the third condition of \textbf{definition 1} in 1D :
+where 1D means that we are studying the one-dimensional case. Let's look at the third condition of Definition \ref{Def:1D} in 1D :
 \begin{align*}
 f'''(x)h^3 & \le 2 (f''(x)h^2)^\frac{3}{2} \\
 \end{align*}
@@ -145,10 +145,10 @@ Given a s.c.\ function (on domain X), $x\in X$. If $\delta(x) < 1$ then
 \end{itemize}
 And for any $\delta(x)$, we have 
 \begin{itemize}
-\item $x^+ = x + \left(\dfrac{\delta(x)}{1+\delta(x)}\right)n(x) $
+\item $x^+ = x + \left(\dfrac{n(x)}{1+\delta(x)}\right) $
 \item $f(x) - f(x^+) \geq \delta(x) - \log{(1+\delta(x))} \geq 0 $
 \end{itemize}
-with $\left(\dfrac{\delta(x)}{1+\delta(x)}\right) \le 1$ which is the damped Newton step.
+with $\left(\dfrac{n(x)}{1+\delta(x)}\right) \le 1$ which is the damped Newton step.
 \end{property}
 
 \begin{example}
