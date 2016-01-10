@@ -183,14 +183,14 @@ What can we say about the minimum of a function based only on its first derivati
 \begin{lemma}
 \textbf{Quadratic upper bound (QUB) of $C_L^{1,1}$ function} \\
 Let's $f \in C_L^{1,1}$. Then for any $x$ we have that 
-$$ \hat{f}: y \mapsto  f(x)+ \nabla f^T(x)(x-y)+ \frac{L}{2} \| x-y\|^2 $$
+$$ \hat{f}: y \mapsto  f(x)+ \nabla f^T(x)(y-x)+ \frac{L}{2} \| y-x\|^2_2 $$
  is an upper bound of $f(y)$.
 \end{lemma}
 
 Notice that $\hat{f}$ is a quadratic function of $y$.  What is the minimum of the quadratic upper bound? Our function is now convex and easy to minimize over $y$.
 
 
-$$\nabla \hat{f}(y)=0 \Leftrightarrow  \nabla f(x) +\frac{L}{2} 2(x-y)(-1)=0$$
+$$\nabla \hat{f}(y)=0 \Leftrightarrow  \nabla f(x) +\frac{L}{2} 2(y-x)=0$$
 
 $$ \Rightarrow y^{*} = x- \frac{1}{L} \nabla f(x)$$
 
