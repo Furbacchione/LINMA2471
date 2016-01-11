@@ -21,10 +21,6 @@
 %\maketitle
 % \section{Properties of convex functions}
 % \subsection{Linear transformation on the variables}
-\vspace{0.5cm}
-\begin{property}
- Given a convex function $f$ and an affine transformation $ x \mapsto Ax + b $, the composition $x \mapsto f(Ax + b)$ is also convex.
- \end{property}
  \begin{example}
 \begin{leftbar}
 	$e^{2x - y + z}$ is convex because the exponential is convex and  $2x - y + z$ is a linear transformation of $x, y$ and $z$.
@@ -85,7 +81,7 @@ Let's prove this proposition for a simple case. We assume that $h$ and $g$ are b
 Since f and g are 2 times differentiable, one has:
 $$\big[ h(g(x))\big]'' = \big[ h'(g(x))g'(x)\big]' = \underbrace{h''(x)(g'(x))^2}_\text{A} + \underbrace{h'(g(x))g''(x)}_\text{B} $$
 
-Since h is convex, its second derivative is positive and given that a square is positive, one has that $A$ is positive. Furthermore, since $g$ is also convex and $h$ is increasing, one also has that $B$ is positive. One conclude that the second derivative of $h \circ g$ is positive and thus, the function $h \circ g$ is convex. 
+Since h is convex, its second derivative is non-negative and given that a square is non-negative, one has that $A$ is non-negative. Furthermore, since $g$ is also convex and $h$ is increasing, one also has that $B$ is non-negative. One conclude that the second derivative of $h \circ g$ is non-negative and thus, the function $h \circ g$ is convex. 
 \end{proof}
 \textbf{Remark}: Sometimes we need to square a value but also to keep convexity (for example, we don't care about negative deviations on a budget) \textcolor{red}{Should be better expressed}. However the traditional square function is not increasing on the real line. Let's introduce a restricted square function as follows: 
 $$f: x \mapsto (x_+)^2 = (\frac{x + |x|}{2})^2$$
@@ -197,4 +193,4 @@ $$ (1) \ \exists v \: \ M v = \lambda v $$
 $$(2) \ \exists v \: \ (M + \Delta I) v = ( \lambda + \Delta)v$$
 \end{proof}
 \textbf{Remark}: We can have the same propositions and the same proof while adding $\mu > 0$ anywhere: $ f + \mu ||x||^{2}$. It is a regularization to make it strictly convex.\\
-\textbf{Remark}: There are functions that have no derivative and are strictly convex.
+\textbf{Remark}: There exist also strictly convex functions that are not differentiable everywhere.

@@ -61,7 +61,7 @@ We've been investing in convex models and trying to find the best formulation of
 
 \section{Gradient Method}
 
-A main example of first order methods is the Gradient Method also known as the Steeped Descent Method. Many practical problems have constraints but let's consider for the moment that we have none.  
+A main example of first order methods is the Gradient Method also known as the Steepest Descent Method. Many practical problems have constraints but let's consider for the moment that we have none.  
  
 Problem:  $\underset{x  \in \mathbb{R}^n}{\text{min }} \: f(x) $
  
@@ -209,15 +209,15 @@ $$ f(x_{k+1})-f(x_{k}) \leq - \frac{\|\nabla f(x_k)\|^{2}}{2L}$$
 (because the upper bound displays this decrease \textcolor{red}{What does it mean?})\\
 
 
-$f(1)-f(0) \leq -\dfrac{\|\nabla f(x_{0})\|^{2}}{2L}$\\
-$f(2)-f(1) \leq -\dfrac{\|\nabla f(x_{1})\|^{2}}{2L}$ \\
+$f(x_1)-f(x_0) \leq -\dfrac{\|\nabla f(x_{0})\|^{2}}{2L}$\\
+$f(x_2)-f(x_1) \leq -\dfrac{\|\nabla f(x_{1})\|^{2}}{2L}$ \\
 $\vdots$ \\
-$f(N+1)-f(N) \leq -\dfrac{\|\nabla f(x_{N})\|^{2}}{2L}$\\
+$f(x_{N+1})-f(x_N) \leq -\dfrac{\|\nabla f(x_{N})\|^{2}}{2L}$\\
 
 Summing the equations above, we get \\
-$f(N+1)-f(0) \leq - \dfrac{1}{L} \sum\limits_{i=1}^{N+1}$ $\|\nabla f(x_{i})\|^{2}$\\
+$f(x_{N+1})-f(x_0) \leq - \dfrac{1}{L} \sum\limits_{i=0}^{N}$ $\|\nabla f(x_{i})\|^{2}$\\
 so we deduce \\
-$2L(f(0)-f(N+1)) \geq \sum\limits_{i=1}^{N+1} \|\nabla f(x_{i})\|^{2} \geq (N+1) \min \|\nabla f(x_{i})\|^{2}$
+$2L(f(0)-f(N+1)) \geq \sum\limits_{i=0}^{N} \|\nabla f(x_{i})\|^{2} \geq (N+1) \min \|\nabla f(x_{i})\|^{2}$
 
 Hence
 \begin{align*}
@@ -225,13 +225,6 @@ Hence
 & \leq \sqrt{\frac{2L(f(0)-f(x^*))}{N+1}}
 \end{align*}
 with $x^*$ minimum point of $f$.
-
-\begin{lemma}
-Assume in addition that $f$ is convex (meaning $f \in F^{1,1}_{L}$)\footnotemark, then we have: 
-$$ f(N)-f(x^*) \leq \frac{L\|x_{0}-x^*\|^{2}}{2N} $$ 
- (assuming $x^*$ is one of the minimum points).
-\end{lemma}
-\footnotetext{$f$ is convex and $f \in C_{L}^{1,1}$}
  
 \begin{example}\begin{leftbar} Behaviour of the gradient method
 $$2x^{2}+y^{4}-2y^{2}$$
@@ -262,7 +255,7 @@ We observe that
 0
 \end{pmatrix}
 \end{equation*}
-If we start from $(1,0)$, we can only converge to $(0,0)$ and we couldn't find all the points. 
+If we start from $(1,0)$, we can only converge to $(0,0)$ (which is a saddle point) and we couldn't find all the points. 
 \end{leftbar}\end{example}
 
 

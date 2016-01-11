@@ -223,21 +223,33 @@ Finally:
 
 \begin{center}
 \[
-C =\sqrt7, 
-\hspace{1cm}
-A = \left( \begin{array}{cc}
--1 & 0 \\
-0 & -1 \end{array} \right), 
-\hspace{1cm}
+c =\left( \begin{array}{c}
+\sqrt7 \\ 
+0 \\
+0 \end{array}
+\right)
+, 
+\hspace{0.5cm}
+A = \left( \begin{array}{ccc}
+0 & -1 & 0 \\
+0 & 0 & -1 \end{array} \right), 
+\hspace{0.5cm}
 y = \left( \begin{array}{c}
 y_1 \\
 y_2 \end{array} \right)
+, 
+\hspace{0.5cm}
+b = \left( \begin{array}{c}
+1 \\
+1 \end{array} \right)
 \]
 \end{center}
 And the problem can be written as: 
 \begin{center}
-$\max (y_1+y_2)$ \\
-$-y_1-y_2 \preceq_{\mathbb{L}^2} \sqrt7$
+\begin{eqnarray*}
+\max & & b^t y \\
+\text{such that} & & A^t y \preceq_{\mathbb{L}^2} c
+\end{eqnarray*}
 \end{center}
 \end{leftbar}
 \end{example}
@@ -281,7 +293,7 @@ introduces the product cone $K = K_1 \times K_2$ to write
 If $K_1$ and $K_2$ are proper, $K_1 \times K_2$ is also proper.
 \end{definition}
 
-However, in this course, and for the exercises, we will not merge the cones.
+However, in this course, and for the exercises, we will not merge the cones. Indeed, while merging the cones into a single cone is useful for ``theory'', we do not need to do it in practice (solvers accept problems built with several cones).
 
 \subsection{Equivalence with convex optimization} 
 Since a cone is convex, conic optimization can be related to convex optimization: conic optimization is clearly a special case of convex optimization. What about the reverse statement ?

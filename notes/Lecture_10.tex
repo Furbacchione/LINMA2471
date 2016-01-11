@@ -68,7 +68,7 @@ All eigenvalues of M $\geq 0 \Leftrightarrow M \succeq  0 \Leftrightarrow \lambd
 $\newline$
 All eigenvalues of M $\geq 1 \Leftrightarrow M - I \succeq 0 \Leftrightarrow \lambda_{min}(M) \geq 1$
 $\newline$
-All eigenvalues of M $\geq c \Leftrightarrow M - cI \preceq 0$  (linear even if $c$ is a variable)$  \Leftrightarrow \lambda_{min}(M) \geq c$
+All eigenvalues of M $\geq c \Leftrightarrow M - cI \succeq 0$  (linear even if $c$ is a variable)$  \Leftrightarrow \lambda_{min}(M) \geq c$
 $\newline$
 All eigenvalues of M $\leq c \Leftrightarrow M - cI \preceq 0   \Leftrightarrow \lambda_{max}(M) \leq c \Leftrightarrow - (M-cI) \succeq 0 = cI-M \succeq 0$ which is also a linear constraint.
 $\newline$
@@ -126,7 +126,7 @@ Using the Newton's method, we can find the global minimum of the function $f(x) 
 \begin{example}
 \begin{leftbar} 
 Let us apply the Newton's method on $f(x) = -\cos(x)$. \\
-We get that $x^+ = x - (\cos(x))^{-1}(\sin(x)) = x - \tan(x) = x - (x + \mathcal{O}(x^3))$ (near to 0, quadratic convergence) 
+We get that $x^+ = x - (\cos(x))^{-1}(\sin(x)) = x - \tan(x) = x - (x + \mathcal{O}(x^3))$ (near to 0, cubic convergence) 
 \end{leftbar}
 \end{example}
 

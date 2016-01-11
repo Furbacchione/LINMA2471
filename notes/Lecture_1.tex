@@ -173,7 +173,7 @@ The opposite is both more useful and more subtle:
 
 To do this, we must introduce the concept of \textbf{slack variable} (\textit{variable d'écart} in French). A slack variable is a non-negative variable added on the greater side of the inequality to make it an equality. Basically, its value is $f-g$, the slack between $f$ and $g$, representing the \textit{margin} before the constraint becomes an equality. 
 
-One last case to be treated is the \textbf{lower bound constraint}. This can of course be treated as a constraint, but is redundant with the nonnegativity of the variables in the standard form. A fairly simple solution is to subtitute the variable $X$ with $X-l$, where $l$ is the lower bound.
+One last case to be treated is the \textbf{lower bound constraint}. This can of course be treated as a constraint, but is redundant with the non-negativity of the variables in the standard form. A fairly simple solution is to substitute the variable $X$ with $X-l$, where $l$ is the lower bound. Note that upper bound can be handled in a similar way.
 
 \begin{center}
 \begin{tikzpicture}[->,node distance=7cm, main node/.style={rectangle,draw,font=\bfseries}]
@@ -191,9 +191,9 @@ One last case to be treated is the \textbf{lower bound constraint}. This can of 
 The standard form of a \textbf{linear optimization problem} is:
 \begin{framed}
 $$\begin{array}{cl}
-\min_X & c^T X \\
- & A X = b \\
- & X \geq 0 \;\;\; (\Longleftrightarrow X \text{non-negative})
+\min_x & c^T x \\
+ & A x = b \\
+ & x \geq 0 \;\;\; (\Longleftrightarrow x \text{non-negative})
 \end{array}$$
 \end{framed}
 
@@ -280,7 +280,7 @@ The first, is a special case of linear optimization with \textbf{or} constraints
 \begin{figure}[H]
 \centering
 \includegraphics[scale=.4]{./images/Course2_polynoms}
-\caption{Two (simple) disjoint polyhedron and the convex hull (in green) of the union.}
+\caption{Two (simple) disjoint polyhedron and the convex hull (union of green with original blue and red zone) of the union.}
 \label{fig:my_label}
 \end{figure}
 
@@ -298,7 +298,7 @@ The convex hull of $\{-1,1\}^n$ is $[-1,1]^n$, and so both problems have the sam
 
 It is possible to approximate convex problems by linear ones. Since the objective can always be converted to a linear function by adding a variable, the only work to be done concerns the constraints. Basically, the idea is to approximate the (closed\footnote{Why not open? Because an open set corresponds to strict inequalities, which cannot and will not be treated with the common optimization tools (see ``A note on $\neq$'', page \pageref{note_on_diff})}) set $X$ by a finite intersection of half-spaces (thus, linear constraints).
 
-The way to do this is to use \textbf{projections} of points on the convex space. The projection of a point $u$ on a set $X$ is defined as the point $u_p \in X$ that minimizes the distance between itself and $u$.\\
+The way to do this is to use \textbf{projections} of points on the convex space. The projection of a point $u$ on a set $X$ is defined as the point $u_p \in X$ that minimizes the distance between itself and $u$. Note that the definition of the projection is also valid when the point $u$ belongs to set X: in that case the projection of $u$ on $X$ is equal to $u$ itself.\\
 
 \begin{theorem}{\textbf{Uniqueness and existence of projection.}}
 Let $X$ be a \textbf{closed, non-empty, convex} set in $\mathbb{R}^n$, the projection of any exterior point on $X$ exists and is unique.

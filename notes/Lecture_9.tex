@@ -95,7 +95,20 @@ A feasible solution to a conic (primal or dual) problem is strictly feasible if 
 \end{definition}
 
 \begin{theorem}[Strong duality]
-If the dual problem admits a strictly feasible solution and is unbounded, then the primal is infeasible. If the dual problem admits a strictly feasible solution and is bounded, then the primal is feasible and $c^Tx^*=b^Ty^*$. The reverse proposition holds for the primal.
+If the \textbf{dual} problem admits a \textbf{strictly} feasible solution, we have either
+\begin{itemize}
+	\item an \textbf{unbounded} dual, in which case $d* = +\inf = p*$ and the primal is infeasible
+	\item a \textbf{bounded dual}, in which case the primal is \textbf{solvable with $p* = d*$} (hence there exists at least one feasible primal solution $x*$ such that $c^Tx* = p* = d*$)
+\end{itemize}	
+Similarly, if the \textbf{primal} problem admits a \textbf{strictly} feasible solution, we have either
+\begin{itemize}
+	\item an \textbf{unbounded} primal, in which case $p* = -\inf = d*$ and the dual is infeasible
+	\item a \textbf{bounded primal}, in which case the dual is \textbf{solvable with $d* = p*$} (hence there exists at least one feasible dual solution $y*$ such that $b^Ty* = d* = p*$)
+\end{itemize}
+Finally, when both problems admit a strictly feasible solution, both
+the primal and the dual problems are \textbf{solvable} and the optimal solutions $x*$ and $y*$ satisfy
+$$c^Tx = p* = d* = b^Ty*$$
+hence a \textbf{zero duality gap} (exactly as for linear optimization)
 \end{theorem}
 
 \begin{table}
@@ -124,6 +137,7 @@ If the dual problem admits a strictly feasible solution and is unbounded, then t
 \label{tab_strong}
 \end{table}
 
+Note that we are not sure the dual problem admits an optimal solution! It could be that the dual optimal value is not attained (i.e. there is a sequence of feasible points tending to the optimal value but the limit is not feasible).\\
 Before going on to the following section, let us formulate a little remark about the dual of a cone. Actually finding the dual of a cone is not always an easy task. This becomes really tedious if it must be done by a computer. This is the reason why most of the conic solvers work only with self-dual cones. The most used self-dual cones are: the first-order cone $\mathbb{R}^n_+$, the Lorentz cone $\mathbb{L}^n$ and the semi-definite cone $\mathbb{S}^n_+$.
 
 \section{Sensibility analysis}

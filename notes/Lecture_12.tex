@@ -125,15 +125,15 @@ Take for example $f(y) = - \sum_{i = 1}^m \log(c_i - a_i^T y)$ for domain $\lbra
 \end{center}
 
 \begin{definition} 
-\textbf{analytic center:} $x(\infty) = \underset{x\ \in \ \int(X)}{\arg \min} f(x) \qquad (*)$  \\
-We call this center "analytic" because it is defined by functions, by calculus. This corresponds to the value of $x$ that minimizes $f(x)$.
+\textbf{analytic center:} $x(\infty) = \underset{x\ \in \ int(X)}{\arg \min} f(x) \qquad (*)$  \\
+We call this center ``analytic" because it is defined by functions, by calculus. This corresponds to the value of $x$ that minimizes $f(x)$.
 \end{definition}
 
 \subsection{Barrier Problem} 
 We are going to use the self-concordant function as a barrier to get to the border of the polytope.
 \begin{equation}
 \label{BarrierProblem}
-(p_{\mu}) \qquad \underset{x \in \int X}{\min} \quad \dfrac{c^T x}{\mu} + f(x) = \underset{x \in \int X}{\min} \quad f_{\mu}(x)
+(p_{\mu}) \qquad \underset{x \in int X}{\min} \quad \dfrac{c^T x}{\mu} + f(x) = \underset{x \in int X}{\min} \quad f_{\mu}(x)
 \end{equation}
 In (\ref{BarrierProblem}) we saw that
 \begin{itemize}
@@ -144,7 +144,7 @@ In (\ref{BarrierProblem}) we saw that
 As we decrease the value of $\mu$, we get closer to the effective solution of our problem.
 \newline
 \begin{theorem}
-Assuming that $X$ contains no lines, for $\mu > 0$, $x(\mu) = \underset{x \in \int X}{\min} \dfrac{c^T x}{\mu} + f(x)$ is well defined and unique (simply proved)
+Assuming that $X$ contains no lines, for $\mu > 0$, $x(\mu) = \underset{x \in int X}{\min} \dfrac{c^T x}{\mu} + f(x)$ is well defined and unique (simply proved)
 \end{theorem}
 Consider $\lbrace x(\mu) ; \mu > 0 \rbrace$ and call it the \textit{central path}. It tries to be as far as possible from the boundary  and, in the same time, tends to the minimum.\\
 
@@ -177,7 +177,7 @@ $k \leftarrow k + 1$
 \end{lstlisting}
 
 
-\begin{definition} Assume that $f$ is a self-concordant function and $\delta (x) \leq \sqrt{\nu}$ for some $\nu \geq 1$. Then, $f$ is a \textbf{$\nu$-self-concordant barrier}.
+\begin{definition} Assume that $f$ is a self-concordant function and $\delta (x) \leq \sqrt{\nu}$ for some $\nu \geq 1$ $\forall x \in dom f$. Then, $f$ is a \textbf{$\nu$-self-concordant barrier}.
 \end{definition}
 
 \begin{example}
@@ -229,7 +229,8 @@ Choosing $\tau = \dfrac{1}{4}$, $\theta = \dfrac{1}{16 \sqrt{\nu}}$, the method
 \end{enumerate}
 \end{theorem}
 
-This method is known as the \textit{Short-step path following method}. The term $\theta = \dfrac{1}{16 \sqrt{\nu}}$ is too small and the step between two $\mu$ is also too small. Thus, the complexity is too bad.\\
+This method is known as the \textit{Short-step path following method}. In practice, the term $\theta = \dfrac{1}{16 \sqrt{\nu}}$ is too small and the step between two $\mu$ is also too small. Thus, the practical behaviour is too bad.\\
+However, the theoretical behaviour is fine. It is in fact the best know theoretical complexity bound for this problem.\\
 
 \textbf{How to find $x_0$ and $\mu_0$?}\\
 Pick whatever $\mu_0$ you like, depends on the problem (could be heuristic or the central point,...). The chosen $x_0$ must be close to the central path.\\

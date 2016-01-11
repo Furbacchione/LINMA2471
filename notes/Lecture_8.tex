@@ -206,7 +206,7 @@ This model cannot be simplified any further.
 After this example of conic dual computation, we want to study the properties of the conic dual optimization and some of its theorems. One interesting design allows to prove some theorems. Let us first explain this design to eventually find the dual of the primal conic problem (P):
 \begin{eqnarray*}
  \min & &\textbf{b}^T\textbf{y}\\
- \text{such that} & & \textbf{A}^T\textbf{y}\preceq_K \textbf{c}
+ \text{such that} & & A^T\textbf{y}\preceq_K \textbf{c}
 \end{eqnarray*}
 
 First, to build the standard dual problem, we write the constraints as a system of inequations where coefficients $\lambda_i \geq 0$ multiplies $c_i$ (positivity of $\boldsymbol{\lambda}$ assures the preservation of inequalities):
@@ -226,11 +226,11 @@ First, to build the standard dual problem, we write the constraints as a system 
 (\sum_{i=1}^{n}\lambda_i a_i)^T \textbf{y} \leq \sum_{i=1}^{n}\lambda_i c_i\]
 
 We can write the new system system as:
-\[(\boldsymbol{A}\boldsymbol{\lambda})^T \boldsymbol{y} \leq \boldsymbol{c}^T \boldsymbol{\lambda}
+\[(A\boldsymbol{\lambda})^T \boldsymbol{y} \leq \boldsymbol{c}^T \boldsymbol{\lambda}
 \]
 The dual goal is to find the best upper bound for this system. This is, that best upper bound is found by minimizing the dual objective.\\
 
-When $\boldsymbol{A\lambda}=\boldsymbol{b}$, we get the system $\boldsymbol{b}^T \boldsymbol{y} \leq \boldsymbol{c}^T \boldsymbol{\lambda}$. The upper bound depends on $\boldsymbol{\lambda}$ and the dual problem (D) becomes:
+When $A\boldsymbol{\lambda}=\boldsymbol{b}$, we get the system $\boldsymbol{b}^T \boldsymbol{y} \leq \boldsymbol{c}^T \boldsymbol{\lambda}$. The upper bound depends on $\boldsymbol{\lambda}$ and the dual problem (D) becomes:
 
 \begin{eqnarray*}
 \min & & \boldsymbol{c}^T \boldsymbol{\lambda}\\
@@ -369,12 +369,5 @@ We can conclude what has been done with two theorems on conic duality:
 \begin{theorem}[Weak duality]
 If x is feasible for the primal (P) and y is feasible for the dual (D), then $$c^Tx\ge b^Ty$$
 \end{theorem}
-
-\begin{theorem}
-Under some assumptions, optimal value of (P) is equal to the optimal value of (D).
-\end{theorem}
-
-
-
 
 %\end{document}

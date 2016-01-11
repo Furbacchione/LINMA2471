@@ -88,13 +88,13 @@ Let $x \rightarrow f(x)$ be a s.c. function. Then $y \rightarrow f(c-A^Ty)$ is s
 
 \begin{example}
 \begin{leftbar}
-$$f(y) = - \sum\limits_{i=1}^m \log{(c_i-a_i^Ty)}$$ on domain $\{y|c-A^Ty > 0\}$ is s.c.\
+$$f(y) = - \sum\limits_{i=1}^m \log{(c_i-a_i^Ty)}$$ on domain $\{y|c-A^Ty \geq 0\}$ is s.c.\
 \end{leftbar}
 \end{example}
 
 \begin{example}
 \begin{leftbar}
-$$f(x_0,x_1,...,x_n) = -\log{(x_0^2-x_1^2-...-x_n^2)}$$ is s.c. on int$(\mathbb{L}^n)$ with $\mathbb{L}^n = \left\{(x_0,x_1,...,x_n) | x_0 > \sqrt{x_1^2+...+x_n^2}\right\}$
+$$f(x_0,x_1,...,x_n) = -\log{(x_0^2-x_1^2-...-x_n^2)}$$ is s.c. on int$(\mathbb{L}^n)$ with $\mathbb{L}^n = \left\{(x_0,x_1,...,x_n) | x_0 \geq \sqrt{x_1^2+...+x_n^2}\right\}$
 \end{leftbar}
 \end{example}
 
@@ -145,17 +145,17 @@ Given a s.c.\ function (on domain X), $x\in X$. If $\delta(x) < 1$ then
 \end{itemize}
 And for any $\delta(x)$, we have 
 \begin{itemize}
-\item $x^+ = x + \left(\dfrac{n(x)}{1+\delta(x)}\right) $
+\item $x^+ = x + \left(\dfrac{n(x)}{1+\delta(x)}\right) $ is feasible
 \item $f(x) - f(x^+) \geq \delta(x) - \log{(1+\delta(x))} \geq 0 $
 \end{itemize}
-with $\left(\dfrac{n(x)}{1+\delta(x)}\right) \le 1$ which is the damped Newton step.
+with $\left(\dfrac{1}{1+\delta(x)}\right) \le 1$ which is the step length.
 \end{property}
 
 \begin{example}
 \begin{leftbar}
 \textbf{(Application)}\\ 
 Suppose $\delta(x_0) > \dfrac{1}{\sqrt{2}}$, we have $$f(x_0) - f(x_1) \geq 0.16.$$ 
-If again $\delta(x_1) > \dfrac{1}{\sqrt{2}}$, then $$f(x_1) - f(x_2) \geq 0.16.$$ Hence, after at most $\dfrac{f(x_0) - f(x^*)}{0.16}$ iterations, we have $\leq \dfrac{1}{\sqrt{2}}$. \\
+If again $\delta(x_1) > \dfrac{1}{\sqrt{2}}$, then $$f(x_1) - f(x_2) \geq 0.16.$$ Hence, after at most $\dfrac{f(x_0) - f(x^*)}{0.16}$ iterations, we have $\delta(x) \leq \dfrac{1}{\sqrt{2}}$. \\
 After applying $O(\log{\log{\frac{1}{\epsilon}}})$ pure Newton steps, we obtain an $\epsilon-$solution.
 \end{leftbar}
 \end{example}

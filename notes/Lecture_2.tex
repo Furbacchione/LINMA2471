@@ -74,6 +74,9 @@ $$ y_3 + y_4 + y_5 \geq \log(1.05)$$
 This problem is now linear (and thus convex). \\
 
 \textbf{Remark}: If we don't make the change of variable $y_i = \log(r_i) \; \forall i=1,...,5$,  the variables $r_i$ appear in $\log$ so the problem isn't linear.
+\textbf{Remark}: The solution is surprising: it can be shown that the problem is unbounded! Take for example $y1=-M$, $y2=-M$, $y3=2*M+10$, $y4=-M$, $y5=-M$ which is feasible for any value of $M$, and whose objective value $10-2*M$ can be as negative as we want.
+
+
 \end{leftbar}
 \end{example}
 
@@ -82,7 +85,7 @@ This problem is now linear (and thus convex). \\
 We use change of variables in order to transform the problem into a linear or convex problem. For example, if every variable appears in a logarithm, then we can use the change of variable to remove the logarithm.\\ 
 \textbf{Remark}: every appearance of the variables needs to match the change of variables! \\
 
-For example, signomials\footnote{A signomial is an algebraic function of one or more variables of the form:\\ $f(x_1,x_2,...x_n) = \sum_i{(c_i\prod_j{x_j^{a_{ij}}})}$} can be converted into convex functions thanks of this trick. Let's consider the signomial $\frac{x_1x_2^2}{x_3^{\frac{1}{2}}}$. Let $x_i = e^{y_i}$, we obtain the following expression by change of variable $e^{y_1+2y_2-\frac{1}{2}y_3}$. Moreover, the exponential of a linear function is convex and the change of variables conserves the convexity (see later \textcolor{red}{Should add correct reference}).
+For example, signomials\footnote{A signomial is an algebraic function of one or more variables of the form:\\ $f(x_1,x_2,...x_n) = \sum_i{(c_i\prod_j{x_j^{a_{ij}}})}$ where $c_i >0$.} can be converted into convex functions thanks of this trick. Let's consider the signomial $\frac{x_1x_2^2}{x_3^{\frac{1}{2}}}$. Let $x_i = e^{y_i}$, we obtain the following expression by change of variable $e^{y_1+2y_2-\frac{1}{2}y_3}$. Moreover, the exponential of a linear function is convex and the change of variables conserves the convexity (see later \textcolor{red}{Should add correct reference}).
 
 \subsection{Misleading/Deceptive appearances}
 
@@ -234,7 +237,7 @@ Here are several examples:
 \item Linear and affine functions are convex ($x \rightarrow \alpha x$,  $x\rightarrow b^Tx$  and  $x \rightarrow b^Tx+\alpha$)
 \item The norm function and the square of the norm function are convex functions ($x \rightarrow \|x\|$ and $x \rightarrow \|x\|^2$)
 \item Quadratic forms ($x \rightarrow x^TQx$) are convex functions when the matrix $Q \in \mathbb{R}^{n\times n}$ is semi positive definite
-\item The functions $x \rightarrow e^x$,  $x\rightarrow log(x)$ and $x \rightarrow |x|^p \;\;(1 \le p)$ are convex
+\item The functions $x \rightarrow e^x$,  $x\rightarrow -log(x)$ and $x \rightarrow |x|^p \;\;(1 \le p)$ are convex
 \end{itemize}
 \end{leftbar}
 \end{example}
